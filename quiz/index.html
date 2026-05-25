@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculá el tiempo que podrías reinvertir</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fafaf8; color: #1a1a1a; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 1.5rem; }
+  .card { background: #fff; border: 0.5px solid #e0ddd6; border-radius: 16px; padding: 2.5rem 2rem; max-width: 540px; width: 100%; }
+  .step { display: none; }
+  .step.active { display: block; }
+  .progress { display: flex; gap: 6px; margin-bottom: 2rem; }
+  .prog-dot { height: 3px; flex: 1; border-radius: 99px; background: #e0ddd6; }
+  .prog-dot.done { background: #1a1a1a; }
+  h1 { font-size: 22px; font-weight: 500; margin-bottom: 0.5rem; line-height: 1.3; }
+  .sub { font-size: 14px; color: #888; margin-bottom: 2rem; }
+  .q-title { font-size: 17px; font-weight: 500; margin-bottom: 0.4rem; line-height: 1.4; }
+  .q-desc { font-size: 13px; color: #888; margin-bottom: 1.25rem; }
+  .options { display: flex; flex-direction: column; gap: 8px; }
+  .opt { padding: 13px 16px; border: 0.5px solid #e0ddd6; border-radius: 10px; cursor: pointer; font-size: 15px; color: #1a1a1a; background: #fff; transition: all 0.15s; text-align: left; }
+  .opt:hover { border-color: #aaa; background: #fafaf8; }
+  .opt.selected { border-color: #1a1a1a; background: #f5f4f0; }
+  .nav { display: flex; justify-content: flex-end; margin-top: 1.5rem; }
+  .btn { padding: 11px 22px; border-radius: 10px; border: 0.5px solid #ccc; background: #fff; color: #1a1a1a; font-size: 14px; cursor: pointer; transition: all 0.15s; }
+  .btn:hover { background: #f5f4f0; }
+  .btn:disabled { opacity: 0.3; cursor: default; }
+  .btn-primary { background: #1a1a1a; color: #fff; border-color: #1a1a1a; width: 100%; padding: 14px; font-size: 15px; margin-top: 1rem; }
+  .btn-primary:hover { background: #333; }
+  label { font-size: 13px; color: #666; display: block; margin-bottom: 4px; margin-top: 14px; }
+  input[type="text"], input[type="email"] { width: 100%; padding: 11px 14px; border: 0.5px solid #e0ddd6; border-radius: 10px; font-size: 15px; color: #1a1a1a; background: #fff; outline: none; }
+  input:focus { border-color: #aaa; }
+  .big-num { font-size: 56px; font-weight: 500; line-height: 1; margin: 1rem 0 0.25rem; }
+  .big-label { font-size: 14px; color: #888; margin-bottom: 1.5rem; }
+  .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 1.5rem; }
+  .metric { background: #f5f4f0; border-radius: 10px; padding: 14px; }
+  .metric-val { font-size: 24px; font-weight: 500; }
+  .metric-lbl { font-size: 12px; color: #888; margin-top: 3px; }
+  .res-msg { font-size: 14px; color: #555; margin-bottom: 1.5rem; line-height: 1.6; }
+  .divider { height: 0.5px; background: #e0ddd6; margin: 1.5rem 0; }
+  .success { text-align: center; padding: 1rem 0; }
+  .success h2 { font-size: 20px; font-weight: 500; margin-bottom: 0.75rem; }
+  .success p { font-size: 14px; color: #666; line-height: 1.6; margin-bottom: 1.5rem; }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <div id="step-0" class="step active">
+    <h1>Calculá el tiempo que podrías reinvertir</h1>
+    <p class="sub">6 preguntas · menos de 2 minutos · resultado personalizado</p>
+    <button class="btn btn-primary" onclick="goStep(1)">Empezar →</button>
+  </div>
+
+  <div id="step-1" class="step">
+    <div class="progress" id="prog-1"></div>
+    <p class="q-title">¿Cuántas horas por semana dedicás a tareas administrativas?</p>
+    <p class="q-desc">Emails, agendas, seguimientos, organización de archivos…</p>
+    <div class="options" data-q="1">
+      <button class="opt" data-val="2" onclick="select(this)">Menos de 2 horas</button>
+      <button class="opt" data-val="4" onclick="select(this)">Entre 2 y 5 horas</button>
+      <button class="opt" data-val="8" onclick="select(this)">Entre 5 y 10 horas</button>
+      <button class="opt" data-val="12" onclick="select(this)">Más de 10 horas</button>
+    </div>
+    <div class="nav"><button class="btn" id="btn-1" onclick="goStep(2)" disabled>Siguiente</button></div>
+  </div>
+
+  <div id="step-2" class="step">
+    <div class="progress" id="prog-2"></div>
+    <p class="q-title">¿Cuánto tiempo dedicás a crear y publicar contenido?</p>
+    <p class="q-desc">Posts, reels, newsletters, programación…</p>
+    <div class="options" data-q="2">
+      <button class="opt" data-val="1" onclick="select(this)">Menos de 1 hora</button>
+      <button class="opt" data-val="3" onclick="select(this)">Entre 1 y 3 horas</button>
+      <button class="opt" data-val="5" onclick="select(this)">Entre 3 y 6 horas</button>
+      <button class="opt" data-val="8" onclick="select(this)">Más de 6 horas</button>
+    </div>
+    <div class="nav"><button class="btn" id="btn-2" onclick="goStep(3)" disabled>Siguiente</button></div>
+  </div>
+
+  <div id="step-3" class="step">
+    <div class="progress" id="prog-3"></div>
+    <p class="q-title">¿Cuánto tiempo por semana gestionás comunicaciones con clientes?</p>
+    <p class="q-desc">WhatsApp, email, coordinación de turnos o sesiones…</p>
+    <div class="options" data-q="3">
+      <button class="opt" data-val="1" onclick="select(this)">Menos de 1 hora</button>
+      <button class="opt" data-val="2" onclick="select(this)">Entre 1 y 3 horas</button>
+      <button class="opt" data-val="4" onclick="select(this)">Entre 3 y 5 horas</button>
+      <button class="opt" data-val="6" onclick="select(this)">Más de 5 horas</button>
+    </div>
+    <div class="nav"><button class="btn" id="btn-3" onclick="goStep(4)" disabled>Siguiente</button></div>
+  </div>
+
+  <div id="step-4" class="step">
+    <div class="progress" id="prog-4"></div>
+    <p class="q-title">¿Con qué frecuencia sentís que "apagás incendios" en vez de trabajar en lo tuyo?</p>
+    <div class="options" data-q="4">
+      <button class="opt" data-val="0" onclick="select(this)">Casi nunca</button>
+      <button class="opt" data-val="2" onclick="select(this)">Una o dos veces por semana</button>
+      <button class="opt" data-val="4" onclick="select(this)">Casi todos los días</button>
+      <button class="opt" data-val="6" onclick="select(this)">Es mi modo de trabajo habitual</button>
+    </div>
+    <div class="nav"><button class="btn" id="btn-4" onclick="goStep(5)" disabled>Siguiente</button></div>
+  </div>
+
+  <div id="step-5" class="step">
+    <div class="progress" id="prog-5"></div>
+    <p class="q-title">¿Cuántos proyectos o frentes activos tenés corriendo al mismo tiempo?</p>
+    <p class="q-desc">Programas, cursos, consultas, comunidad, redes…</p>
+    <div class="options" data-q="5">
+      <button class="opt" data-val="1" onclick="select(this)">Solo uno</button>
+      <button class="opt" data-val="2" onclick="select(this)">Dos o tres</button>
+      <button class="opt" data-val="3" onclick="select(this)">Cuatro o más</button>
+    </div>
+    <div class="nav"><button class="btn" id="btn-5" onclick="goStep(6)" disabled>Siguiente</button></div>
+  </div>
+
+  <div id="step-6" class="step">
+    <div class="progress" id="prog-6"></div>
+    <p class="q-title">¿Tenés equipo o trabajás sola?</p>
+    <div class="options" data-q="6">
+      <button class="opt" data-val="1.3" onclick="select(this)">Sola</button>
+      <button class="opt" data-val="1.1" onclick="select(this)">Con equipo muy pequeño</button>
+      <button class="opt" data-val="1.0" onclick="select(this)">Con equipo consolidado</button>
+    </div>
+    <div class="nav"><button class="btn" id="btn-6" onclick="goEmail()" disabled>Ver resultado</button></div>
+  </div>
+
+  <div id="step-email" class="step">
+    <p class="q-title">Ya tengo tu resultado</p>
+    <p class="q-desc">Dejame tu nombre y email para enviártelo junto con ideas concretas de qué podrías delegar primero.</p>
+    <form id="quiz-form" onsubmit="submitForm(event)">
+      <label>Nombre</label>
+      <input type="text" id="inp-name" name="name" placeholder="Tu nombre" required />
+      <label>Email</label>
+      <input type="email" id="inp-email" name="email" placeholder="tu@email.com" required />
+      <input type="hidden" name="horas_semanales" id="hidden-hours" />
+      <input type="hidden" name="horas_mensuales" id="hidden-monthly" />
+      <input type="hidden" name="perfil" id="hidden-profile" />
+      <button type="submit" class="btn btn-primary">Ver mi resultado →</button>
+    </form>
+  </div>
+
+  <div id="step-result" class="step">
+    <p style="font-size:13px; color:#888; margin-bottom:8px;">Horas semanales que podrías reinvertir</p>
+    <div class="big-num" id="res-hours">—</div>
+    <div class="big-label" id="res-month">— horas al mes</div>
+    <div class="metrics">
+      <div class="metric"><div class="metric-val" id="res-weeks">—</div><div class="metric-lbl">semanas de trabajo al año</div></div>
+      <div class="metric"><div class="metric-val" id="res-days">—</div><div class="metric-lbl">días laborales recuperados</div></div>
+    </div>
+    <p class="res-msg" id="res-msg"></p>
+    <div class="divider"></div>
+    <p style="font-size:14px; color:#555; margin-bottom:1rem;">¿Querés ver cómo recuperar esas horas esta semana?</p>
+    <a href="https://calendly.com/https://calendly.com/bessonangelina/15min" target="_blank" class="btn btn-primary" style="display:block; text-align:center; text-decoration:none;">Hablemos 15 minutos →</a>
+  </div>
+
+</div>
+
+<script>
+var answers = {};
+
+function buildProgress(n) {
+  var el = document.getElementById('prog-' + n);
+  if (!el) return;
+  el.innerHTML = '';
+  for (var i = 1; i <= 6; i++) {
+    var d = document.createElement('div');
+    d.className = 'prog-dot' + (i <= n ? ' done' : '');
+    el.appendChild(d);
+  }
+}
+
+function goStep(n) {
+  document.querySelectorAll('.step').forEach(function(s) { s.classList.remove('active'); });
+  document.getElementById('step-' + n).classList.add('active');
+  if (n >= 1 && n <= 6) buildProgress(n);
+}
+
+function select(el) {
+  var container = el.closest('.options');
+  container.querySelectorAll('.opt').forEach(function(o) { o.classList.remove('selected'); });
+  el.classList.add('selected');
+  var q = container.getAttribute('data-q');
+  answers[q] = parseFloat(el.getAttribute('data-val'));
+  var btn = document.getElementById('btn-' + q);
+  if (btn) btn.disabled = false;
+}
+
+function calcResult() {
+  var base = (answers[1]||0) + (answers[2]||0) + (answers[3]||0) + (answers[4]||0);
+  var multiplier = answers[6] || 1.0;
+  var frentes = answers[5] || 1;
+  var weekly = Math.round(base * multiplier * (1 + (frentes - 1) * 0.1));
+  var monthly = Math.round(weekly * 4);
+  var weeksYear = Math.round(weekly * 52 / 40);
+  var daysYear = Math.round(weekly * 52 / 8);
+  var profile = weekly <= 8 ? 'Perfil en crecimiento' : weekly <= 15 ? 'Perfil saturado' : 'Perfil desbordado';
+  var msg = weekly <= 8
+    ? 'Estás en un momento donde cada hora cuenta. Incluso delegando las tareas más pequeñas podés recuperar foco para lo que realmente genera valor.'
+    : weekly <= 15
+    ? 'Estás perdiendo casi dos días de trabajo por semana en tareas que no son tuyas. Ese tiempo puede volver a tu negocio.'
+    : 'Tenés el equivalente a media jornada laboral atrapada en el operativo. Delegar no es un lujo — es una decisión estratégica.';
+  return { weekly: weekly, monthly: monthly, weeksYear: weeksYear, daysYear: daysYear, profile: profile, msg: msg };
+}
+
+function goEmail() {
+  document.querySelectorAll('.step').forEach(function(s) { s.classList.remove('active'); });
+  document.getElementById('step-email').classList.add('active');
+}
+
+function submitForm(e) {
+  e.preventDefault();
+  var result = calcResult();
+  document.getElementById('hidden-hours').value = result.weekly + ' horas semanales';
+  document.getElementById('hidden-monthly').value = result.monthly + ' horas mensuales';
+  document.getElementById('hidden-profile').value = result.profile;
+
+  var formData = new FormData(document.getElementById('quiz-form'));
+
+  fetch('https://formspree.io/f/mnjrgdgr', {
+    method: 'POST',
+    body: formData,
+    headers: { 'Accept': 'application/json' }
+  }).then(function(res) {
+    showResult(result);
+  }).catch(function() {
+    showResult(result);
+  });
+}
+
+function showResult(result) {
+  document.getElementById('res-hours').textContent = result.weekly + 'h';
+  document.getElementById('res-month').textContent = result.monthly + ' horas al mes';
+  document.getElementById('res-weeks').textContent = result.weeksYear;
+  document.getElementById('res-days').textContent = result.daysYear;
+  document.getElementById('res-msg').textContent = result.msg;
+  document.querySelectorAll('.step').forEach(function(s) { s.classList.remove('active'); });
+  document.getElementById('step-result').classList.add('active');
+}
+</script>
+</body>
+</html>
