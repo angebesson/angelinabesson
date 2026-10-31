@@ -10,6 +10,8 @@ Sitio web estático de [Angelina Besson](https://angebesson.github.io/angelinabe
 angelinabesson/
 ├── index.html        # Página principal
 ├── assets/           # Imágenes y logo
+├── portfolio/
+│   └── index.html    # Portfolio en inglés (empleo): casos anonimizados, sin datos de contacto
 └── quiz/
 └── index.html    # Lead magnet: quiz de diagnóstico
 ## 🛠️ Tecnologías

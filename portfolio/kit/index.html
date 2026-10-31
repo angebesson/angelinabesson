@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Assistant Kit — Angelina Besson</title>
+  <meta name="description" content="Six free templates for a clear client relationship: weekly report, publishing procedure, checklist, task confirmation, scope and payment agreement, and a prioritized task list." />
+  <link rel="canonical" href="https://angebesson.github.io/angelinabesson/portfolio/kit/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --green-light: #d6f2ef; --green-dark: #2f6f68; --orange: #ff9770; --orange-light: #ffe8e0;
+      --grey-light: #dce4f0; --dark: #1c1c1c; --mid: #4a4a4a; --white: #fff;
+      --font-display: 'Plus Jakarta Sans', 'DM Sans', system-ui, sans-serif; --font-body: 'DM Sans', system-ui, sans-serif;
+      --radius: 12px; --max: 860px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); font-size: 16px; line-height: 1.7; color: var(--dark); background: var(--white); }
+    a { color: var(--green-dark); text-decoration: underline; text-underline-offset: 3px; }
+    a:hover { color: var(--dark); }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; border-radius: 4px; }
+    .container { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    header.top { background: var(--green-light); padding: 48px 0 40px; }
+    .back { font-size: .92rem; display: inline-block; margin-bottom: 18px; }
+    h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; font-weight: 700; letter-spacing: -0.01em; }
+    h1 { font-size: clamp(1.8rem, 5vw, 2.6rem); }
+    h2 { font-size: clamp(1.35rem, 3.2vw, 1.75rem); margin-bottom: 8px; }
+    h3 { font-size: 1.05rem; margin: 18px 0 6px; font-family: var(--font-body); }
+    p { margin-bottom: 12px; max-width: 70ch; }
+    ul, ol { margin: 0 0 12px 22px; max-width: 70ch; }
+    li { margin-bottom: 5px; }
+    .intro { margin-top: 14px; }
+    .btn { display: inline-block; margin-top: 16px; padding: 11px 22px; border-radius: 999px; font-weight: 600; font-family: inherit; font-size: 1rem; cursor: pointer; border: 2px solid var(--orange); background: var(--orange); color: var(--dark); }
+    .btn:hover { background: var(--dark); border-color: var(--dark); color: var(--white); }
+    .toc { margin: 22px 0 0 20px; }
+    section.tpl { padding: 40px 0; border-bottom: 1px solid var(--grey-light); break-inside: avoid; }
+    .num { font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--green-dark); font-weight: 600; }
+    .why { color: var(--mid); font-size: .95rem; }
+    .box { background: #fafafa; border: 1px solid var(--grey-light); border-left: 4px solid var(--orange); border-radius: var(--radius); padding: 18px 22px; margin: 14px 0; }
+    .box p, .box li { max-width: none; }
+    .box .ph { color: var(--green-dark); font-weight: 600; }
+    table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: .95rem; }
+    th, td { border: 1px solid var(--grey-light); padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: var(--orange-light); }
+    .table-wrap { overflow-x: auto; }
+    .check { list-style: none; margin-left: 0; }
+    .check li::before { content: "☐ "; }
+    footer { padding: 32px 0 48px; color: var(--mid); font-size: .92rem; }
+    @media print {
+      header.top { background: none; padding: 0 0 10px; }
+      .back, .btn, .toc { display: none; }
+      body { font-size: 10.5pt; }
+      a { color: inherit; text-decoration: none; }
+      section.tpl { padding: 16px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="container">
+      <a class="back" href="../">← Back to the portfolio</a>
+      <h1>The Assistant Kit</h1>
+      <p class="intro">Six templates I built from real work with a remote client, to keep expectations clear: what was asked, what is done, what is included and what happens when something goes wrong. Copy them and adapt them. Every example here is invented; nothing comes from a client.</p>
+      <button class="btn" type="button" onclick="window.print()">Print or save as PDF</button>
+      <ol class="toc">
+        <li><a href="#report">One-page weekly report</a></li>
+        <li><a href="#procedure">Publishing procedure, with a final check</a></li>
+        <li><a href="#checklist">Publishing checklist</a></li>
+        <li><a href="#confirm">Three-line task confirmation</a></li>
+        <li><a href="#scope">One-page scope and payment agreement</a></li>
+        <li><a href="#tasks">Prioritized task list</a></li>
+        <li><a href="#questions">Questions for the first call</a></li>
+      </ol>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="tpl" id="report">
+      <p class="num">Template 1</p>
+      <h2>One-page weekly report</h2>
+      <p class="why">For clients who are busy and cannot read long documents. One page, honest numbers, one clear next step.</p>
+      <div class="box">
+        <p><strong>Weekly summary:</strong> <span class="ph">[project or channel]</span> · Week of <span class="ph">[dates]</span></p>
+        <ol>
+          <li><strong>Key numbers</strong> (this week vs. last week): <span class="ph">[metric 1]</span>, <span class="ph">[metric 2]</span>, <span class="ph">[metric 3]</span>, each with its change in %.</li>
+          <li><strong>Top 3 results this week:</strong> <span class="ph">[item, number]</span></li>
+          <li><strong>What I think is happening:</strong> two sentences, with the reason.</li>
+          <li><strong>Recommendation for next week:</strong> one or two actions.</li>
+          <li><strong>Hours this week:</strong> <span class="ph">[x h]</span> (by task: <span class="ph">[task a, task b]</span>)</li>
+          <li><strong>I need from you:</strong> <span class="ph">[decision, file or approval]</span> by <span class="ph">[date]</span>.</li>
+        </ol>
+      </div>
+      <p><strong>Tip:</strong> include the bad numbers too. A report that only shows good news stops being read.</p>
+    </section>
+
+    <section class="tpl" id="procedure">
+      <p class="num">Template 2</p>
+      <h2>Publishing procedure, with a final check</h2>
+      <p class="why">My first version of this procedure had seven steps and no final review. This is version 2: step 6 is the one that was missing.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Step</th><th>What to do</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Select</td><td>Filter the log for "not scheduled". Prioritize by the client's goal.</td></tr>
+            <tr><td>2</td><td>Edit</td><td>Format, closing call to action, music, length. Keep one visual style.</td></tr>
+            <tr><td>3</td><td>Titles</td><td>Write three options. Send them for approval if the client asked to see them.</td></tr>
+            <tr><td>4</td><td>Description</td><td>Fixed call to action, guest links, hashtags. Short paragraphs with blank lines between them.</td></tr>
+            <tr><td>5</td><td>Upload and schedule</td><td>Link the right full episode as the related video.</td></tr>
+            <tr><td><strong>6</strong></td><td><strong>Final check</strong></td><td>Go through the checklist below. Nothing goes live without the client's OK.</td></tr>
+            <tr><td>7</td><td>Log</td><td>Date, status and link in the shared sheet.</td></tr>
+            <tr><td>8</td><td>Monitor</td><td>Review CTR and retention. Adjust titles after about three days.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Write down your own time estimate for the whole process (mine was 7.5 to 10 hours for 15 short videos) and log every task in a time tracker. It answers "how long does this take?" before the client asks.</p>
+    </section>
+
+    <section class="tpl" id="checklist">
+      <p class="num">Template 3</p>
+      <h2>Publishing checklist</h2>
+      <p class="why">Five points plus the client's OK, two minutes in total. The most expensive mistakes are the small ones.</p>
+      <div class="box">
+        <ul class="check">
+          <li>Names are spelled exactly (guest and client).</li>
+          <li>Right episode, right link, and the closing banner matches the episode.</li>
+          <li>Music volume is comfortable and there is no copyright claim.</li>
+          <li>Maximum resolution; subtitles do not cover faces or images.</li>
+          <li>Title, description (with spaces), tags and preview image reviewed.</li>
+          <li>Client's OK received.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="tpl" id="confirm">
+      <p class="num">Template 4</p>
+      <h2>Three-line task confirmation</h2>
+      <p class="why">Send it right after each request, in the same channel and format the client used.</p>
+      <div class="box">
+        <p><strong>Understood:</strong> <span class="ph">[what you asked for, in my words]</span></p>
+        <p><strong>I will:</strong> <span class="ph">[what, in which format]</span> by <span class="ph">[day and time, with the time zone]</span></p>
+        <p><strong>I need:</strong> <span class="ph">[file, decision or access]</span> from you by <span class="ph">[day]</span></p>
+      </div>
+      <p><strong>Example:</strong> Understood: a 40-second reel from the interview, with subtitles and the new title. I will send it Thursday by 6 pm (Buenos Aires time). I need the final cut of the video by Wednesday.</p>
+      <p><strong>Rule:</strong> reply within two hours on working days, even if only to confirm.</p>
+    </section>
+
+    <section class="tpl" id="scope">
+      <p class="num">Template 5</p>
+      <h2>One-page scope and payment agreement</h2>
+      <p class="why">Agreed at the start. It prevents most disagreements. This is a work template, not legal advice: adapt it to your country.</p>
+      <div class="box">
+        <ol>
+          <li><strong>Parties and start date:</strong> <span class="ph">[names, date]</span></li>
+          <li><strong>Included:</strong> <span class="ph">[list of deliverables and how many per month]</span></li>
+          <li><strong>Not included</strong> (quoted separately): <span class="ph">[for example design work, shopping research, new channels]</span></li>
+          <li><strong>Rounds of corrections:</strong> <span class="ph">[for example 2 per deliverable]</span></li>
+          <li><strong>Rework:</strong> rework caused by my own error is not billed. Rework caused by changed instructions is quoted or billed.</li>
+          <li><strong>Channel:</strong> one channel for tasks (<span class="ph">[WhatsApp, Telegram or email]</span>) and one format (<span class="ph">[audio, text]</span>).</li>
+          <li><strong>Response times:</strong> within <span class="ph">[x hours]</span> on working days. Weekend work is agreed by Friday.</li>
+          <li><strong>Hours and reports:</strong> time tracked by task; a one-page weekly report and a detailed monthly report.</li>
+          <li><strong>Payment:</strong> <span class="ph">[rate, currency, fees, due date, method]</span>. Paid in advance or in packs of hours.</li>
+          <li><strong>What success means:</strong> <span class="ph">[metric and target, with a review date]</span>. Any change to these targets is written down.</li>
+          <li><strong>Notice to end:</strong> <span class="ph">[for example 14 days]</span>, with an orderly handover of all files.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="tpl" id="tasks">
+      <p class="num">Template 6</p>
+      <h2>Prioritized task list</h2>
+      <p class="why">One shared list. The client sets the priority; I set the plan.</p>
+      <p><strong>Priorities:</strong> 🔴 urgent (within 24 hours) · 🟡 important (up to 2 days) · 🟢 can wait (up to 5 working days). Review it together once a week.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Priority</th><th>Task</th><th>Asked on</th><th>Due</th><th>Status</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>🔴</td><td>[task]</td><td>[date]</td><td>[date, time]</td><td>[to do / doing / waiting for you / done]</td><td>[what I need]</td></tr>
+            <tr><td>🟡</td><td>[task]</td><td>[date]</td><td>[date]</td><td>[status]</td><td></td></tr>
+            <tr><td>🟢</td><td>[task]</td><td>[date]</td><td>[date]</td><td>[status]</td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="tpl" id="questions">
+      <p class="num">Bonus</p>
+      <h2>Questions for the first call</h2>
+      <ul>
+        <li>How do you prefer to give me tasks: voice notes, text, a shared list?</li>
+        <li>What counts as urgent for you, and which time zone should I plan for?</li>
+        <li>How many rounds of corrections are included, and who approves before anything is published?</li>
+        <li>What does success look like in three months, in numbers, and who decides it?</li>
+        <li>How and when do I invoice, and in which currency?</li>
+        <li>What should I do when the instructions change?</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Angelina Besson · <a href="../">Back to the portfolio</a> · <a href="https://www.linkedin.com/in/angelinabesson" rel="noopener">LinkedIn</a></p>
+    </div>
+  </footer>
+</body>
+</html>
