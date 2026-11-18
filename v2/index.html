@@ -469,6 +469,9 @@
 
     /* cards:start */
     .f-h2h .shotimg { left: 6%; right: auto; top: 50%; width: 88%; height: auto; transform: translateY(-50%); transform-origin: 50% 50%; border-radius: 6px; box-shadow: 0 12px 26px -14px #0008, 0 0 0 1px #0002; }
+    /* pantallas chicas (visto en Firefox y Safari): los trazos del inicio tienen su propio alto, el correo no se parte en dos y el boton de pausa es mas discreto */
+    @media (max-width: 899px) { .strokes { height: clamp(84px, 24vw, 120px); } }
+    @media (max-width: 560px) { .contact-list li { grid-template-columns: 1fr; gap: 2px; } .pause-btn { font-size: .68rem; padding: 6px 11px; } }
     /* cards:end */
 
     footer { border-top: 1px solid var(--rule); padding: 26px 0 90px; color: var(--mute); font-size: .85rem; }
