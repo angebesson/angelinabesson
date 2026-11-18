@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--SEO-->
+  <title>Angelina Besson (Ange) | Virtual &amp; Executive Assistant</title>
+  <meta name="description" content="Angelina (Ange) Besson: virtual and executive assistant in Argentina, working remotely. Content operations, reporting, calendar, documentation." />
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#e9e8e4" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 0v20M0 10h20M2.9 2.9l14.2 14.2M17.1 2.9L2.9 17.1' stroke='%23b8351b' stroke-width='2.4' stroke-linecap='round' fill='none'/%3E%3C/svg%3E" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Angelina Besson (Ange) | Virtual &amp; Executive Assistant" />
+  <meta property="og:description" content="Angelina (Ange) Besson: virtual and executive assistant in Argentina, working remotely. Content operations, reporting, calendar, documentation." />
+  <meta property="og:locale" content="en" />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Angelina Besson","alternateName":"Ange Besson","jobTitle":"Virtual & Executive Assistant","description":"Angelina (Ange) Besson: virtual and executive assistant in Argentina, working remotely. Content operations, reporting, calendar, documentation.","sameAs":["https://www.linkedin.com/in/angelinabesson"],"knowsAbout":["Content operations","Reporting","Calendar management","Documentation","Front-end development"],"address":{"@type":"PostalAddress","addressCountry":"AR"}}</script>
+  <!--/SEO-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;500;800&family=Alegreya:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {                         /* Variante A · Papel */
+      --bg: #e9e8e4; --ink: #111111; --mute: #5b5a56; --accent: #b8351b; --rule: #11111122;
+      --serif: 'Alegreya', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter Tight', system-ui, sans-serif; --sans-track: -0.045em;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-weight: 500; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+    .skip { position: absolute; left: -999px; top: 0; background: var(--ink); color: var(--bg); padding: 8px 14px; z-index: 20; }
+    .skip:focus { left: 8px; top: 8px; }
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 0 clamp(18px, 4vw, 48px); }
+    .micro { font-size: .72rem; letter-spacing: .09em; text-transform: uppercase; font-weight: 500; }
+
+    /* ---------- Cabecera ---------- */
+    header.top { padding: 22px 0; }
+    header.top .wrap { display: grid; grid-template-columns: 1fr auto; gap: 14px 28px; align-items: start; }
+    header.top .id { display: flex; align-items: center; gap: 10px; }
+    .star { display: inline-block; width: 1em; height: 1em; color: var(--accent); }
+    nav ol { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 36px; }
+    nav a { text-decoration: none; display: grid; gap: 2px; }
+    nav a i { font-style: normal; color: var(--mute); font-size: .62rem; }
+    nav a:hover span { text-decoration: underline; text-underline-offset: 4px; }
+
+    /* ---------- Hero ---------- */
+    .hero { padding: clamp(28px, 7vw, 90px) 0 clamp(40px, 7vw, 90px); }
+    .hero h1 { line-height: .86; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 .22em; margin-top: clamp(16px, 3vw, 40px); }
+    .hero h1 .a { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(3.6rem, 15.5vw, 14rem); letter-spacing: -0.03em; }
+    .hero h1 .b { font-family: var(--sans); font-weight: 800; font-size: clamp(3.4rem, 14.5vw, 13rem); letter-spacing: var(--sans-track); }
+    .scribble { display: block; width: 100%; height: auto; margin: clamp(6px, 1vw, 14px) 0 clamp(10px, 2vw, 24px); overflow: visible; pointer-events: none; position: relative; z-index: 2; }
+    .scribble path { fill: none; stroke: var(--accent); stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 20px clamp(24px, 6vw, 90px); align-items: end; }
+    .role { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(1.5rem, 3.4vw, 2.6rem); line-height: 1.1; }
+    .lead { font-size: clamp(1.02rem, 1.5vw, 1.25rem); max-width: 34em; }
+    .facts { margin-top: 12px; color: var(--mute); font-size: .92rem; }
+    .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+    .btn { display: inline-block; padding: 13px 22px; border-radius: 999px; border: 2px solid var(--ink); text-decoration: none; font-weight: 800; font-size: .95rem; }
+    .btn.main { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .btn:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(.35em); } to { opacity: 1; transform: none; } }
+    .rise { animation: rise .8s cubic-bezier(.2,.7,.2,1) both; }
+    .d1 { animation-delay: .35s; } .d2 { animation-delay: .5s; } .d3 { animation-delay: 1.9s; } .d4 { animation-delay: 2.1s; }
+
+    /* ---------- Recorrido ---------- */
+    .journey { padding: clamp(30px, 6vw, 80px) 0 clamp(60px, 8vw, 120px); border-top: 1px solid var(--rule); }
+    .work-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: clamp(18px, 3vw, 40px); }
+    .work-head h2 { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(2rem, 5vw, 4rem); line-height: 1; }
+    .journey-grid { display: grid; grid-template-columns: minmax(150px, 24%) minmax(0, 1fr); gap: 0 clamp(20px, 4vw, 60px); align-items: start; }
+    .count { position: sticky; top: 16vh; padding-top: 8px; }
+    .big-count { display: flex; align-items: baseline; gap: .15em; line-height: .8; }
+    .big-count #cur { font-family: var(--sans); font-weight: 800; letter-spacing: -0.06em; font-size: clamp(5rem, 13vw, 11rem); }
+    .big-count .of { font-family: var(--serif); font-style: italic; font-size: clamp(1.6rem, 3vw, 2.6rem); color: var(--mute); }
+    .count .micro { margin-top: 14px; color: var(--mute); max-width: 14em; }
+    .stops { list-style: none; position: relative; }
+    .stop { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(18px, 3vw, 44px); align-items: center; padding: clamp(28px, 5vw, 70px) 0; border-top: 1px solid var(--rule); min-height: 60vh; }
+    .stop:first-child { border-top: 0; padding-top: 0; }
+
+    .shot { margin: 0; perspective: 900px; }
+    .frame { aspect-ratio: 16 / 10; border-radius: 10px; border: 1px solid var(--rule); box-shadow: 0 18px 40px -22px #0006; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; background: linear-gradient(135deg, var(--c1), var(--c2)); color: var(--c-ink, #111); transform: rotate(var(--r, -1.5deg)); }
+    .frame .micro { opacity: 1; }
+    .frame strong { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(1.8rem, 4vw, 3.6rem); line-height: 1; }
+    .frame .stat { font-family: var(--sans); font-weight: 800; letter-spacing: -0.05em; font-size: clamp(3rem, 7vw, 6rem); line-height: .9; }
+
+    .txt .tag { color: var(--mute); }
+    .txt .tag b { color: var(--accent); font-weight: 800; }
+    .txt h3 { font-family: var(--sans); font-weight: 800; letter-spacing: var(--sans-track); font-size: clamp(1.7rem, 3.6vw, 3rem); line-height: 1; margin: 12px 0 14px; }
+    .txt h3 em { font-family: var(--serif); font-weight: 400; letter-spacing: -0.02em; }
+    .txt p { max-width: 34em; }
+    .txt .shows { margin-top: 12px; color: var(--mute); font-size: .92rem; }
+    .txt .shows b { color: var(--ink); }
+    .links { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 18px; }
+    .links a { font-weight: 800; text-underline-offset: 5px; text-decoration-thickness: 2px; text-decoration-color: var(--accent); }
+    .links a:hover { text-decoration-color: var(--ink); }
+    .links .off { color: var(--mute); font-size: .88rem; font-weight: 500; }
+
+    @supports (animation-timeline: view()) {
+      @keyframes reveal { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: none; } }
+      .txt { animation: reveal linear both; animation-timeline: view(); animation-range: entry 5% cover 30%; }
+      @keyframes drift { from { transform: rotate(var(--r, -1.5deg)) translateY(36px); } to { transform: rotate(calc(var(--r, -1.5deg) * -0.4)) translateY(-24px); } }
+      .frame { animation: drift linear both; animation-timeline: view(); animation-range: entry 0% exit 100%; }
+    }
+
+    /* sites-cards */
+    .sites { padding: clamp(30px, 6vw, 80px) 0 clamp(60px, 8vw, 120px); border-top: 1px solid var(--rule); }
+    .sites-lead { color: var(--mute); max-width: 36em; margin: -14px 0 clamp(18px, 3vw, 36px); }
+    .cards { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 310px), 1fr)); gap: clamp(14px, 2vw, 26px); }
+    .card { border: 1px solid var(--rule); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 10px; background: linear-gradient(180deg, var(--c1) 0, transparent 42%); }
+    .card .tag { color: var(--mute); }
+    .card .need { font-family: var(--serif); font-size: clamp(1.35rem, 2.2vw, 1.8rem); line-height: 1.1; }
+    .card .need em { font-style: italic; }
+    .card h3 { font-weight: 800; letter-spacing: var(--sans-track); font-size: 1.15rem; line-height: 1.15; }
+    .card .shows { margin-top: auto; padding-top: 6px; color: var(--mute); font-size: .92rem; }
+    .card .shows b { color: var(--ink); }
+    .card .links { margin-top: 6px; }
+    @supports (animation-timeline: view()) {
+      .card { animation: reveal linear both; animation-timeline: view(); animation-range: entry 5% cover 28%; }
+    }
+    @media (prefers-reduced-motion: reduce) { .card { animation: none !important; opacity: 1 !important; transform: none !important; } }
+
+    /* motifs:start */
+    body { overflow-x: clip; }
+    .frame { position: relative; overflow: hidden; }
+    .frame .motif { position: absolute; inset: 0; }
+    .frame .lab, .frame .bot { position: relative; z-index: 2; }
+    .frame .bot { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(1.8rem, 4vw, 3.4rem); line-height: 1; }
+    .frame .stat { font-family: var(--sans); font-style: normal; }
+    .f-celeste { --c-ink: #3e4a7a; }
+    .f-shorts .bot, .f-shorts .lab { max-width: 52%; }
+
+    /* animaciones: hasta que la tarjeta entra en pantalla, quedan en pausa (solo si hay JS) */
+    html.js .stop:not(.in) .m-anim, html.js .card:not(.in) .m-anim, html.js .stop:not(.in) .d-loop { animation-play-state: paused; }
+
+    /* Shorts: barras que suben */
+    .m-bars { position: absolute; right: 4%; bottom: 8%; width: 50%; height: auto; color: var(--ink); }
+    .m-bars .bar { fill: var(--ink); fill-opacity: .82; transform-box: fill-box; transform-origin: 50% 100%; animation: grow .9s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i) * .11s + .15s); }
+    .m-bars .bar.hot { fill: var(--accent); fill-opacity: 1; }
+    @keyframes grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+
+    /* Celeste: cielo de estrellas con zoom y parpadeo */
+    .m-sky { position: absolute; inset: 0; background: linear-gradient(180deg, #9c92c4 0%, #c9bedd 52%, #f2e6d8 100%); }
+    .m-sky .glow { position: absolute; left: 50%; bottom: -30%; width: 90%; aspect-ratio: 1; transform: translateX(-50%); border-radius: 50%; background: radial-gradient(circle, #f3d9ab 0%, #e8c79c55 38%, transparent 68%); animation: breathe 7s ease-in-out infinite alternate; }
+    .m-sky .neb { position: absolute; width: 60%; aspect-ratio: 1; border-radius: 50%; filter: blur(26px); opacity: .55; }
+    .m-sky .n1 { left: -12%; top: -20%; background: #7d6fb3; animation: drift 16s ease-in-out infinite alternate; }
+    .m-sky .n2 { right: -14%; top: 8%; background: #8ec1e8; animation: drift 19s ease-in-out infinite alternate-reverse; }
+    .m-sky .layer { position: absolute; inset: 0; transform-origin: 50% 60%; }
+    .m-sky .l1 { animation: zoomfar 20s linear infinite; }
+    .m-sky .l2 { animation: zoommid 14s linear infinite; }
+    .m-sky .l3 { animation: zoomnear 10s linear infinite; }
+    .m-sky i { position: absolute; width: var(--s); height: var(--s); border-radius: 50%; background: var(--c, #fff); box-shadow: 0 0 7px 1px var(--c, #fff); animation: twinkle var(--t) ease-in-out infinite; animation-delay: var(--d); }
+    @keyframes twinkle { 0%, 100% { opacity: .25; transform: scale(.7); } 50% { opacity: 1; transform: scale(1.25); } }
+    @keyframes zoomfar { from { transform: scale(1); } to { transform: scale(1.35); } }
+    @keyframes zoommid { from { transform: scale(1); } to { transform: scale(1.7); } }
+    @keyframes zoomnear { from { transform: scale(1); } to { transform: scale(2.2); } }
+    @keyframes drift { from { transform: translate(0, 0); } to { transform: translate(12%, 10%); } }
+    @keyframes breathe { from { opacity: .75; } to { opacity: 1; } }
+
+    /* Norma: mis trazos de tinta sobre papel */
+    .m-norma { position: absolute; inset: 0; background: #f4e9d9 url(img/papel.jpg) center / cover; }
+    .m-norma .stroke { position: absolute; left: 6%; bottom: 20%; width: 70%; height: auto; clip-path: inset(0 100% 0 0); animation: inkx 1.2s .2s cubic-bezier(.4,0,.2,1) both; }
+    .m-norma .cactus { position: absolute; right: 8%; bottom: 22%; height: 50%; width: auto; transform-origin: 50% 100%; animation: popin .9s 1.1s cubic-bezier(.3,1.6,.5,1) both; }
+    @keyframes inkx { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+    @keyframes popin { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .f-norma .bot, .f-norma .lab { color: #2b1d14; }
+    .f-norma { justify-content: flex-start; gap: 8px; }
+    .f-norma .bot { font-size: clamp(1.5rem, 2.8vw, 2.4rem); max-width: 60%; }
+    .m-norma .stroke { left: 8%; bottom: 13%; width: 66%; }
+    .m-norma .cactus { right: 7%; bottom: 15%; height: 46%; }
+
+    /* Head to Hand: del enredo en la cabeza a una pagina */
+    .m-h2h { position: absolute; right: 2%; top: 6%; width: 74%; height: auto; }
+    .m-h2h .bubble { fill: #fff; stroke: #2f6f68; stroke-width: 2.2; }
+    .m-h2h .dot { fill: #fff; stroke: #2f6f68; stroke-width: 2; }
+    .m-h2h .page { fill: #fff; stroke: #2f6f68; stroke-width: 2.2; }
+    .m-h2h .tangle, .m-h2h .ln { fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; }
+    .m-h2h .tangle { stroke: var(--accent); stroke-width: 2.6; animation: tdraw 7s ease-in-out infinite; }
+    .m-h2h .ln { stroke: #2f6f68; stroke-width: 3; animation: ldraw 7s ease-in-out infinite; animation-delay: calc(var(--k) * .22s); }
+    @keyframes tdraw { 0% { stroke-dashoffset: 1; opacity: 1; } 24%, 80% { stroke-dashoffset: 0; opacity: 1; } 92%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+    @keyframes ldraw { 0%, 30% { stroke-dashoffset: 1; opacity: 1; } 46%, 86% { stroke-dashoffset: 0; opacity: 1; } 96%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+    .f-h2h .bot, .f-h2h .lab { color: #12302b; }
+    .f-h2h { justify-content: flex-start; }
+    .f-h2h .bot { display: none; }
+    .f-h2h .lab { align-self: flex-start; background: #f7f4eecc; padding: 4px 10px; border-radius: 99px; }
+    .f-h2h .motif { overflow: hidden; }
+    .shotimg { position: absolute; right: 0; top: 0; height: 100%; width: auto; max-width: none; transform: scale(1.5); transform-origin: 96% 55%; display: block; }
+
+    /* tarjetas: mini escenas */
+    .card .mini { height: 118px; border-radius: 9px; margin: -6px -6px 4px; position: relative; overflow: hidden; background: linear-gradient(135deg, var(--m1), var(--m2)); }
+    .mini svg, .mini .m-receipt { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .m-candle .halo { animation: breathe 2.6s ease-in-out infinite alternate; }
+    .m-candle .flame { transform-box: fill-box; transform-origin: 50% 100%; animation: flicker 1.9s ease-in-out infinite alternate; }
+    .m-candle .flame.in2 { animation-duration: 1.3s; }
+    @keyframes flicker { 0% { transform: scale(1, 1) skewX(-2deg); } 35% { transform: scale(.96, 1.07) skewX(2.5deg); } 70% { transform: scale(1.03, .96) skewX(-3deg); } 100% { transform: scale(.97, 1.05) skewX(1.5deg); } }
+    .m-kit .sheet rect { fill: #fff; stroke: #2f6f68; stroke-width: 1.6; }
+    .m-kit .sheet path { fill: none; stroke: #2f6f68; stroke-opacity: .5; stroke-width: 1.6; stroke-linecap: round; }
+    .m-kit .sheet { transform-box: fill-box; transform-origin: 50% 100%; animation: fan 1s cubic-bezier(.2,.8,.2,1) both; animation-delay: calc(var(--i) * .08s); }
+    @keyframes fan { from { transform: translateX(var(--dx)) rotate(0); } to { transform: translateX(0) rotate(var(--r)); } }
+    .m-receipt { display: grid; place-items: start center; overflow: hidden; }
+    .m-receipt .slot { position: absolute; left: 14%; right: 14%; top: 8px; height: 8px; border-radius: 99px; background: #4a5f78; z-index: 3; }
+    .m-receipt .ticket { width: 56%; margin-top: 14px; padding: 10px 10px 8px; background: #fff; border-radius: 0 0 4px 4px; font-size: .56rem; line-height: 1.5; color: #1c1c1c; box-shadow: 0 6px 12px -8px #0006; animation: printout 1.5s cubic-bezier(.3,.6,.2,1) both; font-weight: 500; }
+    .m-receipt .ticket b { display: block; font-weight: 800; letter-spacing: .08em; text-align: center; margin-bottom: 2px; }
+    .m-receipt .ticket span { display: flex; justify-content: space-between; gap: 8px; }
+    .m-receipt .ticket span i { font-style: normal; }
+    .m-receipt .ticket hr { border: 0; border-top: 1px dashed #1c1c1c88; margin: 3px 0; }
+    .m-receipt .ticket .tot { font-weight: 800; }
+    @keyframes printout { from { transform: translateY(-105%); } to { transform: translateY(0); } }
+    .m-rubric .sheetbg { fill: #fff; stroke: #1a1f4a; stroke-opacity: .55; stroke-width: 1.4; }
+    .m-rubric .grid { fill: none; stroke: #1a1f4a; stroke-opacity: .5; stroke-width: 1.4; stroke-dasharray: 1; }
+    .m-rubric .check { fill: none; stroke: #2f6f68; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; }
+    .m-rubric .d-draw { animation: dash .6s ease-out both; animation-delay: calc(var(--i) * .16s); }
+    .m-rubric .pdf rect { fill: var(--accent); }
+    .m-rubric .pdf text { fill: #111; font: 800 9px var(--sans); }
+    .m-rubric .pdf { transform-box: fill-box; transform-origin: center; animation: popin .5s 1.7s cubic-bezier(.3,1.6,.5,1) both; }
+    .m-sign .pen { fill: none; stroke: #1a1f4a; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 1; animation: dash 1.8s ease-in-out both; }
+    .m-sign .pen.under { stroke: var(--accent); stroke-width: 2.4; animation-duration: .7s; animation-delay: 1.8s; }
+    @keyframes dash { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+
+    .origin { margin-top: clamp(28px, 5vw, 60px); padding-top: 22px; border-top: 1px solid var(--rule); display: grid; grid-template-columns: minmax(140px, 22%) 1fr; gap: 14px 24px; }
+    .origin .micro { color: var(--mute); }
+    .origin ul { list-style: none; display: grid; gap: 14px; }
+    .origin li p { max-width: 40em; }
+    .origin li b { font-weight: 800; }
+    @media (max-width: 700px) { .origin { grid-template-columns: 1fr; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .m-anim, .m-sky .layer, .m-sky i, .m-sky .neb, .m-sky .glow, .m-candle .flame, .m-candle .halo,
+      .m-h2h .tangle, .m-h2h .ln, .m-norma .stroke, .m-norma .cactus, .m-kit .sheet, .m-receipt .ticket,
+      .m-rubric .d-draw, .m-rubric .pdf, .m-sign .pen { animation: none !important; }
+      .m-norma .stroke { clip-path: none; }
+      .m-kit .sheet { transform: rotate(var(--r)); }
+      .m-h2h .tangle { opacity: 0; } .m-h2h .ln { stroke-dashoffset: 0; }
+      .m-bars .bar { transform: none; }
+    }
+    /* motifs:end */
+
+    /* menu:start */
+    :root { --rail-w: 0px; --inkword: #14183a; }
+    @media (min-width: 900px) { :root { --rail-w: clamp(176px, 14.5vw, 226px); } }
+    body { padding-left: var(--rail-w); }
+    main { padding-top: 0; }
+    section[id] { scroll-margin-top: 16px; }
+    .hero-status { display: none; color: var(--mute); margin-top: 4px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+    /* Riel: las cuatro palabras dibujadas, siempre en el mismo lugar, cada una sobre su mancha de acuarela */
+    .rail { position: fixed; left: 0; top: 0; bottom: 0; width: var(--rail-w); z-index: 30; display: none; flex-direction: column; justify-content: space-between; gap: 24px; padding: 26px 8px 26px clamp(34px, 2.8vw, 44px); pointer-events: none; }
+    .rail a { pointer-events: auto; }
+    .rail .micro { color: var(--ink); opacity: .72; font-size: .66rem; line-height: 1.5; }
+    .rail ol { list-style: none; display: grid; gap: 10px; justify-items: start; }
+    .rail li a { position: relative; display: inline-flex; align-items: center; justify-content: center; padding: 11px 15px; text-decoration: none; }
+    .rail .sw { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; transform: rotate(var(--tilt, -1.5deg)); transition: transform .25s cubic-bezier(.3,1.4,.5,1), filter .25s; }
+    .rail .w { position: relative; z-index: 1; display: block; height: var(--h); }
+    .rail .w svg { display: block; height: 100%; width: auto; color: var(--inkword); }
+    .rail li a:hover .sw, .rail li a:focus-visible .sw { transform: rotate(0deg) scale(1.07); }
+    .rail li a[aria-current] .sw { transform: rotate(0deg) scale(1.13); filter: drop-shadow(0 3px 0 rgba(20, 24, 58, .28)); }
+    .rail .arrow { position: absolute; left: -27px; top: 50%; width: 20px; height: auto; color: var(--ink); opacity: 0; transform: translate(-6px, -50%) scale(.6); transition: opacity .2s, transform .3s cubic-bezier(.3,1.5,.5,1); pointer-events: none; }
+    .rail li a:hover .arrow, .rail li a:focus-visible .arrow { opacity: .55; transform: translate(0, -50%) scale(.9); }
+    .rail li a[aria-current] .arrow { opacity: 1; transform: translate(0, -50%) scale(1); }
+    .rail li a:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; border-radius: 6px; }
+    .status-fixed { position: fixed; top: 20px; right: clamp(18px, 3vw, 40px); z-index: 30; display: none; align-items: center; gap: 10px; color: var(--ink); background: var(--bg); border: 1px solid var(--rule); border-radius: 999px; padding: 7px 14px; pointer-events: none; }
+    .status-fixed .star { color: var(--accent); }
+    @media (min-width: 900px) { .rail { display: flex; } .status-fixed { display: flex; } }
+
+    /* Pantallas chicas: las mismas palabras y manchas, fijas abajo, sin boton */
+    @media (max-width: 899px) {
+      body { padding-bottom: 62px; }
+      .hero-status { display: block; }
+      .rail { display: block; left: 0; right: 0; top: auto; bottom: 0; width: auto; padding: 8px 10px calc(8px + env(safe-area-inset-bottom)); background: color-mix(in srgb, var(--bg) 92%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-top: 1px solid var(--rule); pointer-events: auto; }
+      .rail .micro { display: none; }
+      .rail ol { display: flex; justify-content: space-between; gap: 6px; }
+      .rail li a { padding: 8px 9px; }
+      .rail .w { height: calc(var(--h) * .78); }
+      .rail .arrow { display: none; }
+      .replay { bottom: 72px; }
+    }
+    @media (prefers-reduced-motion: reduce) { .rail .sw, .rail .arrow { transition: none; } }
+    /* menu:end */
+
+    /* play:start */
+    .play { padding: clamp(30px, 6vw, 80px) 0 clamp(70px, 9vw, 130px); border-top: 1px solid var(--rule); }
+    .play-grid { display: grid; grid-template-columns: minmax(140px, 24%) minmax(0, 1fr); gap: 0 clamp(20px, 4vw, 60px); align-items: start; }
+    .play-count { position: sticky; top: 16vh; }
+    .play-count .big { display: block; font-family: var(--sans); font-weight: 800; letter-spacing: -0.06em; font-size: clamp(5rem, 13vw, 11rem); line-height: .8; }
+    .play-count .micro { display: block; margin-top: 14px; color: var(--mute); }
+    .play-intro { font-family: var(--serif); font-style: italic; font-size: clamp(1.5rem, 3vw, 2.4rem); line-height: 1.12; max-width: 24em; margin-bottom: clamp(20px, 3vw, 40px); }
+    .play-list { list-style: none; border-top: 1px solid var(--rule); }
+    .play-item { display: grid; grid-template-columns: auto minmax(0, 1fr) minmax(130px, 24%); gap: 10px clamp(14px, 3vw, 36px); align-items: start; padding: clamp(18px, 2.4vw, 30px) 0; border-bottom: 1px solid var(--rule); }
+    .play-item .n { color: var(--mute); min-width: 2em; padding-top: .5em; }
+    .play-item h3 { font-family: var(--sans); font-weight: 800; letter-spacing: var(--sans-track); font-size: clamp(1.35rem, 2.6vw, 2.1rem); line-height: 1.05; margin-bottom: 8px; }
+    .play-item p { max-width: 38em; font-size: .96rem; }
+    .play-item p + p { margin-top: 6px; }
+    .play-item p b { font-weight: 800; }
+    .play-item code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .86em; background: var(--rule); padding: 1px 5px; border-radius: 4px; }
+    .play-item .learned { color: var(--mute); }
+    .play-item .learned b { color: var(--ink); }
+    .play-item .side { display: grid; gap: 8px; justify-items: start; padding-top: .5em; }
+    .play-item .status { color: var(--mute); }
+    .play-item .open { font-weight: 800; text-underline-offset: 5px; text-decoration-thickness: 2px; text-decoration-color: var(--accent); }
+    .play-item .open:hover { text-decoration-color: var(--ink); }
+    .play-item.next { border-bottom: 0; }
+    .play-item.next h3 { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: -0.02em; }
+    .cursor { display: inline-block; width: .55em; height: 1.05em; margin-left: 6px; vertical-align: -0.15em; background: var(--accent); animation: blink 1.1s steps(2, start) infinite; }
+    @keyframes blink { to { visibility: hidden; } }
+    @supports (animation-timeline: view()) {
+      .play-item { animation: reveal linear both; animation-timeline: view(); animation-range: entry 5% cover 25%; }
+    }
+    @media (max-width: 860px) {
+      .play-grid { grid-template-columns: 1fr; }
+      .play-count { position: static; display: flex; align-items: baseline; gap: 14px; margin-bottom: 18px; }
+      .play-count .big { font-size: 4.2rem; }
+      .play-count .micro { margin: 0; }
+      .play-item { grid-template-columns: auto minmax(0, 1fr); }
+      .play-item .side { grid-column: 2; grid-auto-flow: column; justify-content: start; gap: 18px; align-items: center; }
+    }
+    @media (prefers-reduced-motion: reduce) { .play-item { animation: none !important; opacity: 1 !important; transform: none !important; } .cursor { animation: none; } }
+    /* play:end */
+
+    /* contact:start */
+    .contact { padding: clamp(40px, 7vw, 90px) 0 clamp(70px, 9vw, 130px); border-top: 1px solid var(--rule); }
+    .contact-line { font-family: var(--serif); font-style: italic; font-size: clamp(3rem, 11vw, 9rem); line-height: .95; margin-bottom: clamp(18px, 3vw, 36px); }
+    .contact-list { list-style: none; max-width: 36em; border-top: 1px solid var(--rule); }
+    .contact-list li { display: grid; grid-template-columns: 8em 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+    .contact-list .micro { color: var(--mute); padding-top: .25em; }
+    .contact-list a { font-weight: 800; text-underline-offset: 5px; text-decoration-thickness: 2px; text-decoration-color: var(--accent); }
+    /* contact:end */
+
+    /* play2:start */
+    .play-item { grid-template-columns: auto clamp(110px, 15vw, 190px) minmax(0, 1fr) minmax(130px, 22%); align-items: center; }
+    .play-item .n { align-self: start; }
+    .play-item .mini { aspect-ratio: 16 / 10; border-radius: 9px; position: relative; overflow: hidden; background: linear-gradient(135deg, var(--m1, #e6e5e0), var(--m2, #d8d7d0)); align-self: start; }
+    .play-item .mini.blank { background: none; border: 1.5px dashed var(--rule); }
+    .play-item .mini svg, .play-item .mini .m-receipt { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .play-item .side { align-self: start; }
+    .play-item .lnk { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+    html.js .play-item:not(.in) .m-anim { animation-play-state: paused; }
+    /* mini escenas nuevas */
+    .m-map .route { fill: none; stroke: #1a1f4a; stroke-opacity: .35; stroke-width: 2; stroke-dasharray: 3 5; }
+    .m-map .node { fill: var(--accent); transform-box: fill-box; transform-origin: center; animation: pulse 3s ease-in-out infinite; animation-delay: calc(var(--i) * .35s); }
+    @keyframes pulse { 0%, 100% { transform: scale(.7); opacity: .55; } 40% { transform: scale(1.25); opacity: 1; } }
+    .m-calc .trk { fill: #1a1f4a22; }
+    .m-calc .fill { fill: var(--accent); transform-box: fill-box; transform-origin: 0 50%; animation: growx 1s cubic-bezier(.2,.7,.2,1) both; animation-delay: calc(var(--i) * .15s + .1s); }
+    .m-calc .hrs { fill: #1a1f4a; font: 800 11px var(--sans); animation: popin .5s 1.1s both; }
+    @keyframes growx { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .m-line path { fill: none; stroke: var(--accent); stroke-width: 3; vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; }
+    .m-sky2 .cloud { fill: #fff; opacity: .92; animation: cloudmove 9s ease-in-out infinite alternate; }
+    .m-sky2 .c2 { animation-duration: 12s; animation-direction: alternate-reverse; }
+    @keyframes cloudmove { from { transform: translateX(-14px); } to { transform: translateX(14px); } }
+    .m-sky2 .bird { fill: none; stroke: #14183a; stroke-width: 1.6; stroke-linecap: round; animation: bob 2.4s ease-in-out infinite alternate; }
+    @keyframes bob { from { transform: translate(-6px, 2px); } to { transform: translate(8px, -4px); } }
+    .m-sky2 .bld { fill: #243a5e; }
+    .m-sky2 .bld.b2 { fill: #1c2d4a; }
+    .m-sky2 .win { fill: #ffd86b; animation: winlight 4s ease-in-out infinite; animation-delay: calc(var(--i) * .43s); }
+    @keyframes winlight { 0%, 100% { opacity: .15; } 45%, 70% { opacity: 1; } }
+    .origin { margin-top: clamp(28px, 5vw, 56px); }
+    @media (max-width: 860px) {
+      .play-item { grid-template-columns: clamp(100px, 30vw, 150px) minmax(0, 1fr); align-items: start; }
+      .play-item .n { display: none; }
+      .play-item .body { grid-column: 2; }
+      .play-item .side { grid-column: 1 / -1; grid-auto-flow: column; justify-content: start; gap: 18px; align-items: center; }
+      .play-item .mini { grid-row: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) { .m-map .node, .m-calc .fill, .m-calc .hrs, .m-sky2 .cloud, .m-sky2 .bird, .m-sky2 .win { animation: none !important; } .m-calc .fill { transform: none; } .m-sky2 .win { opacity: .8; } }
+    /* play2:end */
+
+    /* strokes:start */
+    .scribble { display: none; }
+    .hero .micro, .hero h1, .hero .hero-grid { position: relative; z-index: 1; }
+    .strokes { position: relative; z-index: 0; width: clamp(240px, 46vw, 580px); height: clamp(40px, 5vw, 62px); margin: clamp(8px, 1.4vw, 18px) 0 clamp(12px, 2vw, 26px); }
+    .strokes .st { position: absolute; left: 0; top: 50%; width: 100%; height: auto; transform: translateY(-50%); color: var(--ink); overflow: visible; animation-duration: 6.4s; animation-fill-mode: both; animation-timing-function: cubic-bezier(.5, 0, .2, 1); animation-delay: .2s; }
+    .st-a { animation-name: stA; } .st-b { animation-name: stB; } .st-c { animation-name: stC; }
+    @keyframes stA { 0% { opacity: 0; clip-path: inset(0 100% 0 0); } 3% { opacity: 1; } 26% { opacity: 1; clip-path: inset(0 0 0 0); } 40% { opacity: 1; } 50%, 100% { opacity: 0; clip-path: inset(0 0 0 0); } }
+    @keyframes stB { 0%, 38% { opacity: 0; clip-path: inset(0 100% 0 0); } 42% { opacity: 1; } 55% { opacity: 1; clip-path: inset(0 0 0 0); } 66% { opacity: 1; } 76%, 100% { opacity: 0; clip-path: inset(0 0 0 0); } }
+    @keyframes stC { 0%, 64% { opacity: 0; clip-path: inset(0 100% 0 0); } 68% { opacity: 1; } 82%, 100% { opacity: 1; clip-path: inset(0 0 0 0); } }
+    @media (max-width: 899px) { .strokes { width: min(78%, 420px); } }
+    @media (prefers-reduced-motion: reduce) { .st-a, .st-b { display: none; } .strokes .st-c { animation: none; opacity: 1; clip-path: none; } }
+    /* strokes:end */
+
+    /* about:start */
+    .about { padding: clamp(40px, 7vw, 90px) 0 clamp(50px, 8vw, 100px); border-top: 1px solid var(--rule); }
+    .moods { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: clamp(20px, 3vw, 44px); }
+    .mood p { max-width: 36em; }
+    .mood p + p, .mood p.pill + * { margin-top: 12px; }
+    .pill { display: inline-block; padding: 8px 18px; border-radius: 999px; font-family: var(--serif); font-style: italic; font-size: 1.25rem; line-height: 1; color: #1c1c1c; }
+    .pill.lilac { background: #e6c6f4; } .pill.peach { background: #fbd0bd; } .pill.cream { background: #efe9d7; border: 1px solid var(--rule); }
+    .portrait { margin: 14px 0 6px; width: min(100%, 250px); transform: rotate(-1.4deg); transition: transform .3s cubic-bezier(.3,1.4,.5,1); }
+    .portrait:hover { transform: rotate(0deg); }
+    .portrait img { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; object-fit: cover; border-radius: 10px; box-shadow: 0 16px 26px -16px #0008; }
+    @media (prefers-reduced-motion: reduce) { .portrait { transition: none; } }
+    .quote { border-left: 3px solid var(--accent); padding-left: 16px; }
+    .quote p { font-family: var(--serif); font-style: italic; font-size: clamp(1.3rem, 2.2vw, 1.7rem); line-height: 1.2; }
+    .quote footer { margin-top: 10px; color: var(--mute); font-size: .88rem; }
+    .quote footer span { display: block; margin-top: 4px; }
+    .mood .small { color: var(--mute); font-size: .92rem; }
+    .notes { margin-top: clamp(30px, 5vw, 60px); display: grid; gap: clamp(20px, 3vw, 36px); }
+    .sticky-row { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: clamp(16px, 2.4vw, 30px); }
+    .sticky { background: #fff6a5; padding: 18px 18px 20px; box-shadow: 0 14px 22px -14px #0008, 0 2px 0 #0001; transform: rotate(var(--r, 0deg)); transition: transform .25s cubic-bezier(.3,1.4,.5,1); min-height: 112px; display: flex; flex-direction: column; gap: 8px; }
+    .sticky:hover { transform: rotate(0deg) translateY(-3px); }
+    .sticky .hand { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: clamp(2rem, 3.6vw, 2.8rem); line-height: 1; color: #2a2a20; }
+    .sticky small { color: #6b6743; font-size: .8rem; }
+    .sticky .hand svg { display: block; height: clamp(34px, 3.4vw, 46px); width: auto; max-width: 100%; color: #2a2a20; }
+    .sticky.mono code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .92rem; font-weight: 700; color: #2a2a20; }
+    .sticky.mono span { font-size: .9rem; line-height: 1.4; color: #3d3b28; }
+    .palette { margin-top: clamp(26px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 10px; }
+    .palette i { width: clamp(26px, 3.4vw, 38px); aspect-ratio: 1; border-radius: 50%; border: 1px solid #0001; }
+    .palette-cap { margin-top: 10px; color: var(--mute); }
+    #contact a, #contact p { overflow-wrap: anywhere; }
+    .play-count .big .inf { display: inline-block; transform: rotate(45deg); transform-origin: 50% 54%; margin-left: .08em; }
+    @supports (animation-timeline: view()) { .mood, .sticky { animation: reveal linear both; animation-timeline: view(); animation-range: entry 5% cover 25%; } }
+    @media (prefers-reduced-motion: reduce) { .mood, .sticky { animation: none !important; opacity: 1 !important; } .sticky { transition: none; } }
+    /* about:end */
+
+    /* open:start */
+    html.js { --p: 0; }
+    :root { --p: 1; --s: 1; --u: 1; }
+    .opening { position: relative; min-height: 100vh; min-height: 100svh; margin-left: calc(-1 * var(--rail-w)); display: flex; flex-direction: column; align-items: center; padding-top: clamp(40px, 15vh, 150px); text-align: center; overflow: hidden; }
+    .opening h1 { display: flex; flex-direction: column; align-items: center; line-height: 1; position: relative; z-index: 2; }
+    .opening h1 .a { font-family: var(--sans); font-weight: 300; font-size: clamp(3.4rem, min(6.1vw, 13.8vh), 8rem); letter-spacing: .01em; line-height: .9; }
+    .opening h1 .b { font-family: 'Alegreya', var(--serif); font-style: normal; font-weight: 700; font-size: clamp(2.2rem, min(4.6vw, 10.4vh), 5.4rem); letter-spacing: .05em; text-transform: uppercase; line-height: 1; margin-top: -.02em; }
+    .opening .figura { position: absolute; left: 0; right: 0; margin-inline: auto; bottom: clamp(10px, 3vh, 36px); height: auto; width: min(30vw, 30vh * 1.52, 400px); z-index: 1; pointer-events: none; }
+    .opening-hint { position: absolute; right: clamp(18px, 3vw, 40px); bottom: clamp(14px, 3vh, 32px); color: var(--mute); z-index: 1; opacity: calc(1 - var(--p) * 4); }
+    .intro { padding-top: clamp(40px, 7vw, 90px); }
+    @media (max-width: 899px) {
+      .opening { padding-top: clamp(36px, 7vh, 60px); }
+      .opening .figura { width: min(50vw, 24vh * 1.52, 380px); bottom: calc(60px + 2vh); }
+      .opening h1 .a { font-size: clamp(3.4rem, 22vw, 6rem); }
+      .opening h1 .b { font-size: clamp(2.1rem, 13vw, 3.8rem); }
+      .opening-hint { display: none; }
+    }
+
+    /* las palabras del riel viajan desde el arco del inicio hasta su lugar (--p: 0 = inicio, 1 = riel) */
+    .rail li { transform: translate(calc(var(--dx, 0px) * (1 - var(--p))), calc(var(--dy, 0px) * (1 - var(--p)))) scale(calc(1 + (var(--s) - 1) * (1 - var(--p)))); will-change: transform; }
+    .rail .sw { opacity: var(--p); }
+    .rail .rail-name, .rail .rail-meta { opacity: calc(var(--p) * .72); }
+    .rail .crt { position: absolute; left: 50%; bottom: calc(100% - 6px); transform: translateX(-50%); height: calc(var(--ch) * var(--u) * 1px / var(--s)); width: auto; max-width: none; opacity: max(0, calc(1 - var(--p) * 2.4)); pointer-events: none; z-index: 2; }
+    @media (max-width: 899px) {
+      .rail { background: transparent !important; -webkit-backdrop-filter: none !important; backdrop-filter: none !important; border-top-color: transparent !important; pointer-events: none; }
+      .rail::before { content: ""; position: absolute; inset: 0; background: color-mix(in srgb, var(--bg) 92%, transparent); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-top: 1px solid var(--rule); opacity: var(--p); }
+      .rail nav { position: relative; }
+    }
+
+    /* seleccion: las demas palabras se ven borrosas */
+    .rail li a { transition: filter .3s ease, opacity .3s ease; }
+    .rail ol:has(a:hover) li a:not(:hover),
+    .rail ol:has(a[aria-current]) li a:not([aria-current]):not(:hover) { filter: blur(1.6px); opacity: .55; }
+    .rail ol:has(a:hover) li a:not(:hover) { filter: blur(2.2px); opacity: .45; }
+    .rail ol:has(a:focus-visible) li a:not(:focus-visible) { filter: blur(2.2px); opacity: .45; }
+
+    /* los trazos del inicio arrancan cuando se ven (ya no estan en la primera pantalla) */
+    html.js .strokes:not(.in) .st { animation-play-state: paused; }
+    @media (prefers-reduced-motion: reduce) { .rail li { transform: none !important; } .rail .crt { display: none; } .rail .sw { opacity: 1; } .rail .rail-name, .rail .rail-meta { opacity: .72; } .opening-hint { display: none; } }
+    /* open:end */
+
+    /* a11y:start */
+    html { scroll-padding-top: 16px; }
+    @media (max-width: 899px) { html { scroll-padding-bottom: 84px; } }
+    .pause-btn { position: fixed; right: 112px; bottom: 14px; z-index: 30; font: inherit; font-size: .72rem; background: var(--bg); color: var(--ink); border: 1px solid var(--ink); border-radius: 999px; padding: 8px 14px; cursor: pointer; }
+    .pause-btn[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+    @media (max-width: 899px) { .pause-btn { right: 12px; bottom: calc(env(safe-area-inset-bottom, 0px) + 58px); } .replay { display: none; }
+      .rail ol:has(a:hover) li a:not(:hover), .rail ol:has(a[aria-current]) li a:not([aria-current]):not(:hover) { filter: blur(1px); opacity: .7; } }
+    /* tarjetas en una sola columna: que no se ensanchen mas que la pantalla */
+    @media (max-width: 860px) { .journey .journey-grid, .journey .stop { grid-template-columns: minmax(0, 1fr); } .journey .shot, .journey .frame { min-width: 0; max-width: 100%; } }
+    html.motion-paused *, html.motion-paused *::before, html.motion-paused *::after { animation-play-state: paused !important; transition: none !important; }
+    html.motion-paused { scroll-behavior: auto; }
+    /* a11y:end */
+
+    /* cards:start */
+    .f-h2h .shotimg { left: 6%; right: auto; top: 50%; width: 88%; height: auto; transform: translateY(-50%); transform-origin: 50% 50%; border-radius: 6px; box-shadow: 0 12px 26px -14px #0008, 0 0 0 1px #0002; }
+    /* cards:end */
+
+    footer { border-top: 1px solid var(--rule); padding: 26px 0 90px; color: var(--mute); font-size: .85rem; }
+    .replay { position: fixed; right: 14px; bottom: 14px; z-index: 30; font: inherit; font-size: .72rem; background: var(--ink); color: var(--bg); border: 0; border-radius: 999px; padding: 9px 14px; cursor: pointer; }
+
+    @media (max-width: 860px) {
+      .journey-grid { grid-template-columns: 1fr; }
+      .count { display: none; }
+      .stop { grid-template-columns: 1fr; min-height: 0; }
+      .stop:first-child { padding-top: 0; }
+    }
+    @media (max-width: 760px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero h1 { flex-direction: column; gap: 0; }
+      .hero h1 .a { font-size: 27vw; }
+      .hero h1 .b { font-size: 23.5vw; }
+      header.top .wrap { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .rise { animation: none; }
+      .txt, .frame { animation: none !important; opacity: 1 !important; }
+      .frame { transform: rotate(var(--r, -1.5deg)) !important; }
+    }
+  </style>
+  <script>document.documentElement.classList.add('js')</script>
+  <style>@media (min-width: 900px) { .pause-btn { right: 14px; } }</style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!--HEADER-->
+  <header class="rail">
+    <p class="micro rail-name">Angelina Besson<br><span>© 2026</span></p>
+    <nav aria-label="Main">
+      <ol>
+        <li><a href="#work" style="--tilt:-2deg;--h:19px"><img class="crt" src="img/crt-ants.svg" alt="" width="1124" height="1184" style="--ch:68" decoding="async"><svg class="arrow" aria-hidden="true" focusable="false" viewBox="29 33 676 450" xmlns="http://www.w3.org/2000/svg" ><path fill="currentColor" stroke="none" stroke-width="0" d="M 478.5 42 L 493.5 42 L 497.5 44 L 520.5 62 L 535 76.5 L 537.5 80 Q 546.75 84.25 553 91.5 Q 552.25 93.75 554.5 93 L 559 96.5 Q 558.25 98.75 560.5 98 L 565.5 103 L 577.5 111 L 584.5 114 L 587.5 117 L 609.5 127 L 615.5 129 L 619.5 129 L 629.5 133 L 638.5 134 L 642.5 136 L 657.5 137 L 668.5 141 L 674.5 141 L 683 145.5 L 687.5 151 Q 693.38 151.63 696 155.5 L 697 157.5 L 697 172.5 L 696 173.5 L 696 197.5 L 689 212.5 L 688 221.5 L 686 223.5 L 684 231.5 L 678.5 243 L 675 245.5 L 665 259.5 L 664 264.5 Q 659.65 269.15 658 276.5 L 650 287.5 L 645 299.5 L 638 309.5 L 631 324.5 L 623 332.5 L 621 340.5 L 610 359.5 Q 609.34 367.34 606 372.5 L 605 380.5 L 600 391.5 L 600 399.5 L 596 411.5 L 595 421.5 L 587.5 433 Q 581.75 434.25 579.5 439 L 573.5 439 L 563.5 443 L 557 449.5 L 554.5 453 L 546 457.5 L 539.5 468 Q 533.86 467.36 532.5 471 L 509.5 471 L 503.5 475 L 484.5 475 L 474 469.5 L 473 466.5 L 467 459.5 L 464 451.5 L 464 435.5 L 467 428.5 L 467 419.5 L 469 417.5 L 470 404.5 L 473 399.5 L 473 389.5 L 478 373.5 L 478 369.5 L 480 366.5 L 480 361.5 L 484 352.5 L 484 349.5 L 494 332.5 L 497 322.5 L 497 313.5 L 488.5 309 L 480.5 309 L 468.5 313 L 460.5 313 L 454.5 315 L 448.5 315 L 444.5 317 L 426.5 318 L 421.5 321 L 401.5 321 L 400.5 320 L 389.5 320 L 382.5 322 L 366.5 322 L 365.5 323 L 332.5 323 L 328.5 325 L 296.5 325 L 290.5 323 L 280.5 323 L 276.5 325 L 247.5 325 L 244.5 327 L 227.5 327 L 223.5 325 L 204.5 325 L 203.5 326 L 184.5 327 L 183.5 328 L 162.5 328 L 161.5 327 L 151.5 327 L 150.5 326 L 116.5 326 L 115.5 325 L 105.5 325 L 93.5 321 L 77.5 320 Q 73.5 316 65.5 316 L 63.5 314 L 59 314 L 55.5 309 L 49 305.5 L 47.5 303 L 45 301.5 L 38 289.5 L 38 260.5 L 39 259.5 L 39 245.5 L 38 244.5 L 38 227.5 L 43.5 221 L 50 215.5 L 52.5 211 L 66.5 211 L 69 210 L 70.5 207 L 72.5 206 L 87.5 206 L 89 204.5 L 90.5 202 Q 92.75 198.25 99.5 199 Q 101.5 195 106.5 194 L 126.5 194 L 127.5 195 L 136.5 195 L 137.5 196 L 166.5 197 L 170.5 199 L 184.5 199 L 185.5 200 L 260.5 200 L 268.5 202 L 282.5 202 L 283.5 201 L 332.5 200 L 333.5 199 L 343.5 199 L 344.5 198 L 364.5 198 L 365.5 199 L 380.5 199 L 393.5 203 L 403.5 203 L 404.5 202 L 420.5 202 L 421.5 203 L 434.5 203 L 439.5 201 L 449.5 201 L 450.5 200 L 462.5 199 Q 466.54 196.04 473.5 196 L 475 194.5 L 475 186.5 L 464.5 176 L 454 168.5 L 451.5 165 L 448 162.5 L 439.5 151 L 431 143.5 L 427 137 L 421 136 L 421 131.5 L 403 111.5 Q 402 105 398 101.5 L 398 84.5 L 399 83.5 L 399 73.5 Q 403.49 68.99 404 60.5 L 407.5 56 L 434.5 56 L 442.5 51 L 460.5 51 L 463 48.5 Q 462.25 46.25 464.5 47 L 471.5 43 Q 477 44.5 478.5 42 Z " /></svg><img class="sw" src="img/sw-orange.webp" alt="" decoding="async"><span class="w"><svg aria-hidden="true" focusable="false" viewBox="47 22 993 480" xmlns="http://www.w3.org/2000/svg" ><path fill="currentColor" stroke="none" stroke-width="0" d="M 467.5 31 L 477.5 31 L 480 33.5 L 481 37.5 Q 479 38.5 480 42.5 L 475.5 48 L 468 54.5 L 466.5 57 L 463.5 58 L 456 65.5 L 450.5 74 L 448 75.5 Q 448.75 77.75 446.5 77 L 436.5 90 Q 434.25 89.25 435 91.5 L 422.5 106 L 420 107.5 L 419 111 Q 416.33 109.88 417 112.5 L 410 120.5 L 407 131.5 Q 404.15 133.15 404 137.5 L 390.5 154 Q 388.25 153.25 389 155.5 L 388 159.5 L 379 175.5 L 377 182.5 L 371 191.5 L 370 200.5 L 364 211.5 L 359 217.5 L 353 230.5 L 349 246.5 L 349 250.5 L 346 255.5 L 344 265.5 Q 339.98 271.48 339 280.5 L 336 285.5 L 336 292.5 L 334 299.5 L 333 312.5 L 331 314.5 L 331 317.5 L 328 323.5 L 326 337.5 L 324 342.5 L 324 349.5 L 320 359.5 L 320 365.5 L 318 373.5 L 318 382.5 L 316 388.5 L 316 397.5 L 317 398.5 L 317 411.5 L 316 412.5 L 316 457.5 L 317 458.5 L 317 491.5 Q 316.25 495.75 310.5 495 L 308.5 494 Q 307.5 496 306.5 494 L 304.5 494 L 299 488.5 L 296 480.5 L 292 476.5 L 286 464.5 L 283 461.5 L 280 453.5 L 269 440.5 L 269 438.5 L 265 432.5 L 264 426.5 L 255 409.5 L 254 402.5 L 249 393.5 L 245 377.5 L 244 366.5 L 242 362.5 L 242 352.5 L 240 347.5 L 239 330.5 L 237 326.5 L 234 311 L 229.5 309 L 225 314.5 L 224 320.5 L 215 335.5 L 214 345.5 Q 211.4 346.9 212 351.5 L 209 355.5 L 207 364.5 L 203 370.5 L 202 377.5 L 200 379.5 L 197 387.5 L 196 399.5 L 191 407.5 Q 190.49 415.99 186 420.5 L 186 424.5 L 180 435.5 L 180 441.5 L 176 453.5 L 176 460.5 L 169 472.5 L 169 481.5 L 166 489 Q 163.63 490.75 157.5 490 L 154 484.5 L 154 474.5 L 151 463.5 L 151 458.5 L 145 448.5 L 143 419.5 L 140 414.5 L 139 405.5 L 134 395.5 L 132 387.5 L 132 383.5 L 130 377.5 L 130 368.5 L 128 361.5 L 128 355.5 L 126 347.5 L 124 345.5 L 123 337.5 L 119 328.5 L 119 320.5 L 116 310.5 L 116 303.5 L 114 300.5 L 113 293.5 L 109 284.5 L 109 276.5 Q 105.6 270.4 105 261.5 L 98 249.5 L 97 235.5 L 92 222.5 L 92 213.5 L 91 212.5 L 91 206.5 L 89 198.5 L 84 191.5 L 84 186.5 L 79 175.5 L 79 171.5 L 77 168.5 L 77 163.5 L 75 156.5 L 72 153.5 Q 72.17 148.33 69 146.5 L 68 139.5 L 63 128.5 L 62 119.5 L 56 108.5 L 56 91.5 L 68 82.5 L 75.5 74 L 83.5 73 Q 84.85 75.25 89 74 L 93 81.5 L 94 89.5 L 97 95.5 L 97 99.5 L 104 108.5 L 106 114.5 L 106 124.5 L 110 137.5 L 111 152.5 L 115 160.5 L 116 174.5 L 120 181.5 L 123 198.5 L 128 212.5 L 129 223.5 L 133 234.5 L 134 244.5 L 136 250.5 L 137 267.5 L 141 279.5 L 142 291.5 L 144 298.5 L 145 320.5 L 146 321.5 L 146 342.5 L 148 347.5 L 149 361.5 L 151 363.5 L 151 368.5 L 154 379.5 L 154 387.5 L 155 388.5 L 156 397.5 L 161.5 406 L 163.5 407 L 167 405 L 177 383.5 L 177 380.5 L 180 373.5 L 184 367.5 L 186 354.5 L 195 344.5 L 196 338.5 L 202 329.5 L 206 320.5 L 208 308.5 L 214 298.5 L 216 290.5 L 220 284.5 L 221 278.5 L 229 261.5 L 234 254.5 L 235 250.5 L 240 244.5 L 245.5 234 Q 252.25 232.25 254 235.5 Q 257.2 237.8 256 244.5 L 254 250.5 L 253 265.5 L 251 270.5 L 251 306.5 L 252 307.5 L 252 313.5 L 254 320.5 L 254 328.5 L 256 335.5 L 260 341.5 L 260 345.5 L 264 355.5 L 270 363.5 L 271 370.5 L 276 378.5 L 277 386.5 L 283.5 399 Q 286.47 401.83 292 401 L 294 395.5 L 294 388.5 L 296 383.5 L 296 374.5 L 299 368.5 L 300 358.5 Q 302.96 354.46 303 347.5 L 305 344.5 L 305 339.5 L 307 336.5 L 307 332.5 L 309 329.5 L 309 326.5 L 312 320.5 L 315 308.5 L 320 297.5 L 320 292.5 L 324 277.5 L 324 267.5 L 328 255.5 L 328 250.5 L 332 239.5 L 332 232.5 L 336 226.5 L 338 220.5 L 338 216.5 L 344 201.5 L 345 194.5 L 351 186.5 L 353 177.5 L 356 174.5 L 365 157.5 L 366 150.5 L 370 145.5 L 370 138.5 Q 372.85 136.85 373 132.5 L 376 129.5 L 382 116.5 L 401.5 89 Q 403.75 89.75 403 87.5 L 412.5 76 Q 414.75 76.75 414 74.5 L 422.5 64 L 431 56.5 L 437.5 48 Q 442.25 47.75 444 44.5 L 445.5 42 L 457.5 34 L 467.5 31 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 810.5 170 L 822.5 170 L 824 171.5 Q 823 175.5 825 176.5 L 826 229.5 L 825 232.5 L 826 233.5 L 826 253.5 L 827 254.5 L 827 261.5 L 828 262.5 L 828 280.5 L 830 282.5 L 831 291.5 L 833.5 294 L 835.5 295 L 846.5 295 L 856 288.5 L 860.5 282 L 868 275.5 L 868 273.5 L 872 267.5 L 889 248.5 L 895 239.5 L 897 234 L 900 232.5 L 918 204.5 L 923 193.5 L 924 184.5 L 926.5 182 L 938.5 180 L 947 183 L 947 190.5 Q 943.5 194.5 943 201.5 L 932 216.5 L 931 221 Q 928.33 219.88 929 222.5 L 925 231.5 Q 918.74 237.45 916 246 L 913 247.5 Q 913.75 249.75 911.5 249 L 897.5 267 Q 895.25 266.25 896 268.5 L 885.5 282 Q 882.88 281.17 884 284.5 L 880 287.5 L 880 289 L 878 289 Q 879.13 291.67 876.5 291 L 869 301.5 L 869 311.5 L 874.5 318 L 886.5 325 L 891.5 330 L 900.5 334 L 909.5 340 L 936.5 362 L 947.5 367 L 958.5 378 L 964 380.5 L 965.5 383 L 989.5 394 L 1002.5 402 L 1014.5 406 Q 1016.95 410.45 1022 411 L 1031 424.5 L 1033 436.5 Q 1032 440 1026.5 439 L 1025.5 438 L 1012.5 437 L 1006.5 433 L 996.5 431 L 994.5 429 L 976 421 L 976 419.5 L 971.5 415 L 963.5 411 L 940 392.5 L 937.5 389 L 932 386.5 L 930.5 384 L 925 381 L 923.5 378 Q 921.25 378.75 922 376.5 L 916 371.5 Q 916.75 369.25 914.5 370 L 888.5 352 L 881.5 349 L 866.5 336 L 865 336 L 863.5 333 L 853.5 326 L 850.5 326 L 843.5 323 L 836.5 323 L 834 325.5 L 833 329.5 L 834 330.5 L 834 342.5 L 836 347.5 L 836 360.5 L 835 361.5 L 835 377.5 Q 837.25 378.75 836 383.5 L 839 387.5 L 841 394.5 L 841 425.5 L 833 436.5 L 833 448.5 L 830.5 451 L 825.5 451 L 821 446.5 L 820 444.5 L 820 419.5 L 819 418.5 L 819 410.5 L 817 408.5 Q 818.5 403 816 401.5 L 816 379.5 L 814 372.5 L 814 354.5 L 811 345.5 L 811 336.5 L 810 335.5 L 810 308.5 L 807 297.5 L 807 264.5 L 805 259.5 L 805 246.5 L 804 245.5 L 804 218.5 L 802 212.5 L 801 198.5 L 799 193.5 L 799 184.5 Q 801 183.5 800 179.5 L 805 171 Q 809.15 172.25 810.5 170 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 636.5 206 L 655.5 206 L 656.5 207 L 672.5 207 L 673.5 208 Q 674.5 206 675.5 208 L 691.5 212 L 703 219.5 L 708 225.5 L 710 232.5 L 713 235.5 L 714 245.5 L 715 246.5 L 715 269.5 L 712 280.5 L 705.5 290 Q 703.25 289.25 704 291.5 L 683.5 318 L 679 321.5 L 675 329 L 673.5 329 L 668.5 334 L 661.5 337 L 651 345.5 L 651 351.5 L 657.5 359 L 666.5 366 L 674.5 368 L 686.5 379 L 701.5 386 L 718.5 398 L 726.5 399 L 744.5 409 L 756.5 414 L 764.5 415 L 767 417.5 L 767 431.5 L 764.5 434 L 757.5 435 L 746 429 Q 747.13 426.33 744.5 427 L 727.5 418 L 724.5 418 L 719.5 415 L 714.5 415 L 703.5 409 L 700.5 406 L 687.5 400 L 680.5 399 L 668.5 391 Q 666.5 388.5 661.5 389 L 644.5 379 L 638.5 378 L 633.5 374 L 617.5 367 L 610.5 362 L 598.5 362 L 597.5 361 Q 596.25 363.25 591.5 362 L 589 364.5 L 588 366.5 L 588 400.5 L 592 406.5 L 594 414.5 L 587 433 Q 585.25 434.5 580.5 434 L 573 429.5 Q 570 426.5 571 419.5 L 574 410.5 L 573 409.5 L 573 385.5 L 570 372.5 L 570 354.5 L 569 353.5 L 569 346.5 L 568 345.5 L 567 315.5 L 565 307.5 L 565 299.5 L 558 286.5 L 558 278.5 L 561 268.5 L 561 245.5 Q 558.75 244.25 560 239.5 Q 562.25 238.15 561 234 L 564 232.5 L 569.5 226 L 573.5 225 L 574.5 226 L 585.5 226 L 589.5 225 L 606.5 215 L 610.5 215 L 613.5 213 L 626.5 210 L 628.5 208 L 636.5 206 Z M 645 220 L 644 221 L 637 221 L 636 222 L 624 223 L 610 231 Q 607 230 608 233 L 600 238 L 598 238 L 596 241 L 593 243 L 586 254 L 586 266 L 585 267 L 585 281 L 586 282 L 586 319 L 588 324 L 591 326 L 595 327 L 608 327 L 609 328 L 621 325 L 639 315 L 644 314 L 647 311 L 658 306 L 661 303 L 675 296 L 678 293 L 680 293 L 689 285 Q 688 282 691 283 L 692 280 Q 697 277 698 272 L 698 251 L 691 239 L 689 236 L 686 234 L 683 231 L 669 221 L 666 222 L 665 221 L 645 220 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 444.5 223 L 467.5 223 L 475.5 226 L 485.5 233 L 492.5 235 L 500 241.5 L 500 243.5 L 505.5 250 L 508 251.5 L 515 259.5 L 526 276.5 L 528 282.5 L 528 290.5 L 530 297.5 L 529 298.5 L 529 305.5 L 531 312.5 L 531 337.5 L 528 342.5 L 527 354.5 L 524 364.5 Q 519.83 368.83 519 376.5 L 513 385.5 L 512 392.5 Q 507.63 401.13 500 406.5 L 498.5 410 L 496 411.5 L 492.5 417 L 460.5 438 L 452.5 439 L 448.5 442 Q 444.5 441 443.5 443 L 421.5 443 L 405.5 439 L 389.5 430 L 384 424.5 L 382.5 422 L 377 418.5 L 376 415.5 L 366 404.5 L 362 394 Q 359 395.25 360 391.5 L 356 387.5 L 355 379.5 L 353 376.5 L 352 362.5 L 351 361.5 L 351 335.5 L 350 331.5 L 351 330.5 L 351 313.5 L 352 312.5 Q 349.75 311.25 351 306.5 L 353 299.5 L 356 296.5 L 362 286.5 L 363 282.5 L 368 275.5 L 370 267 L 383 258.5 L 385.5 255 L 389 252.5 L 398.5 239 L 405.5 234 L 411.5 234 L 444.5 223 Z M 449 240 L 434 245 L 428 251 L 419 256 L 409 265 Q 410 267 408 266 L 399 276 L 395 283 Q 396 285 393 284 L 382 305 L 379 314 L 376 318 L 375 326 L 374 327 L 374 333 L 373 334 L 373 341 L 372 342 L 372 368 L 376 376 L 378 385 L 382 392 L 384 400 Q 388 402 389 408 L 393 410 L 394 413 L 407 422 L 412 424 L 420 424 L 423 426 L 446 426 L 447 425 L 455 425 L 471 413 Q 473 414 472 412 Q 477 404 486 401 L 489 396 L 492 394 Q 494 387 500 383 L 501 376 L 505 370 L 505 366 L 507 361 L 507 355 L 509 351 L 509 343 L 510 342 L 510 323 L 508 315 L 506 313 L 506 298 L 505 297 L 505 290 L 504 289 L 504 279 L 503 278 Q 504 274 501 275 L 500 271 L 490 255 L 483 249 L 469 249 L 468 248 Q 465 249 466 247 L 459 241 Q 452 242 449 240 Z " /></svg></span><span class="sr-only">Work</span></a></li>
+        <li><a href="#playground" style="--tilt:1.5deg;--h:18px"><img class="crt" src="img/crt-butterflies.svg" alt="" width="1490" height="1463" style="--ch:104" decoding="async"><svg class="arrow" aria-hidden="true" focusable="false" viewBox="29 33 676 450" xmlns="http://www.w3.org/2000/svg" ><path fill="currentColor" stroke="none" stroke-width="0" d="M 478.5 42 L 493.5 42 L 497.5 44 L 520.5 62 L 535 76.5 L 537.5 80 Q 546.75 84.25 553 91.5 Q 552.25 93.75 554.5 93 L 559 96.5 Q 558.25 98.75 560.5 98 L 565.5 103 L 577.5 111 L 584.5 114 L 587.5 117 L 609.5 127 L 615.5 129 L 619.5 129 L 629.5 133 L 638.5 134 L 642.5 136 L 657.5 137 L 668.5 141 L 674.5 141 L 683 145.5 L 687.5 151 Q 693.38 151.63 696 155.5 L 697 157.5 L 697 172.5 L 696 173.5 L 696 197.5 L 689 212.5 L 688 221.5 L 686 223.5 L 684 231.5 L 678.5 243 L 675 245.5 L 665 259.5 L 664 264.5 Q 659.65 269.15 658 276.5 L 650 287.5 L 645 299.5 L 638 309.5 L 631 324.5 L 623 332.5 L 621 340.5 L 610 359.5 Q 609.34 367.34 606 372.5 L 605 380.5 L 600 391.5 L 600 399.5 L 596 411.5 L 595 421.5 L 587.5 433 Q 581.75 434.25 579.5 439 L 573.5 439 L 563.5 443 L 557 449.5 L 554.5 453 L 546 457.5 L 539.5 468 Q 533.86 467.36 532.5 471 L 509.5 471 L 503.5 475 L 484.5 475 L 474 469.5 L 473 466.5 L 467 459.5 L 464 451.5 L 464 435.5 L 467 428.5 L 467 419.5 L 469 417.5 L 470 404.5 L 473 399.5 L 473 389.5 L 478 373.5 L 478 369.5 L 480 366.5 L 480 361.5 L 484 352.5 L 484 349.5 L 494 332.5 L 497 322.5 L 497 313.5 L 488.5 309 L 480.5 309 L 468.5 313 L 460.5 313 L 454.5 315 L 448.5 315 L 444.5 317 L 426.5 318 L 421.5 321 L 401.5 321 L 400.5 320 L 389.5 320 L 382.5 322 L 366.5 322 L 365.5 323 L 332.5 323 L 328.5 325 L 296.5 325 L 290.5 323 L 280.5 323 L 276.5 325 L 247.5 325 L 244.5 327 L 227.5 327 L 223.5 325 L 204.5 325 L 203.5 326 L 184.5 327 L 183.5 328 L 162.5 328 L 161.5 327 L 151.5 327 L 150.5 326 L 116.5 326 L 115.5 325 L 105.5 325 L 93.5 321 L 77.5 320 Q 73.5 316 65.5 316 L 63.5 314 L 59 314 L 55.5 309 L 49 305.5 L 47.5 303 L 45 301.5 L 38 289.5 L 38 260.5 L 39 259.5 L 39 245.5 L 38 244.5 L 38 227.5 L 43.5 221 L 50 215.5 L 52.5 211 L 66.5 211 L 69 210 L 70.5 207 L 72.5 206 L 87.5 206 L 89 204.5 L 90.5 202 Q 92.75 198.25 99.5 199 Q 101.5 195 106.5 194 L 126.5 194 L 127.5 195 L 136.5 195 L 137.5 196 L 166.5 197 L 170.5 199 L 184.5 199 L 185.5 200 L 260.5 200 L 268.5 202 L 282.5 202 L 283.5 201 L 332.5 200 L 333.5 199 L 343.5 199 L 344.5 198 L 364.5 198 L 365.5 199 L 380.5 199 L 393.5 203 L 403.5 203 L 404.5 202 L 420.5 202 L 421.5 203 L 434.5 203 L 439.5 201 L 449.5 201 L 450.5 200 L 462.5 199 Q 466.54 196.04 473.5 196 L 475 194.5 L 475 186.5 L 464.5 176 L 454 168.5 L 451.5 165 L 448 162.5 L 439.5 151 L 431 143.5 L 427 137 L 421 136 L 421 131.5 L 403 111.5 Q 402 105 398 101.5 L 398 84.5 L 399 83.5 L 399 73.5 Q 403.49 68.99 404 60.5 L 407.5 56 L 434.5 56 L 442.5 51 L 460.5 51 L 463 48.5 Q 462.25 46.25 464.5 47 L 471.5 43 Q 477 44.5 478.5 42 Z " /></svg><img class="sw" src="img/sw-green.webp" alt="" decoding="async"><span class="w"><svg aria-hidden="true" focusable="false" viewBox="8 18 1800 275" xmlns="http://www.w3.org/2000/svg" ><path fill="currentColor" stroke="none" stroke-width="0" d="M 1670.5 22 L 1677.5 22 L 1678.5 23 L 1685.5 23 L 1686.5 24 L 1710.5 24 L 1718.5 28 L 1726.5 29 L 1731.5 32 L 1736.5 32 L 1739.5 35 L 1742.5 35 L 1752.5 39 L 1773 54.5 L 1779.5 64 L 1782 65.5 L 1788 76.5 L 1788 81.5 L 1795 94.5 L 1796 100.5 L 1800 107.5 L 1800 110.5 L 1802 112.5 L 1802 119.5 L 1803 120.5 L 1803 127.5 L 1804 128.5 L 1804 143.5 L 1805 145.5 L 1804 146.5 L 1804 164.5 L 1802 172.5 L 1796 182.5 L 1795 190.5 L 1784.5 203 L 1781 205.5 L 1773.5 216 L 1770 217 L 1768.5 220 L 1765 221.5 L 1763.5 224 L 1758.5 228 L 1755.5 228 L 1752.5 231 L 1745.5 232 L 1737.5 236 L 1698.5 236 L 1697.5 235 L 1690.5 235 L 1678.5 230 L 1666.5 227 L 1658 222.5 L 1656.5 220 L 1652.5 217 Q 1644.93 218.07 1642 214.5 L 1636 206.5 L 1636 203.5 L 1633 198.5 Q 1634.5 193 1632 191.5 L 1632 177.5 L 1639.5 173 L 1649.5 172 L 1655.5 176 L 1657.5 176 L 1659 174.5 L 1659 155.5 L 1660 154.5 L 1660 92.5 L 1659 91.5 L 1658 68.5 L 1655 61.5 L 1655 48.5 L 1654 44.5 L 1651.5 42 L 1646 43 L 1643.5 47 L 1641.5 48 L 1627.5 48 L 1625 47 Q 1623.03 37.25 1628.5 34 L 1642.5 26 L 1648.5 26 L 1658.5 23 L 1669.5 23 L 1670.5 22 Z M 1687 41 L 1684 42 L 1682 47 L 1683 49 L 1684 95 L 1685 96 L 1685 122 L 1684 123 L 1684 143 L 1685 144 L 1685 197 L 1686 200 L 1690 202 L 1694 202 L 1702 206 L 1706 205 L 1722 205 L 1730 203 Q 1734 198 1742 197 L 1747 192 L 1756 187 L 1759 187 L 1760 185 L 1765 181 L 1770 176 L 1777 163 L 1778 155 L 1781 150 L 1781 141 L 1784 131 L 1784 105 Q 1781 102 1782 97 L 1778 88 L 1773 82 L 1772 77 L 1768 72 Q 1765 73 1766 71 L 1763 68 L 1753 57 Q 1750 58 1751 56 Q 1748 51 1742 49 L 1736 48 L 1730 44 L 1723 42 L 1687 41 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 85.5 27 L 89.5 27 L 92.5 29 Q 97.25 27.75 98.5 30 L 114.5 31 L 115.5 32 L 138.5 32 L 154 42.5 Q 153.25 44.75 155.5 44 L 162 49.5 L 167 61.5 L 169.5 64 L 172 65.5 L 172 72.5 L 176 81.5 L 176 89.5 L 178 96.5 L 178 110.5 L 171 116.5 L 171 121.5 L 176 129.5 L 176 134.5 L 168 147 L 164 149.5 L 157.5 157 L 148 164.5 L 146 170 L 143.5 171 L 131.5 171 L 123.5 175 L 90.5 176 L 88.5 175 L 87.5 176 L 79 176 L 78 184.5 L 79 185.5 L 79 201.5 L 80 202.5 L 81 257.5 L 77.5 262 Q 71.5 263.5 70 260.5 L 67 254.5 L 65 223.5 Q 67 222.5 65 221.5 L 65 207.5 L 64 206.5 L 64 198.5 L 63 197.5 L 63 177.5 L 61 168 Q 58.94 166.37 53.5 167 L 42.5 160 Q 35 161 32 159 L 31 151.5 Q 32.25 145.25 36.5 142 L 38.5 141 L 59 141 Q 60.88 138.31 60 131.5 Q 57.5 130 59 124.5 L 60 123.5 L 60 112.5 L 59 111.5 L 59 99.5 L 58 98.5 L 57 59.5 L 55.5 58 L 49.5 57 Q 47.5 59.5 42.5 59 L 37.5 64 L 36 64 Q 37.13 66.67 34.5 66 Q 30.05 70.33 21 69 Q 19.5 67.25 20 62.5 L 21 61.5 L 21 54.5 L 13 49.5 L 12 46.5 L 14.5 45 Q 20 46.5 21.5 44 L 33.5 44 L 43.5 36 L 46.5 36 L 60.5 29 L 70.5 29 L 71.5 28 Q 72.5 30 73.5 28 L 84.5 28 L 85.5 27 Z M 111 46 L 110 47 L 91 47 L 90 48 L 82 48 Q 79 50 75 50 L 70 53 L 69 57 L 69 95 L 71 103 L 72 129 L 73 130 Q 72 138 74 143 L 80 145 L 90 145 L 91 144 L 98 144 L 99 143 L 121 142 L 143 128 L 152 113 L 154 107 L 154 100 L 156 95 L 156 82 L 154 77 L 154 72 L 147 54 L 141 48 L 136 46 L 111 46 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 1546.5 30 Q 1554.47 29.03 1557 33.5 L 1557 47.5 L 1559 55.5 Q 1556.5 57 1558 62.5 L 1559 63.5 L 1559 72.5 Q 1556.5 74 1558 79.5 L 1559 80.5 L 1559 97.5 L 1560 98.5 L 1560 142.5 L 1559 143.5 L 1559 160.5 L 1560 161.5 L 1560 186.5 L 1562 192.5 L 1563 217.5 L 1566.5 224 L 1569 225.5 L 1570 232.5 Q 1568.37 236.87 1561.5 236 L 1560.5 235 L 1546.5 234 L 1545.5 235 L 1542 231.5 L 1533.5 220 L 1530 217.5 L 1530 213.5 L 1526 207.5 L 1525 203.5 L 1521 199.5 L 1500.5 168 L 1498 166.5 L 1494.5 160 L 1492 158.5 L 1490.5 156 L 1487 153.5 L 1485 148.5 L 1476 137.5 L 1462 114.5 L 1441.5 91 L 1434.5 88 L 1432 91.5 L 1431 178.5 L 1432 179.5 L 1432 202.5 L 1431 203.5 L 1431 212.5 L 1430 213.5 L 1430 223.5 L 1426 230.5 L 1421 235.5 L 1416.5 244 L 1401.5 244 L 1400 242.5 L 1398 239.5 L 1398 223.5 L 1399 222.5 L 1399 205.5 L 1402 193.5 L 1402 182.5 L 1403 181.5 L 1403 107.5 L 1404 106.5 L 1404 97.5 L 1403 96.5 L 1403 67.5 L 1404 64.5 L 1403 60.5 L 1406 48 L 1408 48 Q 1406.88 45.33 1409.5 46 L 1413.5 45 L 1418.5 48 L 1426.5 49 L 1435 54.5 L 1438 59.5 L 1440 66.5 L 1448.5 76 L 1453 78.5 L 1456 84.5 L 1465.5 96 L 1468 97.5 L 1476 112 Q 1478.67 110.88 1478 113.5 L 1490 129.5 L 1495 138.5 L 1505 149.5 L 1507 156 Q 1509.67 154.88 1509 157.5 L 1513 162.5 L 1514 166.5 L 1519.5 173 Q 1521.75 172.25 1521 174.5 L 1526.5 181 L 1529 182.5 L 1531.5 188 L 1533.5 188 L 1540.5 195 L 1545 195 L 1545 159.5 L 1546 158.5 L 1546 80.5 L 1545 79.5 L 1545 65.5 L 1544 64.5 L 1544 47.5 L 1543 46.5 L 1543 32 L 1546.5 30 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 923.5 40 L 933.5 40 L 937.5 41 L 939.5 40 Q 940.5 42 944.5 41 L 950.5 45 L 953 45 L 957.5 54 L 960 55.5 Q 962.5 57.5 962 62.5 L 965 65.5 L 965 79.5 L 966 80.5 L 966 96.5 L 967 100.5 L 966 101.5 L 963 119.5 L 949 144 L 938 150 L 936.5 153 L 932.5 156 L 922.5 159 L 918.5 162 L 910.5 163 L 904.5 168 L 894.5 171 L 890 174.5 L 887 179.5 L 887 183.5 L 889.5 185 L 897.5 183 L 906 187 L 906 188.5 L 918.5 201 L 938 218.5 L 939.5 221 L 942 222.5 Q 941.25 224.75 943.5 224 L 945 227 L 950 229 L 950 230.5 L 956.5 237 L 959 238.5 Q 958.25 240.75 960.5 240 L 966.5 246 L 970 247.5 L 971.5 250 L 982 255.5 L 982 259.5 L 985 265.5 L 985 286.5 L 983.5 288 L 971.5 289 L 959.5 282 L 949.5 278 L 944.5 274 L 938.5 272 Q 932.18 263.58 922 260 Q 917.94 251.23 910.5 245 L 903 240 L 900.5 236 Q 898.25 236.75 899 234.5 L 895.5 230 L 886 224 L 886 222.5 L 881.5 218 L 877 214.5 L 877 211.5 L 874 207.5 L 874 205.5 L 864.5 192 L 859.5 191 L 858 194.5 L 859 198.5 L 858 199.5 L 858 206.5 Q 863 208.5 861 217.5 L 860 218.5 L 860 229.5 L 861 231.5 Q 858.5 233 860 238.5 L 856.5 242 L 854.5 241 L 852.5 242 L 850.5 241 L 848.5 242 Q 847.25 239.75 842.5 241 Q 841.5 243 840.5 241 L 835 238.5 L 836 163.5 L 838 159.5 L 839 123.5 L 840 122.5 L 840 111.5 L 842 103.5 L 842 79.5 Q 844.5 78 843 72.5 L 842 71.5 L 842 64.5 L 843 63.5 L 843 54.5 L 846 46.5 L 848.5 44 L 866.5 45 L 867.5 44 L 880.5 44 L 884.5 46 L 896.5 46 L 916.5 41 L 922.5 41 L 923.5 40 Z M 913 58 L 906 61 L 901 61 L 896 64 L 888 65 L 882 68 L 872 70 L 862 87 L 861 127 L 860 128 L 860 139 L 858 145 L 861 150 L 865 152 Q 870 151 872 153 L 888 153 L 901 148 L 911 147 L 926 139 L 934 132 Q 936 133 935 129 L 937 129 L 939 126 Q 938 123 941 124 L 942 117 L 948 101 L 948 86 Q 946 85 947 81 L 942 72 Q 936 64 927 60 L 913 58 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 745.5 52 L 769.5 52 L 777.5 54 L 782 58.5 L 783 63.5 L 777.5 69 L 775.5 69 L 768.5 66 L 762.5 70 L 755.5 70 L 754.5 69 L 736.5 69 L 735.5 70 L 721.5 70 L 714 74.5 Q 714.83 77.13 711.5 76 L 704.5 79 L 696.5 86 L 695 86 L 691.5 91 L 688 93.5 L 672 117.5 L 667 128.5 L 666 132.5 L 666 150.5 L 664 155.5 L 664 169.5 L 665 170.5 Q 664.13 176.88 666 180.5 L 670 185.5 L 674 195.5 Q 678.45 197.95 679 203 L 682 204.5 L 683 208 Q 685.67 206.87 685 209.5 Q 694.58 220.42 708.5 227 L 713.5 227 L 722.5 230 Q 728.67 228.83 731.5 231 L 732.5 230 L 743.5 230 L 746.5 228 L 758.5 226 L 763 223.5 Q 762.25 221.25 764.5 222 L 774 211.5 L 776 207.5 L 779 195.5 L 782 191.5 L 782 188.5 L 786 180.5 Q 785.33 174.83 788 172.5 L 788 160.5 L 784.5 156 Q 782 154 776.5 155 L 766.5 158 L 753.5 158 L 746.5 154 L 721.5 153 L 720.5 152 L 711.5 151 L 708 148.5 L 707 143.5 L 710.5 138 L 715 134.5 Q 714.17 131.88 717.5 133 L 721.5 132 L 731.5 136 L 768.5 136 L 769.5 135 L 777.5 135 L 779.5 133 L 783.5 132 L 800.5 132 L 804 134.5 Q 806.5 138 805 145.5 L 804 146.5 L 804 160.5 L 803 161.5 L 802 178.5 L 798 187.5 L 798 191.5 Q 800.25 192.75 799 197.5 L 791 209.5 L 787 218.5 L 778 228.5 L 777 232 L 775.5 232 L 760.5 246 L 752.5 250 L 715.5 250 L 702.5 243 L 694.5 242 L 689 239 L 687.5 236 L 683 235 L 680.5 230 L 676 226.5 L 673 220 L 667 216.5 L 664 208 Q 661.33 209.13 662 206.5 L 659 202.5 L 651 184.5 L 651 159.5 L 650 158.5 L 650 149.5 L 651 148.5 L 651 138.5 L 653 135.5 L 654 127.5 L 656 124.5 L 656 121.5 L 660 110.5 L 665 104.5 L 667 97.5 L 680 82.5 L 683 77 L 687 76 L 689.5 72 L 698 67 Q 696.75 64 700.5 65 Q 701.5 63 705.5 64 L 717.5 57 L 728.5 55 L 731.5 53 L 744.5 53 L 745.5 52 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 1081.5 56 L 1100.5 56 L 1103.5 57 L 1114.5 64 L 1116.5 64 L 1130 75.5 L 1142.5 90 Q 1145.83 88.88 1145 91.5 L 1149 98.5 L 1155 121.5 L 1155 130.5 L 1156 131.5 L 1156 163.5 L 1155 164.5 L 1153 182.5 L 1151 186.5 L 1151 191.5 L 1149 199.5 L 1142 215.5 L 1137 221.5 L 1133.5 230 L 1131.5 230 L 1127 233.5 L 1122.5 240 L 1114.5 241 L 1103.5 248 L 1089.5 253 L 1087.5 252 L 1083.5 254 L 1065.5 254 Q 1064.5 252 1060.5 253 L 1057.5 251 L 1050.5 250 L 1044.5 245 L 1039.5 244 L 1020.5 226 L 1019 226 L 1017 220.5 L 1014 217.5 L 1002 196.5 Q 1002.6 191.9 1000 190.5 L 1000 184.5 L 996 174.5 L 996 157.5 L 997 156.5 L 997 146.5 L 999 143.5 L 1000 134.5 Q 1002.6 133.1 1002 128.5 L 1007 122.5 Q 1009.67 120.17 1009 114.5 L 1014 107.5 L 1015 103.5 L 1019.5 99 Q 1021.75 99.75 1021 97.5 L 1028.5 88 Q 1030.75 88.75 1030 86.5 L 1035.5 80 Q 1037.75 80.75 1037 78.5 L 1042.5 72 L 1049.5 69 L 1061.5 61 L 1081.5 56 Z M 1077 74 L 1075 75 L 1071 82 L 1071 85 L 1069 87 L 1057 87 L 1046 95 L 1041 103 L 1040 112 L 1037 116 L 1036 134 L 1033 147 L 1033 152 L 1032 153 L 1033 157 L 1032 161 L 1032 178 L 1034 186 L 1037 189 L 1046 211 L 1056 218 L 1067 224 L 1072 224 L 1081 228 Q 1086 227 1088 229 L 1104 229 L 1115 225 Q 1120 221 1123 214 L 1126 212 L 1134 200 L 1134 194 L 1136 191 L 1136 186 L 1138 181 L 1139 171 L 1141 165 L 1141 158 L 1142 157 L 1142 132 L 1138 124 L 1137 119 L 1134 115 L 1133 109 L 1128 101 L 1127 96 L 1122 88 L 1114 82 L 1098 75 L 1094 74 L 1077 74 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 609.5 57 L 617 58 L 618 65.5 L 617 68 L 614 69.5 L 610.5 74 L 608 75.5 Q 607.75 80.25 604.5 82 L 597 87.5 L 588 104.5 L 586 113.5 L 583 117.5 Q 582.85 121.85 580 123.5 L 580 126.5 L 574 137.5 L 573 147.5 L 570 154.5 Q 571.25 159.25 569 160.5 L 569 168.5 L 566 172.5 L 566 179.5 L 564 184.5 L 564 193.5 L 556 210.5 L 556 218.5 L 548 232.5 L 547 238.5 L 542 244.5 L 542 249.5 L 539.5 252 Q 532.69 252.88 530 251 L 529 248.5 L 529 232.5 L 530 231.5 L 530 224.5 L 531 223.5 L 531 216.5 L 532 215.5 L 532 208.5 L 534 203.5 L 535 191.5 L 538 182.5 L 541 178.5 L 542 173.5 L 545 168.5 L 547 155.5 Q 544.75 154.25 546 149.5 L 541.5 143 L 539 141.5 L 537.5 139 Q 535.25 139.75 536 137.5 L 527 127.5 L 526 124 Q 522 123.75 520 120.5 L 519 117.5 L 512 109.5 L 510 104.5 L 504.5 99 Q 502.25 99.75 503 97.5 L 497.5 90 L 490 83.5 L 489 78.5 L 483 71.5 L 483 65 L 485.5 64 L 488 65 Q 486.25 69.5 491.5 68 L 502 79.5 L 502 81 Q 504.67 79.88 504 82.5 L 506.5 86 L 509 87.5 L 512.5 92 L 514.5 92 L 518 95.5 Q 517.25 99.25 519.5 100 Q 521.75 99.25 521 101.5 L 527.5 109 L 532 112.5 L 535.5 118 L 546 126.5 L 550.5 132 L 556.5 134 L 560 131.5 L 561 126.5 L 562.5 125 L 566 122.5 L 567 113.5 L 573 106.5 L 578.5 93 Q 580.75 93.75 580 91.5 L 586 83.5 L 586 81.5 L 590 77.5 L 590 75.5 L 599 65.5 L 599 64 Q 601.67 65.13 601 62.5 L 603.5 59 L 609.5 57 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 1326.5 64 Q 1335.17 62.83 1338 67.5 L 1340 74.5 L 1340 90.5 L 1341 91.5 L 1341 99.5 L 1342 100.5 L 1342 127.5 L 1343 128.5 L 1343 138.5 L 1344 139.5 L 1344 174.5 L 1345 175.5 L 1346 184.5 L 1343 196.5 L 1342 207.5 L 1340 209.5 L 1337 218 L 1332 221.5 Q 1325.95 232.45 1316.5 240 L 1313 241 L 1313 243.5 L 1308.5 249 Q 1305.67 251.17 1299.5 250 L 1288.5 256 L 1271.5 256 L 1260.5 252 L 1257.5 252 L 1254.5 250 L 1251.5 250 L 1245.5 246 L 1243.5 246 L 1232 237.5 L 1228.5 233 Q 1225.5 233.87 1227 229.5 L 1222.5 224 L 1220 222.5 L 1216 213.5 L 1211 206.5 L 1210 201.5 L 1206 195.5 L 1206 192.5 L 1204 190.5 L 1203 186.5 L 1203 176.5 L 1202 175.5 L 1202 148.5 L 1203 147.5 L 1203 132.5 L 1204 131.5 L 1204 112.5 L 1207 103.5 L 1207 95.5 L 1208 94.5 L 1209 81.5 L 1212.5 76 L 1216.5 75 L 1227.5 75 L 1229.5 74 L 1232 75 L 1233 79.5 Q 1231 80.5 1232 84.5 L 1228 90.5 Q 1229 94.5 1227 95.5 L 1225 116.5 L 1223 122.5 L 1223 132.5 L 1219 144.5 L 1219 155.5 Q 1217 156.5 1218 160.5 L 1219 161.5 L 1219 181.5 L 1220 185.5 L 1225 198.5 L 1228.5 202 L 1242.5 213 L 1253.5 218 L 1256.5 218 L 1258.5 220 Q 1262.5 219 1263.5 221 L 1284.5 221 L 1285.5 220 L 1294.5 219 Q 1304.44 215.44 1311 208.5 L 1314 199.5 L 1314 187.5 L 1320 174.5 L 1320 167.5 L 1323 159.5 L 1323 152.5 L 1324 151.5 L 1324 134.5 L 1326 127.5 L 1326 93.5 Q 1320.76 89.24 1321 79.5 L 1322 78.5 L 1323 67.5 L 1326.5 64 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 376.5 74 L 382.5 75 L 385 77.5 Q 388.37 80.13 389 85.5 L 401.5 101 L 405 103.5 Q 406 108.5 410 110.5 L 410 115.5 L 417 124.5 Q 419.5 126.5 419 131.5 L 425 140.5 L 427 148.5 Q 437.01 156.99 443.5 169 L 447 171.5 L 449 178.5 Q 452.37 181.13 453 186.5 L 457 190.5 L 464 208 L 467 209.5 Q 468 216.5 473 219.5 L 473 222.5 L 481 237.5 L 481 240.5 L 479 247.5 L 479 255.5 L 476.5 258 L 470.5 259 L 463 255 L 461.5 252 L 458 250.5 L 454 241.5 L 447 232.5 L 442 219.5 L 439 215.5 Q 439.75 208.75 436 206.5 L 436 191.5 Q 433.2 189.8 434 184.5 L 431.5 181 Q 428.5 178 421.5 179 L 420.5 180 L 412.5 180 L 408.5 182 L 398.5 182 L 391.5 185 L 371.5 188 Q 370.5 186 366.5 187 L 363 190.5 L 363 198.5 L 362 199.5 L 362 238.5 L 361 239.5 L 361 248.5 L 356.5 256 L 351.5 258 L 346 254.5 Q 346.83 251.88 343.5 253 L 342.5 252 L 334.5 252 Q 333.5 254 329.5 253 L 326 250.5 Q 323.67 247.33 325 240.5 Q 328.6 237.6 327 229.5 Q 331.2 226.2 332 219.5 L 337 214.5 Q 336.2 209.2 339 207.5 L 340 193.5 L 344 186.5 L 345 177.5 L 346 176.5 L 347 161.5 L 348.5 160 L 352 158.5 L 355 151.5 L 356 144.5 L 360 138.5 L 360 131.5 L 363 126.5 L 363 120.5 L 366 115.5 L 367 106.5 L 369 102.5 L 369 96.5 L 371 90.5 L 372 79.5 L 374.5 75 L 376.5 74 Z M 385 100 L 382 103 L 381 111 L 380 112 L 380 120 L 375 133 L 373 148 L 369 155 L 369 160 L 372 161 L 391 160 L 404 157 L 414 157 L 417 155 L 417 150 L 413 143 L 413 140 L 410 136 L 408 127 L 403 122 L 403 118 L 398 110 L 388 100 L 385 100 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 193.5 76 L 201.5 76 L 203 77.5 L 209 88.5 L 209 95.5 L 213 106.5 L 213 112.5 L 215 119.5 L 215 144.5 L 216 145.5 L 216 158.5 L 217 159.5 L 217 166.5 L 218 167.5 L 218 174.5 L 219 175.5 L 219 189.5 L 220 190.5 L 219 191.5 L 219 207.5 L 218 208.5 L 218 232 L 220.5 233 L 253.5 233 Q 254.75 235.25 259.5 234 L 266.5 232 L 272.5 232 L 273.5 233 L 281 233 L 282 237 L 288.5 237 L 295.5 241 L 300 241 L 301 255 L 287.5 250 L 273.5 250 L 272.5 249 L 259.5 248 L 258.5 247 L 226.5 247 L 225.5 248 L 218.5 248 L 217.5 249 L 199.5 249 L 197.5 250 L 192 246.5 L 193 177.5 L 194 176.5 L 194 161.5 Q 196 160.5 195 156.5 L 194 155.5 L 194 148.5 L 193 147.5 L 193 121.5 L 194 120.5 L 194 103.5 L 193 102.5 L 193 95.5 L 192 94.5 L 192 77.5 L 193.5 76 Z " /></svg></span><span class="sr-only">Playground</span></a></li>
+        <li><a href="#about" style="--tilt:-1.2deg;--h:14.5px"><img class="crt" src="img/crt-dragonfly.svg" alt="" width="1293" height="984" style="--ch:80" decoding="async"><svg class="arrow" aria-hidden="true" focusable="false" viewBox="29 33 676 450" xmlns="http://www.w3.org/2000/svg" ><path fill="currentColor" stroke="none" stroke-width="0" d="M 478.5 42 L 493.5 42 L 497.5 44 L 520.5 62 L 535 76.5 L 537.5 80 Q 546.75 84.25 553 91.5 Q 552.25 93.75 554.5 93 L 559 96.5 Q 558.25 98.75 560.5 98 L 565.5 103 L 577.5 111 L 584.5 114 L 587.5 117 L 609.5 127 L 615.5 129 L 619.5 129 L 629.5 133 L 638.5 134 L 642.5 136 L 657.5 137 L 668.5 141 L 674.5 141 L 683 145.5 L 687.5 151 Q 693.38 151.63 696 155.5 L 697 157.5 L 697 172.5 L 696 173.5 L 696 197.5 L 689 212.5 L 688 221.5 L 686 223.5 L 684 231.5 L 678.5 243 L 675 245.5 L 665 259.5 L 664 264.5 Q 659.65 269.15 658 276.5 L 650 287.5 L 645 299.5 L 638 309.5 L 631 324.5 L 623 332.5 L 621 340.5 L 610 359.5 Q 609.34 367.34 606 372.5 L 605 380.5 L 600 391.5 L 600 399.5 L 596 411.5 L 595 421.5 L 587.5 433 Q 581.75 434.25 579.5 439 L 573.5 439 L 563.5 443 L 557 449.5 L 554.5 453 L 546 457.5 L 539.5 468 Q 533.86 467.36 532.5 471 L 509.5 471 L 503.5 475 L 484.5 475 L 474 469.5 L 473 466.5 L 467 459.5 L 464 451.5 L 464 435.5 L 467 428.5 L 467 419.5 L 469 417.5 L 470 404.5 L 473 399.5 L 473 389.5 L 478 373.5 L 478 369.5 L 480 366.5 L 480 361.5 L 484 352.5 L 484 349.5 L 494 332.5 L 497 322.5 L 497 313.5 L 488.5 309 L 480.5 309 L 468.5 313 L 460.5 313 L 454.5 315 L 448.5 315 L 444.5 317 L 426.5 318 L 421.5 321 L 401.5 321 L 400.5 320 L 389.5 320 L 382.5 322 L 366.5 322 L 365.5 323 L 332.5 323 L 328.5 325 L 296.5 325 L 290.5 323 L 280.5 323 L 276.5 325 L 247.5 325 L 244.5 327 L 227.5 327 L 223.5 325 L 204.5 325 L 203.5 326 L 184.5 327 L 183.5 328 L 162.5 328 L 161.5 327 L 151.5 327 L 150.5 326 L 116.5 326 L 115.5 325 L 105.5 325 L 93.5 321 L 77.5 320 Q 73.5 316 65.5 316 L 63.5 314 L 59 314 L 55.5 309 L 49 305.5 L 47.5 303 L 45 301.5 L 38 289.5 L 38 260.5 L 39 259.5 L 39 245.5 L 38 244.5 L 38 227.5 L 43.5 221 L 50 215.5 L 52.5 211 L 66.5 211 L 69 210 L 70.5 207 L 72.5 206 L 87.5 206 L 89 204.5 L 90.5 202 Q 92.75 198.25 99.5 199 Q 101.5 195 106.5 194 L 126.5 194 L 127.5 195 L 136.5 195 L 137.5 196 L 166.5 197 L 170.5 199 L 184.5 199 L 185.5 200 L 260.5 200 L 268.5 202 L 282.5 202 L 283.5 201 L 332.5 200 L 333.5 199 L 343.5 199 L 344.5 198 L 364.5 198 L 365.5 199 L 380.5 199 L 393.5 203 L 403.5 203 L 404.5 202 L 420.5 202 L 421.5 203 L 434.5 203 L 439.5 201 L 449.5 201 L 450.5 200 L 462.5 199 Q 466.54 196.04 473.5 196 L 475 194.5 L 475 186.5 L 464.5 176 L 454 168.5 L 451.5 165 L 448 162.5 L 439.5 151 L 431 143.5 L 427 137 L 421 136 L 421 131.5 L 403 111.5 Q 402 105 398 101.5 L 398 84.5 L 399 83.5 L 399 73.5 Q 403.49 68.99 404 60.5 L 407.5 56 L 434.5 56 L 442.5 51 L 460.5 51 L 463 48.5 Q 462.25 46.25 464.5 47 L 471.5 43 Q 477 44.5 478.5 42 Z " /></svg><img class="sw" src="img/sw-pink.webp" alt="" decoding="async"><span class="w"><svg aria-hidden="true" focusable="false" viewBox="20 21 1263 376" xmlns="http://www.w3.org/2000/svg" ><path fill="currentColor" stroke="none" stroke-width="0" d="M 140.5 27 L 154.5 28 L 162 35.5 L 165 44 L 168 45.5 L 172 53.5 L 172 58.5 L 174 66.5 L 189 94.5 L 190 99.5 L 194 103.5 L 195 107.5 L 199 112.5 L 204 124 L 208 126.5 L 212 136.5 L 216 140.5 L 218 146.5 L 226 157.5 L 226 159.5 L 231 167.5 L 231 170.5 L 233 175 L 238.5 178 L 252 181 L 253 186.5 L 248 190.5 Q 244.25 192.75 245 199.5 L 248 205.5 L 248 210.5 L 255 221.5 L 256 226.5 L 263 235.5 L 264 241.5 L 270 249.5 L 270 252.5 L 274 259.5 L 274 262.5 L 279 269.5 L 280 276.5 L 286 285.5 L 287 289.5 L 290 292.5 L 296 306.5 L 300 310.5 L 303 319.5 L 306 323.5 L 307 326.5 L 307 340.5 L 298.5 347 L 288.5 350 L 285 348 L 284 345.5 Q 285.13 337.88 283 333.5 L 277 325.5 L 272 312.5 L 272 309.5 L 265 297.5 L 264 287.5 L 258 277.5 L 257 269.5 L 254 266.5 L 250 256.5 L 248 250.5 L 248 244.5 L 245 237.5 L 239.5 232 L 236 229.5 Q 235.7 223.3 232 220.5 L 229 207.5 L 226.5 204 Q 219.67 205.33 216.5 203 Q 215.5 205 214.5 203 L 200.5 204 L 199.5 203 L 192.5 203 L 191.5 204 L 176.5 204 L 166.5 208 L 148.5 209 L 138.5 212 L 120.5 212 L 119.5 213 L 111.5 214 L 109 216.5 Q 108.58 223.58 104 226.5 L 101 242.5 L 94 260.5 L 91 277.5 L 90 278.5 L 90 283.5 L 87 292.5 L 87 301.5 L 83 307.5 L 82 314.5 L 79 318.5 L 78 325.5 L 72 332.5 L 72 335.5 L 67 343.5 L 67 346.5 L 64 351.5 L 64 356.5 L 60 360.5 L 58 367.5 L 48.5 380 L 45.5 380 Q 43.46 383.46 37.5 383 Q 36.5 381 35.5 383 L 29.5 382 L 28 380.5 L 26 365.5 L 31 352.5 L 31 348.5 L 37 336.5 L 38 326.5 L 41 317 Q 43.67 318.13 43 315.5 Q 46.58 310.07 47 301.5 L 50 298.5 L 51 292.5 L 56 280.5 L 57 271.5 L 60 267.5 L 61 252.5 L 66 243.5 L 66 232.5 L 67 231.5 L 69 214.5 L 71 211.5 L 73 200.5 L 76 193.5 L 76 185.5 Q 77.98 178.48 83 174.5 Q 85 170.5 84 163.5 L 88 157.5 L 88 153.5 L 91 146.5 L 91 140.5 L 93 138.5 Q 92.5 133.5 95 131.5 L 95 122.5 L 98 109.5 L 97 108.5 L 97 101.5 L 100 92.5 L 101 81.5 L 104 76.5 Q 103.3 69.45 105 66 L 108 64.5 Q 111.29 55.29 117.5 49 L 125 43.5 L 128.5 39 L 132 36.5 L 137.5 28 L 140.5 27 Z M 161 101 L 154 103 L 143 115 L 138 127 L 136 129 L 136 132 L 126 150 L 125 155 L 120 162 L 118 170 L 118 187 L 124 187 L 125 188 L 132 187 L 135 188 L 172 188 L 173 187 L 188 187 L 193 185 L 206 184 L 210 182 L 213 178 L 213 172 L 204 157 L 201 155 L 201 153 L 193 142 L 190 140 Q 191 136 188 134 Q 189 131 187 132 Q 181 128 180 120 L 175 115 L 169 104 L 168 102 L 161 101 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 1266.5 50 Q 1273 49 1274 53.5 L 1275 61.5 L 1278 68.5 L 1278 71.5 L 1275.5 76 L 1267.5 76 L 1266.5 77 L 1245.5 77 L 1244.5 76 L 1230.5 76 L 1225.5 78 L 1184.5 79 L 1177 83.5 L 1177 87.5 L 1175 92.5 L 1175 101.5 L 1176 102.5 L 1176 116.5 L 1175 117.5 L 1175 124.5 L 1174 125.5 L 1173 155.5 L 1174 158.5 L 1174 181.5 L 1175 182.5 L 1175 235.5 Q 1177.25 236.75 1176 241.5 L 1175 242.5 L 1175 254.5 L 1174 255.5 L 1174 267.5 L 1173 268.5 L 1173 314.5 L 1174 315.5 L 1174 324.5 L 1173 325.5 L 1173 333.5 L 1175 337.5 L 1175 352.5 L 1176 356.5 L 1170.5 359 L 1160 354.5 L 1157 344.5 L 1157 321.5 L 1155 314.5 L 1155 276.5 L 1156 275.5 L 1156 253.5 L 1157 252.5 L 1157 183.5 L 1156 182.5 L 1156 136.5 L 1153 127.5 L 1153 120.5 L 1150 111.5 L 1149 93.5 L 1143.5 85 L 1102.5 85 Q 1101 87.5 1095.5 86 L 1084.5 91 L 1080.5 90 L 1078.5 91 L 1068.5 88 L 1049.5 87 L 1034.5 81 L 1031 77.5 L 1030 72.5 L 1033.5 68 L 1053.5 68 L 1064.5 65 L 1073.5 65 L 1074.5 64 L 1133.5 64 L 1134.5 63 L 1144.5 63 L 1145.5 62 L 1175.5 62 L 1176.5 61 L 1191.5 61 L 1192.5 60 L 1200.5 60 L 1216.5 54 L 1226.5 53 L 1231.5 51 L 1265.5 51 L 1266.5 50 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 959.5 80 Q 966.69 79.31 969 83.5 L 972 88.5 L 974 98.5 L 979 109.5 L 979 118.5 L 980 119.5 L 981 128.5 L 986 141.5 L 986 144.5 L 988 147.5 L 989 176.5 L 988 177.5 L 988 186.5 L 991 189.5 L 992 212.5 L 991 213.5 L 991 219.5 L 989 227.5 L 985 236.5 L 984 250.5 L 974 268 L 971 269.5 L 971 272.5 L 966.5 280 L 959 286.5 L 956.5 290 L 944 297 Q 945.13 299.67 942.5 299 L 924.5 311 L 915.5 313 L 909.5 316 L 904.5 316 L 902.5 318 L 892.5 319 L 891.5 318 L 882.5 318 L 881.5 317 L 872.5 316 L 861.5 311 L 857.5 311 L 841 300 L 840 296.5 L 828 281.5 L 823 268 L 820 266.5 L 812 249.5 L 809 236.5 L 803 221.5 L 803 204.5 L 802 203.5 L 802 163.5 L 807 155.5 L 808 141.5 L 811 138.5 L 812 122.5 L 814 115.5 L 818 109 L 824.5 107 L 825.5 108 L 838.5 108 Q 840.83 105.33 846.5 106 L 851 109.5 Q 853.83 112.17 853 118.5 L 849.5 124 L 846 126.5 L 838.5 140 Q 835.88 139.17 837 142.5 L 830 159.5 L 830 176.5 L 825 186.5 L 822 189.5 L 822 210.5 L 823 211.5 L 824 222.5 Q 828.07 227.42 829 235.5 L 834 241.5 L 838 250.5 L 847.5 262 L 858.5 271 L 866.5 275 L 870.5 275 L 873.5 277 Q 879 275.5 880.5 278 L 894.5 278 L 908.5 272 L 916 267 L 917.5 264 L 920 262.5 Q 919.25 260.25 921.5 261 L 930 253.5 L 932 248.5 L 932 244.5 L 936 238.5 L 936 233.5 L 941.5 227 L 952 223 L 953.5 220 L 957 217.5 L 964 205.5 L 965 197.5 L 968 192.5 Q 967 188.5 969 187.5 L 969 172.5 L 968 171.5 L 968 140.5 Q 970 139.5 968 138.5 L 968 133.5 L 965 127.5 L 963 115.5 L 957 106.5 L 953 90.5 L 953 83 L 959.5 80 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 662.5 102 L 679.5 102 Q 681 104.5 686.5 103 L 693.5 107 L 701.5 108 L 706.5 112 L 710.5 113 L 714.5 117 L 721.5 119 L 739 133.5 L 743.5 140 L 748 143.5 Q 751.88 152.63 759 158.5 L 766 178.5 L 768 180.5 L 769 186.5 L 772 189.5 L 775 196.5 L 776 218.5 L 777 219.5 L 777 244.5 Q 774.75 245.75 776 250.5 L 767 265.5 L 764 273.5 L 756 283.5 L 753 290.5 L 747.5 296 L 744 298.5 Q 744.75 300.75 742.5 300 Q 734.5 304 729.5 311 L 728 311 Q 729.25 314 725.5 313 L 710.5 321 L 703.5 323 L 660.5 323 L 648 319 Q 649.31 315.67 644.5 317 L 632 310 L 626 301 L 621 299 Q 622.13 296.33 619.5 297 L 614 292.5 L 611 285.5 L 597 265.5 L 594 253.5 L 591 250.5 L 589 244.5 L 588 230.5 L 586 227.5 L 584 219.5 L 583 194.5 L 584 193.5 L 585 172.5 L 590 162.5 L 594 158.5 L 597 151.5 L 604 144.5 L 605 140 Q 607.67 141.13 607 138.5 L 614.5 128 L 632.5 114 L 640 112 L 641.5 109 L 647.5 107 L 651.5 104 L 661.5 103 L 662.5 102 Z M 669 121 L 661 124 L 652 125 L 638 134 L 629 138 L 626 140 L 620 146 L 617 155 L 613 161 L 611 169 L 611 176 L 605 189 L 605 204 L 604 205 L 605 222 L 608 230 L 611 244 L 615 246 Q 615 251 619 255 L 622 256 L 633 271 L 647 280 Q 649 279 648 282 L 655 284 L 658 287 L 664 289 L 668 292 L 678 295 L 695 294 L 697 292 L 701 291 L 711 290 Q 718 287 723 280 L 737 272 L 740 265 L 740 257 L 741 256 L 741 219 L 740 218 L 740 207 Q 738 206 739 202 L 734 194 Q 734 188 731 186 L 731 183 L 729 181 L 726 173 L 723 170 L 716 154 L 712 150 L 709 142 L 706 138 L 695 128 L 691 127 L 684 122 L 680 121 L 669 121 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 440.5 107 L 447.5 109 Q 454.93 116.38 465 120 L 465 121.5 L 483 141.5 Q 483.3 147.7 487 150.5 Q 485.75 155.25 488 156.5 L 488 170.5 L 487 171.5 L 486 182.5 L 488.5 186 L 492.5 187 L 495.5 186 L 517.5 187 L 521.5 185 Q 522.75 187.25 527.5 186 L 541.5 194 Q 546.86 201.14 555 205.5 L 558.5 210 L 563 213.5 L 568 220.5 L 568 222.5 L 573 230.5 L 573 234.5 L 577 238.5 L 580 247.5 L 582 249.5 L 584 264.5 L 586 268.5 L 586 283.5 Q 584 284.5 586 285.5 L 583 297.5 L 583 303.5 L 576 312.5 L 571 323.5 L 565 329.5 L 562 336.5 L 562 339.5 L 559.5 342 L 551 349.5 Q 551.75 351.75 549.5 351 L 539 365.5 L 532.5 372 L 518.5 381 L 515.5 381 L 508.5 384 L 504.5 384 L 493.5 391 Q 489.5 390 488.5 392 L 472.5 392 L 461.5 389 L 450.5 388 L 440.5 384 L 434.5 380 L 429.5 379 Q 422.84 373.66 413.5 371 L 406.5 366 L 403.5 366 Q 403 363.5 399.5 364 L 395.5 360 Q 386.93 358.07 382 352.5 L 379.5 348 L 377.5 348 L 368 339.5 L 364 332.5 L 364 323.5 L 370 315.5 L 370 306.5 L 369 305.5 L 369 296.5 L 367 288.5 L 367 276.5 L 366 275.5 L 366 268.5 L 365 267.5 L 364 225.5 L 362 219.5 L 362 203.5 L 361 202.5 L 361 193.5 L 360 192.5 L 360 178.5 L 357 174.5 L 357 166.5 L 352 155.5 L 352 151.5 L 357 140 L 361 137.5 Q 360.25 135.25 362.5 136 L 373.5 123 Q 375.75 123.75 375 121.5 L 385.5 115 L 399.5 112 L 403.5 109 L 439.5 108 L 440.5 107 Z M 418 123 L 417 124 L 409 124 L 408 126 L 407 127 L 404 127 L 391 132 L 379 142 Q 378 150 381 155 Q 383 167 376 170 Q 377 173 374 172 L 373 176 L 374 195 L 375 196 L 377 218 L 380 230 L 380 235 L 385 237 L 390 235 L 402 224 L 404 224 L 408 220 L 411 220 L 418 214 L 431 210 L 438 205 L 448 201 L 455 201 L 459 198 L 464 192 L 466 187 L 466 183 L 469 177 L 469 174 L 471 172 L 471 152 L 464 143 Q 455 132 444 125 L 438 123 L 418 123 Z M 498 205 L 488 209 L 481 209 Q 478 211 474 211 Q 473 215 469 214 L 466 218 L 459 224 L 457 224 L 453 227 L 447 233 Q 444 232 445 235 L 441 236 L 424 248 Q 418 249 416 252 L 410 253 L 407 256 L 402 258 L 388 258 L 385 262 L 386 290 L 387 291 L 389 306 L 391 309 L 391 319 L 392 320 L 393 334 L 397 340 L 397 343 L 406 349 Q 408 348 407 351 L 420 359 L 424 359 L 428 361 L 439 363 L 442 366 L 450 368 L 468 368 L 469 369 L 481 368 L 488 366 L 497 360 L 503 359 Q 507 353 515 351 Q 518 350 517 345 L 520 342 L 528 341 L 542 323 Q 541 320 544 321 L 553 306 L 553 303 L 555 300 L 557 292 L 556 249 L 541 222 L 538 220 L 536 218 L 530 211 Q 520 209 514 205 L 498 205 Z " /></svg></span><span class="sr-only">About</span></a></li>
+        <li><a href="#contact" style="--tilt:1.8deg;--h:15.5px"><img class="crt" src="img/crt-ladybug.svg" alt="" width="1063" height="1469" style="--ch:86" decoding="async"><svg class="arrow" aria-hidden="true" focusable="false" viewBox="29 33 676 450" xmlns="http://www.w3.org/2000/svg" ><path fill="currentColor" stroke="none" stroke-width="0" d="M 478.5 42 L 493.5 42 L 497.5 44 L 520.5 62 L 535 76.5 L 537.5 80 Q 546.75 84.25 553 91.5 Q 552.25 93.75 554.5 93 L 559 96.5 Q 558.25 98.75 560.5 98 L 565.5 103 L 577.5 111 L 584.5 114 L 587.5 117 L 609.5 127 L 615.5 129 L 619.5 129 L 629.5 133 L 638.5 134 L 642.5 136 L 657.5 137 L 668.5 141 L 674.5 141 L 683 145.5 L 687.5 151 Q 693.38 151.63 696 155.5 L 697 157.5 L 697 172.5 L 696 173.5 L 696 197.5 L 689 212.5 L 688 221.5 L 686 223.5 L 684 231.5 L 678.5 243 L 675 245.5 L 665 259.5 L 664 264.5 Q 659.65 269.15 658 276.5 L 650 287.5 L 645 299.5 L 638 309.5 L 631 324.5 L 623 332.5 L 621 340.5 L 610 359.5 Q 609.34 367.34 606 372.5 L 605 380.5 L 600 391.5 L 600 399.5 L 596 411.5 L 595 421.5 L 587.5 433 Q 581.75 434.25 579.5 439 L 573.5 439 L 563.5 443 L 557 449.5 L 554.5 453 L 546 457.5 L 539.5 468 Q 533.86 467.36 532.5 471 L 509.5 471 L 503.5 475 L 484.5 475 L 474 469.5 L 473 466.5 L 467 459.5 L 464 451.5 L 464 435.5 L 467 428.5 L 467 419.5 L 469 417.5 L 470 404.5 L 473 399.5 L 473 389.5 L 478 373.5 L 478 369.5 L 480 366.5 L 480 361.5 L 484 352.5 L 484 349.5 L 494 332.5 L 497 322.5 L 497 313.5 L 488.5 309 L 480.5 309 L 468.5 313 L 460.5 313 L 454.5 315 L 448.5 315 L 444.5 317 L 426.5 318 L 421.5 321 L 401.5 321 L 400.5 320 L 389.5 320 L 382.5 322 L 366.5 322 L 365.5 323 L 332.5 323 L 328.5 325 L 296.5 325 L 290.5 323 L 280.5 323 L 276.5 325 L 247.5 325 L 244.5 327 L 227.5 327 L 223.5 325 L 204.5 325 L 203.5 326 L 184.5 327 L 183.5 328 L 162.5 328 L 161.5 327 L 151.5 327 L 150.5 326 L 116.5 326 L 115.5 325 L 105.5 325 L 93.5 321 L 77.5 320 Q 73.5 316 65.5 316 L 63.5 314 L 59 314 L 55.5 309 L 49 305.5 L 47.5 303 L 45 301.5 L 38 289.5 L 38 260.5 L 39 259.5 L 39 245.5 L 38 244.5 L 38 227.5 L 43.5 221 L 50 215.5 L 52.5 211 L 66.5 211 L 69 210 L 70.5 207 L 72.5 206 L 87.5 206 L 89 204.5 L 90.5 202 Q 92.75 198.25 99.5 199 Q 101.5 195 106.5 194 L 126.5 194 L 127.5 195 L 136.5 195 L 137.5 196 L 166.5 197 L 170.5 199 L 184.5 199 L 185.5 200 L 260.5 200 L 268.5 202 L 282.5 202 L 283.5 201 L 332.5 200 L 333.5 199 L 343.5 199 L 344.5 198 L 364.5 198 L 365.5 199 L 380.5 199 L 393.5 203 L 403.5 203 L 404.5 202 L 420.5 202 L 421.5 203 L 434.5 203 L 439.5 201 L 449.5 201 L 450.5 200 L 462.5 199 Q 466.54 196.04 473.5 196 L 475 194.5 L 475 186.5 L 464.5 176 L 454 168.5 L 451.5 165 L 448 162.5 L 439.5 151 L 431 143.5 L 427 137 L 421 136 L 421 131.5 L 403 111.5 Q 402 105 398 101.5 L 398 84.5 L 399 83.5 L 399 73.5 Q 403.49 68.99 404 60.5 L 407.5 56 L 434.5 56 L 442.5 51 L 460.5 51 L 463 48.5 Q 462.25 46.25 464.5 47 L 471.5 43 Q 477 44.5 478.5 42 Z " /></svg><img class="sw" src="img/sw-blue.webp" alt="" decoding="async"><span class="w"><svg aria-hidden="true" focusable="false" viewBox="11 30 1044 258" xmlns="http://www.w3.org/2000/svg" ><path fill="currentColor" stroke="none" stroke-width="0" d="M 89.5 35 L 100.5 36 L 103.5 39 L 111.5 42 L 119.5 48 L 125.5 50 L 133 57.5 L 134 63.5 L 133 66 Q 128.14 69.71 116.5 68 L 100.5 59 L 91.5 59 L 90.5 58 L 89.5 59 L 76.5 59 L 71.5 61 Q 69.85 63.85 65.5 64 L 55.5 74 L 54 74 L 40 98.5 L 37 107.5 L 37 111.5 L 34 117.5 L 34 124.5 L 33 125.5 L 33 132.5 L 32 133.5 L 32 142.5 L 31 143.5 L 31 169.5 Q 33.5 171 32 176.5 L 34 180.5 L 34 185.5 L 37 191.5 L 38 200.5 L 46 215.5 L 49 218.5 L 51 224 Q 53.67 222.88 53 225.5 L 54 228 L 57 229.5 L 58.5 232 L 62 234.5 Q 62.88 239.12 66.5 241 L 76.5 247 L 84.5 249 L 92.5 249 L 93.5 250 L 94.5 249 L 101.5 249 L 129 233 L 131.5 227 L 135.5 224 L 141.5 224 L 149.5 222 L 153 225.5 L 153 243.5 L 154 245.5 L 153 249.5 L 154 253.5 Q 152 254.5 153 258.5 L 151.5 260 L 148.5 262 Q 145.54 265.04 139.5 265 L 117.5 280 L 107.5 283 L 90.5 285 L 89.5 284 L 78.5 283 L 71 279 L 71 277.5 L 65.5 272 L 50 261.5 Q 50.75 259.25 48.5 260 L 46 259 L 41 249 L 38 247.5 L 36 241.5 L 27 226.5 L 26 220.5 L 20 207.5 L 18 190.5 L 16 186.5 L 16 153.5 L 17 152.5 L 17 144.5 L 18 143.5 L 18 133.5 L 19 132.5 L 20 114.5 L 22 110.5 L 23 100.5 L 26 96.5 L 26 91.5 Q 31.39 84.89 33 74.5 Q 37.83 72.33 38 65.5 L 44.5 59 L 50 55.5 L 52.5 52 L 64.5 45 L 70.5 44 L 89.5 35 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 1016.5 41 L 1037.5 41 Q 1039 43.5 1044.5 42 L 1048 45.5 L 1049 50.5 L 1051 53.5 L 1051 60.5 L 1046.5 64 Q 1038.98 64.48 1034.5 68 L 1021.5 70 L 1018.5 68 L 1004.5 68 L 995.5 72 L 987.5 73 L 976 81.5 L 975 87.5 L 976 88.5 L 976 119.5 L 977 123.5 L 976 124.5 L 976 134.5 L 975 135.5 L 975 172.5 Q 972.75 173.75 974 178.5 L 972 181.5 L 972 199.5 L 975.5 205 Q 980 204 981 206.5 L 981 210.5 L 975 217.5 L 974 220.5 L 973 231.5 Q 975.8 233.2 975 238.5 L 968.5 243 L 961 238.5 L 960 236.5 L 959 217.5 L 958 213.5 L 955 210.5 L 955 181.5 L 953 176.5 L 953 154.5 L 950 141.5 L 950 114.5 L 948 109.5 L 948 103.5 L 949 101.5 L 947 99.5 L 946 84.5 L 942.5 81 L 940.5 80 L 929.5 80 L 918 73.5 Q 918.83 70.88 915.5 72 Q 911.5 66 902.5 65 L 900.5 66 L 892.5 64 L 890 61.5 L 888 56.5 L 891.5 52 L 912.5 50 L 913.5 49 L 921.5 49 L 925.5 47 L 933.5 47 L 934.5 46 L 961.5 46 L 965.5 45 L 966.5 46 L 980.5 46 L 981.5 45 L 991.5 45 L 995.5 43 L 1012.5 43 L 1016.5 41 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 778.5 52 L 806.5 52 L 821.5 58 L 831 65.5 L 834 71 L 838 73.5 Q 840 76 839 81.5 L 840 82.5 L 835.5 87 L 829.5 88 L 826 85.5 L 826 83.5 L 820.5 78 L 804.5 68 L 788.5 66 L 787.5 67 L 775.5 68 L 772.5 71 L 758.5 77 L 741 90.5 L 733 101.5 L 732 109.5 L 730 113.5 L 730 131.5 L 732 137.5 L 732 143.5 L 741 160.5 L 742 165.5 L 748 171.5 L 748 173.5 L 752 177.5 L 759 189.5 L 767 198.5 L 767 200 L 787.5 207 L 804.5 207 L 807.5 205 L 817.5 205 L 821.5 204 L 823.5 202 L 826.5 202 L 832 199 L 833.5 196 L 841.5 195 L 852 186.5 L 862.5 172 Q 868.5 170.5 870 173.5 Q 872.78 176.22 873 181.5 L 870 188.5 L 870 191.5 L 859.5 203 Q 848.9 205.9 841.5 212 L 838.5 212 L 826.5 220 Q 818.43 220.93 813.5 225 L 806.5 225 L 805.5 224 L 794.5 224 L 789.5 222 L 774.5 220 L 762.5 214 L 759.5 214 L 756.5 212 L 751 211 L 751 209.5 L 744.5 202 L 736.5 195 L 735 195 L 731.5 190 L 726 185.5 L 719.5 175 L 710 169.5 L 707.5 164 Q 705.25 164.75 706 162.5 L 700 151.5 L 699 141.5 L 696 134.5 L 696 112.5 L 697 111.5 L 698 97.5 L 703 85.5 L 708.5 80 L 729.5 69 L 735.5 68 L 739.5 65 L 743.5 65 L 751.5 61 L 757.5 60 L 765.5 56 L 772.5 55 L 778.5 52 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 555.5 69 L 573.5 69 L 574 71.5 Q 576 72.5 575 76.5 L 573 84 L 567.5 87 L 562.5 87 Q 560.25 82.75 558 87.5 L 557 94.5 L 554.5 97 L 529.5 97 L 528.5 98 L 518 98 Q 516 101 517 108.5 L 518 109.5 L 518 119.5 L 520 123.5 L 520 139.5 L 521 140.5 L 521 150.5 L 522 151.5 L 522 233.5 L 525 245.5 Q 523 246.5 524 250.5 L 521.5 254 L 513 255 L 508 245.5 L 507 240.5 L 503 236.5 L 503 230.5 L 504 229.5 L 505 212.5 L 504 211.5 L 504 175.5 L 503 174.5 L 503 156.5 L 501 149.5 L 501 136.5 L 499 130.5 L 498 118.5 Q 500 117.5 499 113.5 L 498 112.5 L 498 104.5 L 495.5 100 L 462.5 100 L 461.5 101 L 451.5 101 Q 450.25 98.75 445.5 100 L 444 98.5 L 442 92.5 L 445.5 89 L 451.5 87 L 465.5 87 L 476.5 84 L 485.5 84 L 499.5 76 L 504.5 76 Q 506.5 79 512.5 78 L 518.5 75 L 523.5 75 L 534.5 70 L 554.5 70 L 555.5 69 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 398.5 81 Q 407.52 80.48 411 85.5 L 412 95.5 L 413 96.5 L 413 108.5 L 417 120.5 L 417 131.5 L 419 134.5 L 419 159.5 L 420 160.5 L 420 175.5 L 421 176.5 L 421 199.5 L 420 200.5 L 420 210.5 L 422 218.5 L 422 228.5 L 421 232 L 390.5 233 L 387 231 L 385.5 228 Q 383.25 228.75 384 226.5 L 360.5 199 Q 358.25 199.75 359 197.5 L 358 194.5 L 345.5 179 L 343 177.5 Q 342.35 171.15 337.5 169 L 332 165.5 L 327.5 159 L 322.5 158 Q 318.33 160.83 320 169.5 L 321 170.5 L 321 201.5 L 322 202.5 L 322 239.5 L 323 240.5 L 323 250.5 L 320.5 254 L 308.5 254 L 299.5 249 L 296 245.5 L 297 212.5 Q 294.75 211.25 296 206.5 L 297 205.5 L 297 148.5 L 298 147.5 L 298 116.5 L 299 112.5 L 301.5 110 L 308.5 111 L 322 120.5 L 324 125.5 L 324 130.5 Q 326.5 131 326 134.5 L 333 141.5 L 333 143 L 337 145.5 L 351 162.5 L 355.5 171 Q 357.75 170.25 357 172.5 L 359.5 176 L 362 177.5 L 367.5 185 L 370 186.5 L 371.5 189 L 374 190.5 L 385.5 203 L 390.5 205 L 393 201.5 L 393 175.5 L 392 174.5 L 391 165.5 L 392 164.5 L 392 149.5 L 391 148.5 L 391 138.5 L 393 133.5 Q 390.5 132 392 126.5 Q 394.85 124.85 395 120.5 L 392 115.5 L 392 85.5 L 398.5 81 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 617.5 81 L 628.5 82 L 633 86.5 L 642 98.5 L 643 102.5 L 660 129.5 L 660 135.5 L 662 138.5 L 665 150.5 L 670 158.5 L 675 178.5 L 678 181.5 L 678 185.5 L 683 198.5 L 690 208.5 L 691 213 Q 693.67 211.87 693 214.5 L 699.5 224 L 707.5 224 L 709 225.5 L 709 230.5 L 707 231 L 707 232.5 L 702.5 237 L 699.5 237 L 695.5 234 L 685.5 232 L 680.5 227 L 679 227 L 679 224.5 L 674 215.5 L 671 203.5 L 665 193.5 L 665 189.5 Q 661.96 186.54 662 180.5 L 659.5 178 L 654.5 177 Q 652.17 179.67 646.5 179 L 645.5 178 L 638.5 178 L 637.5 179 L 608.5 179 L 603 181.5 L 600 188.5 L 600 192.5 L 598 196.5 Q 598.67 202.17 596 204.5 L 596 209.5 L 593 218.5 L 593 232.5 Q 590.75 233.75 592 238.5 L 588.5 244 L 582.5 245 L 579 242.5 L 578 239.5 L 578 212.5 L 584 198.5 L 584 193.5 L 586 189.5 L 588 175.5 L 587 174.5 L 587 164.5 L 589.5 161 L 593 158.5 L 595 150.5 L 595 145.5 L 598 138.5 L 600 120.5 L 603 110.5 L 604 93.5 L 609 85 L 617.5 81 Z M 622 111 L 618 115 L 617 121 L 615 124 L 615 131 L 611 138 L 609 154 L 613 156 Q 614 158 615 156 L 630 157 L 631 158 L 645 158 L 646 157 L 651 159 L 654 155 L 647 133 L 642 126 L 637 122 L 635 120 L 632 117 L 629 113 L 626 111 L 622 111 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 221.5 100 L 232.5 100 L 239.5 102 L 255 114.5 Q 254.25 116.75 256.5 116 L 259.5 120 L 263 122.5 L 269 130.5 L 271 138.5 L 275 146.5 L 278 149.5 L 280 164.5 L 281 165.5 L 281 179.5 L 282 180.5 L 282 211.5 L 280 218.5 L 280 226.5 L 277 239 L 275.5 239 L 260.5 251 L 257.5 251 L 249.5 255 L 225.5 256 L 221.5 257 L 205.5 253 L 190 241.5 L 178 222.5 L 178 219.5 L 174 209.5 L 174 204.5 L 171 200.5 L 170 176.5 L 171 175.5 L 171 164.5 L 177 149.5 L 177 145.5 L 179 139.5 Q 181.85 137.85 182 133.5 L 186 129.5 L 187 125.5 L 192.5 119 Q 194.75 119.75 194 117.5 Q 195 115.25 198 116 L 199.5 113 L 206.5 107 L 221.5 100 Z M 231 118 L 230 119 L 221 120 L 216 124 L 214 127 L 207 132 L 195 146 L 185 165 L 185 182 L 186 183 L 186 194 L 187 195 L 188 203 L 192 212 L 201 222 Q 203 221 202 224 L 208 226 L 217 234 L 239 234 Q 241 231 247 232 L 259 224 L 266 214 L 266 202 L 267 201 L 267 194 L 266 193 L 266 171 L 265 170 L 265 163 L 262 157 Q 263 154 261 155 L 258 152 L 256 143 L 246 126 L 239 119 L 232 119 L 231 118 Z " /></svg></span><span class="sr-only">Contact</span></a></li>
+      </ol>
+    </nav>
+    <p class="micro rail-meta">Argentina<br>Working remotely</p>
+  <div class="status-fixed micro">
+    <svg class="star" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 0v20M0 10h20M2.9 2.9l14.2 14.2M17.1 2.9L2.9 17.1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+    <span>Open to remote assistant roles</span>
+  </div>
+  </header>
+  <!--/HEADER-->
+
+  <main id="main">
+    <!--OPENING-->
+    <section class="opening" aria-labelledby="name">
+      <h1 id="name"><span class="a rise d1">Ange</span><span class="b rise d2">Besson</span><span class="sr-only">, Virtual &amp; Executive Assistant</span></h1>
+      <img class="figura rise d3" src="img/figura-laptop.svg" width="2104" height="1384" alt="Line drawing of a woman sitting on the floor with a laptop on her knees" decoding="async">
+      <p class="micro opening-hint rise d4" aria-hidden="true">Scroll</p>
+    </section>
+    <!--/OPENING-->
+    <section class="hero intro" aria-label="Introduction">
+      <div class="wrap">
+        <p class="micro hero-status rise d1">Open to remote assistant roles</p>
+
+        <!-- Garabato PROVISORIO (generado por codigo): se dibuja enredado y se endereza. Se cambia por tu dibujo a mano. -->
+        <!--STROKES-->
+        <div class="strokes" role="img" aria-label="A tangled brush line that untangles into a straight one">
+          <svg class="st st-a" aria-hidden="true" focusable="false" viewBox="32 27 1666 514" xmlns="http://www.w3.org/2000/svg" ><path fill="currentColor" stroke="none" stroke-width="0" d="M 935.5 37 L 986.5 37 L 987.5 38 L 1005.5 38 L 1023.5 43 L 1029.5 43 L 1057.5 54 L 1074 68.5 Q 1076.5 75 1082 78.5 L 1086 86.5 L 1086 91.5 L 1089 103.5 L 1089 143.5 L 1086 151.5 L 1085 164.5 L 1079 183.5 L 1078 191.5 L 1073 197.5 L 1070 205.5 L 1062 216.5 L 1062 218.5 L 1057 226.5 L 1037 251.5 L 1035 256.5 L 1023 271.5 L 1017 282.5 L 1012 287.5 L 1007 300.5 L 999 308.5 L 991 322.5 L 985.5 329 L 980 333.5 L 976 347.5 L 967 358.5 L 955 380.5 L 953 386.5 L 953 390.5 L 954 393 L 956.5 394 L 969.5 394 L 970.5 393 L 979.5 393 L 985.5 390 L 991.5 388 L 995.5 388 L 1009.5 383 L 1015.5 378 L 1020.5 378 L 1031.5 374 L 1050.5 364 L 1068.5 357 L 1096.5 343 L 1101.5 339 L 1115.5 333 L 1149.5 315 L 1187.5 294 L 1195.5 288 L 1218.5 276 L 1232.5 267 L 1237.5 262 L 1255.5 252 L 1266.5 243 L 1287.5 229 L 1298.5 222 L 1306.5 220 L 1309 217.5 L 1313.5 212 L 1318.5 210 L 1325.5 204 L 1332.5 201 L 1353.5 187 L 1366.5 181 L 1399.5 161 L 1430.5 145 L 1473.5 126 L 1485.5 122 L 1489.5 122 L 1501.5 117 L 1505.5 117 L 1515.5 114 L 1525.5 114 L 1526.5 113 L 1576.5 113 L 1577.5 114 L 1590.5 114 L 1594.5 116 L 1601.5 116 L 1602.5 117 L 1610.5 117 L 1637.5 126 Q 1653.57 132.93 1664.5 145 L 1672.5 148 L 1681 156.5 L 1684 162.5 L 1684 166.5 L 1688 176.5 Q 1686.75 181.25 1689 182.5 L 1689 220.5 L 1688 221.5 L 1688 228.5 L 1687 229.5 L 1686 237.5 L 1681 250.5 Q 1668.78 272.78 1650 288.5 Q 1647.22 291.22 1647 296.5 L 1643.5 300 L 1637.5 302 L 1607 332.5 L 1601.5 339 L 1592 345 L 1592 346.5 L 1585.5 353 L 1575 361.5 L 1560 378.5 L 1546 399.5 L 1544 404.5 L 1543 414.5 L 1546 423.5 L 1557 438.5 L 1567.5 449 L 1582.5 459 L 1596.5 465 L 1600.5 465 L 1605.5 467 L 1625.5 467 L 1626.5 466 L 1635.5 466 L 1656.5 460 L 1685.5 460 L 1688 462.5 L 1688 480.5 L 1685.5 483 L 1675.5 484 L 1659.5 489 L 1650.5 489 L 1649.5 490 L 1640.5 490 L 1639.5 491 L 1626.5 491 L 1625.5 492 L 1601.5 492 L 1600.5 491 L 1592.5 491 L 1591.5 490 L 1582.5 490 L 1570.5 487 L 1549.5 476 L 1535 462.5 L 1522 444.5 L 1520 438.5 L 1520 434.5 L 1518 429.5 L 1518 397.5 L 1521 386.5 L 1521 380.5 L 1528 368.5 L 1544 347.5 L 1563.5 328 L 1584 310.5 L 1590.5 303 Q 1592.75 303.75 1592 301.5 L 1608.5 285 L 1624 273.5 L 1625 268.5 L 1640 253.5 L 1658 227.5 L 1664 210.5 L 1665 200.5 L 1662 193.5 L 1660 183.5 L 1651.5 172 L 1642.5 169 Q 1634.19 159.31 1622.5 153 L 1601.5 144 L 1594.5 143 L 1587.5 140 L 1578.5 140 L 1566.5 137 Q 1556.37 138.62 1550.5 136 L 1549.5 137 L 1532.5 138 L 1528.5 140 L 1515.5 143 L 1512.5 145 L 1508.5 145 L 1491.5 151 L 1462.5 165 L 1453.5 168 L 1416.5 187 L 1384.5 207 L 1378.5 209 L 1366.5 217 L 1359.5 220 L 1341.5 233 L 1336.5 235 L 1332 239.5 L 1329.5 243 L 1319.5 246 L 1275.5 277 L 1257.5 287 L 1243.5 298 L 1232.5 303 L 1212.5 316 L 1128.5 360 L 1119.5 366 L 1058.5 395 L 1043.5 401 L 1036.5 402 L 1030.5 407 L 1018.5 411 L 1011.5 412 L 1003.5 416 L 979.5 417 L 978.5 418 L 941.5 418 L 940.5 417 L 932.5 417 L 923.5 411 L 912.5 411 L 908 416.5 L 900 440.5 L 894.5 446 L 880.5 451 L 877.5 451 L 874 454.5 L 872 460.5 L 867.5 465 L 858.5 468 L 846.5 477 L 840.5 478 L 825.5 489 L 816.5 491 L 807.5 495 L 796.5 502 L 789.5 503 L 775.5 509 L 767.5 510 L 759.5 515 Q 744.72 515.72 735.5 522 L 725.5 522 L 710.5 527 L 705.5 527 L 700.5 529 L 693.5 529 L 692.5 530 L 684.5 530 L 683.5 531 L 664.5 531 L 663.5 532 L 623.5 532 L 622.5 531 L 599.5 531 L 598.5 530 L 590.5 530 L 589.5 529 L 580.5 529 L 548.5 519 L 533 507.5 Q 523.24 497.26 518 482.5 L 518 478.5 L 515 469.5 L 515 459.5 L 514 458.5 L 514 427.5 L 515 426.5 L 516 408.5 L 518 403.5 L 518 396.5 L 519 395.5 L 519 383.5 L 520 382.5 L 520 370.5 L 522 363.5 L 522 351.5 L 525 341.5 L 525 335.5 L 527 327.5 L 530 321.5 L 531 312.5 L 535 305.5 L 535 300.5 Q 539.74 293.74 541 283.5 L 546 276.5 L 546 272.5 L 549 261.5 L 555 250.5 L 557 242.5 L 561 232.5 L 564 228.5 Q 566.27 216.27 572 207.5 L 574 189.5 L 578 176.5 L 574 160.5 L 569.5 154 L 562.5 151 L 547.5 150 L 541.5 152 L 515.5 155 L 502.5 159 L 489.5 161 Q 481 166 469.5 168 L 414.5 193 L 387 210 L 383.5 215 L 377.5 217 L 373 220.5 L 366.5 229 L 353 239.5 L 347.5 247 L 339.5 250 Q 331.25 259.75 320 266.5 L 315.5 272 Q 298.9 281.4 287.5 296 L 280.5 299 L 263.5 313 L 221.5 337 L 212.5 338 L 197.5 346 L 181.5 350 L 170.5 350 L 169.5 351 L 133.5 351 L 132.5 350 L 112.5 349 L 111.5 348 L 105.5 348 L 98.5 346 L 80.5 339 L 67 327.5 L 52 307.5 L 46 294.5 L 45 286.5 L 44 285.5 L 44 273.5 L 42 268.5 L 42 239.5 L 43 238.5 L 44 198.5 L 45 197.5 L 46 186.5 L 50 176.5 L 50 173.5 L 52 170.5 L 55 158.5 Q 60.99 149.99 64 138.5 L 80.5 120 L 101.5 120 L 104 122.5 L 104 141.5 L 96 152.5 L 87 161.5 L 84 170.5 L 79 179.5 L 72 200.5 L 67 222.5 L 67 240.5 L 66 241.5 L 66 248.5 L 67 249.5 L 68 267.5 L 72 279.5 L 90 304.5 L 97.5 312 L 107.5 318 L 118.5 321 L 121.5 323 L 129.5 325 L 135.5 325 L 136.5 326 L 143.5 326 L 144.5 327 L 157.5 327 L 177.5 322 L 189.5 315 L 198.5 314 L 207.5 308 L 222.5 301 Q 230.12 294.12 240.5 290 L 256.5 277 L 262.5 274 L 278.5 259 L 298 243.5 L 299.5 241 L 305.5 238 L 316.5 227 Q 323.57 226.07 327 221.5 L 332.5 214 Q 341.25 209.75 347 202.5 L 351.5 196 L 360.5 192 L 367.5 185 L 395.5 168 Q 402.83 162.83 413.5 161 L 415.5 159 L 426.5 155 L 441.5 147 L 466.5 138 L 478.5 136 L 483.5 134 L 487.5 134 L 496.5 131 L 517.5 129 L 523.5 127 L 532.5 127 L 533.5 126 L 568.5 126 L 569.5 127 L 585.5 128 L 594 132.5 L 598 140.5 L 602 157.5 L 602 194.5 Q 599.5 196 601 201.5 L 597 213.5 L 596 227.5 L 580 265.5 L 578 273.5 L 572 284.5 L 570 290.5 L 569 299.5 L 563 309.5 L 563 313.5 L 559 321.5 L 558 328.5 L 554 335.5 Q 554.22 345.22 550 350.5 L 548 358.5 L 548 364.5 L 545 375.5 L 545 387.5 L 543 394.5 L 543 406.5 L 542 407.5 L 542 420.5 L 539 432.5 L 538 445.5 L 541 454.5 L 541 458.5 L 547 472.5 L 559.5 488 L 574.5 497 L 590.5 501 L 603.5 506 L 614.5 506 L 615.5 507 L 622.5 507 L 623.5 508 L 659.5 508 L 660.5 507 L 668.5 507 L 681.5 504 L 687.5 504 L 702.5 499 L 711.5 499 L 726.5 493 L 738.5 491 L 747.5 486 L 752.5 486 L 763.5 481 L 775.5 478 L 783.5 472 L 804.5 465 L 817.5 455 L 825.5 453 L 838.5 443 L 844.5 442 L 848 438.5 Q 849.55 431.55 854.5 428 L 871.5 423 L 877 417.5 L 880 409.5 L 880 405.5 L 876.5 403 L 863.5 401 L 825.5 383 L 811.5 372 Q 806.69 367.31 798.5 366 L 794 361.5 L 792 356.5 L 775 337.5 L 763 321.5 L 754 305.5 L 753 298.5 L 749 289.5 L 749 283.5 L 748 282.5 L 747 269.5 L 746 268.5 L 746 230.5 L 753 202.5 L 757 191.5 L 768 174.5 L 771 167.5 L 780 156.5 L 787 140.5 L 791.5 136 L 794.5 135 L 807 123.5 L 809.5 120 L 821 110.5 Q 822.92 104.42 827.5 101 L 840 91.5 Q 841.25 85.25 845.5 82 L 853.5 79 L 871.5 64 L 876.5 62 L 881.5 57 Q 891.88 52.88 899.5 46 L 901.5 46 L 907.5 42 L 920.5 41 L 928.5 38 Q 934 39.5 935.5 37 Z M 960 60 L 959 61 L 952 61 L 939 65 Q 932 64 929 66 L 905 80 L 877 102 L 869 105 Q 865 108 864 114 L 849 126 L 843 136 L 834 142 L 831 146 L 827 149 L 820 156 L 820 157 L 815 159 L 810 164 L 803 180 L 796 188 Q 790 201 781 212 L 776 226 L 776 230 L 773 237 L 773 242 L 770 251 L 771 259 L 772 260 L 772 266 L 779 288 L 795 312 L 815 334 L 817 339 L 822 343 L 829 345 L 854 363 L 873 372 L 879 373 L 887 378 L 903 381 L 910 387 L 915 385 Q 920 386 923 384 L 929 376 L 930 364 L 932 358 L 943 338 L 952 326 L 955 320 L 957 311 L 962 307 L 966 303 L 976 286 L 984 278 L 989 265 L 994 260 L 1000 249 L 1011 236 L 1015 228 L 1034 204 L 1039 196 L 1039 194 L 1047 183 L 1049 177 L 1055 168 Q 1055 161 1058 157 L 1058 153 L 1062 141 L 1063 129 L 1065 125 L 1064 117 L 1063 116 L 1063 110 L 1058 100 L 1056 98 L 1051 92 L 1035 77 L 1016 69 L 1013 69 L 1007 66 L 1001 66 L 982 61 L 964 61 L 960 60 Z " /></svg>
+          <svg class="st st-b" aria-hidden="true" focusable="false" viewBox="36 43 1897 164" xmlns="http://www.w3.org/2000/svg" ><path fill="currentColor" stroke="none" stroke-width="0" d="M 1495.5 46 L 1559.5 46 L 1560.5 47 L 1582.5 47 L 1583.5 48 L 1595.5 48 L 1596.5 49 L 1619.5 49 L 1624.5 51 L 1645.5 52 L 1650.5 54 L 1661.5 54 Q 1666.21 57.29 1675.5 56 L 1679.5 58 L 1684.5 58 L 1695.5 61 L 1707.5 62 L 1716.5 65 L 1721.5 65 L 1729.5 68 L 1738.5 68 L 1748.5 71 L 1761.5 72 L 1786.5 80 L 1804.5 84 L 1821.5 90 L 1829.5 91 L 1832.5 93 L 1839.5 94 L 1865.5 103 L 1876.5 109 L 1889.5 113 L 1895.5 117 L 1909.5 122 L 1930 135.5 L 1931 137.5 L 1931 154.5 L 1928.5 157 L 1910.5 157 L 1884.5 141 L 1874.5 138 L 1870.5 135 L 1860.5 132 L 1851.5 127 L 1831.5 119 L 1739.5 93 L 1726.5 92 L 1717.5 89 L 1708.5 89 L 1685.5 83 L 1673.5 82 L 1668.5 80 L 1657.5 79 L 1653.5 77 Q 1644.21 78.29 1639.5 75 L 1629.5 75 L 1624.5 73 L 1603.5 72 L 1598.5 70 L 1574.5 70 L 1573.5 69 L 1561.5 69 L 1560.5 68 L 1518.5 67 L 1517.5 68 L 1509.5 68 L 1508.5 69 L 1501.5 69 L 1500.5 70 L 1489.5 70 L 1484.5 72 L 1464.5 73 L 1450.5 78 L 1438.5 79 L 1426.5 83 L 1417.5 83 L 1407.5 86 L 1397.5 87 L 1393.5 89 L 1380.5 92 L 1375.5 95 L 1366.5 95 L 1361.5 97 L 1354.5 97 L 1346.5 99 L 1325.5 107 L 1321.5 107 L 1308.5 112 L 1301.5 113 L 1295.5 117 L 1283.5 120 L 1277.5 124 Q 1266.63 125.63 1259.5 131 L 1255.5 131 L 1247.5 134 L 1231.5 137 L 1219.5 142 L 1214.5 146 L 1208.5 146 L 1184.5 154 L 1175.5 155 L 1160.5 161 L 1151.5 161 L 1136.5 165 L 1130.5 165 L 1121.5 168 L 1113.5 168 L 1107.5 170 L 1100.5 170 L 1094.5 173 L 1083.5 174 L 1075.5 177 L 1067.5 177 L 1062.5 179 L 1055.5 179 L 1054.5 180 L 1046.5 180 L 1045.5 181 L 1016.5 181 L 1006.5 184 L 971.5 184 L 970.5 183 L 957.5 183 L 956.5 182 L 933.5 181 L 902.5 174 L 890.5 169 L 883.5 168 L 876.5 165 L 864.5 163 L 847.5 157 L 844.5 157 L 841.5 155 L 828.5 151 L 821.5 147 L 808.5 144 Q 801.17 138.83 790.5 137 L 779.5 130 L 751.5 118 L 735.5 114 L 724.5 114 L 723.5 115 L 716.5 115 L 703.5 119 L 693.5 119 L 688.5 121 L 667.5 124 L 656.5 128 L 639.5 131 L 638.5 132 L 631.5 132 L 620.5 136 L 614.5 136 L 604.5 140 L 596.5 142 L 591.5 142 L 580.5 146 L 576.5 146 L 568.5 150 L 559.5 150 L 553.5 153 L 549.5 153 L 533.5 158 L 524.5 159 L 518.5 162 L 504.5 163 L 489.5 167 L 483.5 167 L 482.5 168 L 473.5 169 L 464.5 172 L 458.5 172 L 428.5 181 L 422.5 181 L 415.5 184 L 404.5 185 L 400.5 187 L 394.5 187 L 389.5 189 L 348.5 193 L 338.5 196 L 330.5 196 L 320.5 199 L 312.5 199 L 300.5 202 L 289.5 202 L 288.5 203 L 262.5 203 L 261.5 204 L 238.5 204 L 237.5 205 L 172.5 205 L 159.5 202 L 145.5 201 L 128.5 196 L 105.5 186 L 83.5 173 L 79 168.5 L 62 148.5 L 49 122.5 L 48 115.5 L 42 97.5 L 41 82.5 L 39 78.5 L 39 60.5 L 41.5 58 L 58.5 58 L 62 61.5 L 62 68.5 L 63 69.5 L 64 80.5 L 68 90.5 L 71 103.5 L 77 116.5 L 84 129.5 L 100 146.5 L 101 150 L 130.5 167 L 158.5 178 L 166.5 180 L 172.5 180 L 173.5 181 L 181.5 181 L 194.5 184 L 215.5 184 L 216.5 183 L 239.5 183 L 240.5 182 L 266.5 182 L 267.5 181 L 278.5 181 L 283.5 179 L 298.5 178 L 308.5 175 L 317.5 175 L 326.5 172 L 367.5 168 L 372.5 166 L 378.5 166 L 382.5 164 L 394.5 163 L 401.5 160 L 411.5 159 L 436.5 151 Q 448.18 151.18 455.5 147 L 467.5 146 L 489.5 141 L 497.5 141 L 506.5 137 L 510.5 137 L 527.5 132 L 531.5 132 L 538.5 129 L 546.5 129 L 554.5 125 L 559.5 125 L 566.5 122 L 582.5 119 L 588.5 116 L 599.5 115 L 610.5 111 L 616.5 111 L 617.5 110 L 626.5 109 L 645.5 103 L 666.5 100 L 671.5 98 L 681.5 98 L 694.5 94 L 701.5 94 L 709.5 92 L 731.5 92 L 732.5 93 L 756.5 93 L 761.5 95 L 769.5 96 L 791.5 106 L 796.5 107 L 809.5 115 L 829.5 123 L 837.5 124 L 844.5 128 L 862.5 135 Q 872 136 878.5 140 L 890.5 142 L 901.5 146 L 908.5 147 L 920.5 152 L 955.5 160 L 987.5 162 L 994.5 160 L 1023.5 160 L 1024.5 159 L 1041.5 158 L 1046.5 156 L 1053.5 156 L 1062.5 153 L 1072.5 152 L 1079.5 149 L 1085.5 149 L 1091.5 147 L 1100.5 147 L 1108.5 144 L 1113.5 144 L 1129.5 140 L 1138.5 140 L 1145.5 138 L 1150.5 135 L 1158.5 133 L 1163.5 133 L 1170.5 130 L 1183.5 127 L 1186.5 125 L 1192.5 125 L 1209.5 116 L 1221.5 114 L 1234.5 110 L 1238.5 110 Q 1245.63 104.63 1256.5 103 L 1265.5 98 L 1274.5 96 L 1282.5 91 L 1286.5 91 L 1299.5 86 L 1304.5 86 L 1332.5 76 L 1339.5 76 L 1344.5 74 L 1353.5 74 L 1359.5 71 L 1368.5 68 L 1372.5 68 L 1376.5 66 L 1385.5 65 L 1395.5 62 L 1404.5 62 L 1417.5 58 L 1428.5 57 L 1443.5 52 L 1462.5 51 L 1467.5 49 L 1478.5 49 L 1479.5 48 L 1486.5 48 L 1487.5 47 L 1494.5 47 L 1495.5 46 Z " /></svg>
+          <svg class="st st-c" aria-hidden="true" focusable="false" viewBox="29 38 1887 76" xmlns="http://www.w3.org/2000/svg" ><path fill="currentColor" stroke="none" stroke-width="0" d="M 1325.5 40 L 1363.5 40 L 1366.5 42 L 1374.5 43 L 1375.5 44 L 1477.5 45 L 1478.5 44 L 1489.5 44 L 1490.5 43 L 1530.5 43 L 1531.5 42 L 1651.5 42 L 1652.5 43 L 1665.5 43 L 1674.5 46 L 1733.5 46 L 1734.5 47 L 1756.5 47 Q 1758 49.5 1763.5 48 L 1769.5 51 Q 1779.83 49.17 1784.5 53 L 1887.5 53 L 1888.5 52 L 1912.5 52 L 1915 54.5 L 1915 72.5 L 1911.5 76 L 1905.5 78 L 1877.5 78 L 1876.5 77 L 1868.5 77 L 1867.5 76 L 1846.5 76 L 1845.5 77 L 1813.5 77 L 1812.5 76 L 1761.5 76 L 1757.5 74 L 1746.5 74 L 1740.5 71 L 1733.5 71 L 1732.5 70 L 1683.5 70 L 1682.5 71 L 1654.5 71 L 1647.5 67 Q 1642.75 68.25 1641.5 66 L 1628.5 66 L 1627.5 65 L 1555.5 65 L 1554.5 66 L 1514.5 66 L 1513.5 67 L 1502.5 67 L 1501.5 68 L 1412.5 68 L 1411.5 67 L 1351.5 67 L 1345.5 65 L 1306.5 65 L 1300.5 68 L 1278.5 68 L 1272.5 65 L 1240.5 65 L 1236.5 67 L 1226.5 67 L 1225.5 68 L 1068.5 68 L 1067.5 67 L 1050.5 67 L 1049.5 68 L 1034.5 68 L 1029.5 70 L 983.5 70 L 982.5 71 L 960.5 71 L 959.5 72 L 952.5 72 L 951.5 73 L 936.5 73 L 935.5 74 L 927.5 74 L 926.5 75 L 818.5 76 L 817.5 77 L 743.5 78 L 742.5 79 L 735.5 79 L 734.5 80 L 716.5 80 L 715.5 81 L 677.5 81 L 672.5 79 L 647.5 79 L 646.5 80 L 590.5 80 L 589.5 79 L 523.5 78 L 522.5 79 L 505.5 79 L 504.5 80 L 496.5 80 L 495.5 81 L 468.5 81 L 463.5 83 L 450.5 84 L 449.5 85 L 415.5 85 L 408.5 88 L 376.5 89 L 371.5 91 L 265.5 91 L 258.5 93 L 229.5 93 L 228.5 94 L 200.5 94 L 199.5 95 L 186.5 95 L 185.5 96 L 156.5 96 L 155.5 97 L 139.5 98 L 132.5 100 L 99.5 101 L 98.5 102 L 80.5 102 Q 79.25 104.25 74.5 103 L 68 107.5 L 63.5 113 L 45.5 113 L 43 110.5 Q 44.46 102.54 40.5 100 L 33.5 99 L 31 96.5 L 31 78.5 L 33.5 76 L 36.5 75 L 60.5 75 L 67.5 79 L 74.5 79 L 75.5 78 L 108.5 77 L 115.5 75 L 125.5 75 L 132.5 73 L 161.5 73 L 162.5 72 L 175.5 72 L 176.5 71 L 234.5 70 L 241.5 68 L 347.5 68 L 352.5 66 L 385.5 65 L 392.5 62 L 425.5 62 L 426.5 61 L 439.5 60 L 444.5 58 L 471.5 58 L 472.5 57 L 480.5 57 L 481.5 56 L 496.5 56 L 500.5 54 L 524.5 54 L 525.5 55 L 570.5 55 L 571.5 56 L 613.5 56 L 614.5 57 L 622.5 57 L 623.5 56 L 696.5 56 L 697.5 57 L 710.5 57 L 711.5 56 L 718.5 56 L 719.5 55 L 755.5 55 L 756.5 54 L 771.5 54 L 772.5 53 L 902.5 52 L 903.5 51 L 911.5 51 L 912.5 50 L 927.5 50 L 928.5 49 L 935.5 49 L 936.5 48 L 958.5 48 L 959.5 47 L 1005.5 47 L 1010.5 45 L 1025.5 45 L 1026.5 44 L 1091.5 44 L 1092.5 45 L 1201.5 45 L 1202.5 44 L 1213.5 44 L 1217.5 42 L 1317.5 42 L 1325.5 40 Z " /></svg>
+        </div>
+        <!--/STROKES-->
+        <svg class="scribble" viewBox="0 10 1000 100" role="img" aria-label="A tangled line that straightens out">
+          <path id="ln" d="M 20 60 C 198.3 203.1, -64.8 -38.4, 166.3 62 C 385.1 145.7, 2.1 74.6, 301.7 68.2 C 595.8 -27.7, 196.7 130.7, 439.4 33.2 C 712.9 49.1, 251.1 164.5, 553.5 60.8 C 886.1 124.1, 430.3 86.3, 722.2 84.5 C 940.2 4, 538.3 3, 829 47.9 C 1085.8 -9.7, 660.3 79.5, 980 60" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1">
+            <animate attributeName="stroke-dashoffset" from="1" to="0" dur="1.1s" begin="0.25s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".4 0 .2 1" />
+            <animate attributeName="d" dur="1.1s" begin="1.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines=".6 0 .15 1" values="M 20 60 C 198.3 203.1, -64.8 -38.4, 166.3 62 C 385.1 145.7, 2.1 74.6, 301.7 68.2 C 595.8 -27.7, 196.7 130.7, 439.4 33.2 C 712.9 49.1, 251.1 164.5, 553.5 60.8 C 886.1 124.1, 430.3 86.3, 722.2 84.5 C 940.2 4, 538.3 3, 829 47.9 C 1085.8 -9.7, 660.3 79.5, 980 60;M 20 60 C 65.7 60, 111.4 60, 157.1 60 C 202.9 60, 248.6 60, 294.3 60 C 340 60, 385.7 60, 431.4 60 C 477.1 60, 522.9 60, 568.6 60 C 614.3 60, 660 60, 705.7 60 C 751.4 60, 797.1 60, 842.9 60 C 888.6 60, 934.3 60, 980 60" />
+          </path>
+        </svg>
+
+        <div class="hero-grid">
+          <p class="role rise d3">Virtual &amp; Executive Assistant</p>
+          <div class="rise d4">
+            <p class="lead">I keep the operational and digital side running, so leaders can focus on what matters.</p>
+            <p class="facts">Content operations, reporting, calendar and documentation. Degree in Music Therapy, 11 years as a teacher, English C1.</p>
+            <div class="btns">
+              <a class="btn main" href="#work">See the work</a>
+              <a class="btn" href="https://www.linkedin.com/in/angelinabesson" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey" id="work" aria-labelledby="work-h">
+      <div class="wrap">
+        <div class="work-head">
+          <h2 id="work-h">Selected work</h2>
+          <span class="micro">04 featured · real work first</span>
+        </div>
+
+        <div class="journey-grid">
+          <aside class="count" aria-hidden="true">
+            <div class="big-count"><span id="cur">01</span><span class="of">/04</span></div>
+            <p class="micro" id="curlabel">Assistant work</p>
+          </aside>
+
+          <ol class="stops">
+            <li class="stop" data-n="01" data-group="Selected work">
+              <figure class="shot"><div class="frame f-shorts" style="--c1:#f4d9cf;--c2:#e9b9a6;--r:-1.8deg">
+                <div class="motif"><svg class="m-bars" viewBox="0 0 300 160" aria-hidden="true" focusable="false">
+                  <line x1="8" y1="146" x2="292" y2="146" stroke="currentColor" stroke-opacity=".35" stroke-width="2"/>
+                  <rect class="bar m-anim" style="--i:0" x="14" y="108" width="26" height="38" rx="3"/>
+                  <rect class="bar m-anim" style="--i:1" x="54" y="94" width="26" height="52" rx="3"/>
+                  <rect class="bar m-anim" style="--i:2" x="94" y="100" width="26" height="46" rx="3"/>
+                  <rect class="bar m-anim" style="--i:3" x="134" y="80" width="26" height="66" rx="3"/>
+                  <rect class="bar m-anim" style="--i:4" x="174" y="86" width="26" height="60" rx="3"/>
+                  <rect class="bar m-anim" style="--i:5" x="214" y="58" width="26" height="88" rx="3"/>
+                  <rect class="bar m-anim hot" style="--i:6" x="254" y="22" width="26" height="124" rx="3"/>
+                </svg></div>
+                <span class="micro lab">Anonymous client · remote</span>
+                <div class="bot"><div class="stat">+41%</div><span class="micro">views, Apr 2026 vs Feb 2026</span></div>
+              </div></figure>
+              <div class="txt">
+                <p class="micro tag"><b>01 /04</b> · Paid freelance · Jul 2025 – May 2026</p>
+                <h3><em>Shorts</em> channel operations</h3>
+                <p>I ran a YouTube Shorts channel for a personal-brand entrepreneur for ten months: chose clips with data, wrote the scheduling procedure and sent one-page weekly reports. The target for most shorts was not reached, and the case says so.</p>
+                <p class="shows"><b>Shows:</b> turning analytics into decisions, documenting a process, reporting results.</p>
+                <div class="links"><a href="../portfolio/#cases" aria-label="Read the case: Shorts channel operations">Read the case</a></div>
+              </div>
+            </li>
+
+            <li class="stop" data-n="02" data-group="Selected work">
+              <figure class="shot"><div class="frame f-celeste" style="--c1:#e6def5;--c2:#cfe3f5;--r:1.4deg">
+                <div class="motif"><div class="m-sky" aria-hidden="true">
+                  <span class="neb n1"></span><span class="neb n2"></span><span class="glow"></span>
+                  <div class="layer l1"><i style="left:2.0%;top:43.1%;--s:1.4px;--d:0.2s;--t:5.0s;--c:#e8c79c"></i><i style="left:41.2%;top:49.6%;--s:1.6px;--d:2.4s;--t:3.2s"></i><i style="left:23.0%;top:67.6%;--s:1.2px;--d:1.9s;--t:4.2s"></i><i style="left:81.4%;top:37.2%;--s:1.2px;--d:1.1s;--t:4.6s"></i><i style="left:58.9%;top:53.0%;--s:1.6px;--d:1.2s;--t:3.3s;--c:#e8c79c"></i><i style="left:78.4%;top:3.1%;--s:1.3px;--d:2.9s;--t:4.5s"></i><i style="left:3.3%;top:37.3%;--s:2.1px;--d:2.6s;--t:2.7s"></i><i style="left:60.6%;top:90.2%;--s:1.4px;--d:4.5s;--t:2.5s"></i><i style="left:70.9%;top:76.3%;--s:2.2px;--d:1.4s;--t:2.9s;--c:#e8c79c"></i><i style="left:78.8%;top:89.2%;--s:1.9px;--d:5.0s;--t:4.8s"></i><i style="left:43.4%;top:25.5%;--s:1.8px;--d:0.1s;--t:5.3s"></i><i style="left:81.8%;top:34.4%;--s:2.1px;--d:0.0s;--t:4.4s"></i><i style="left:93.3%;top:52.6%;--s:1.9px;--d:2.5s;--t:5.0s;--c:#e8c79c"></i><i style="left:43.6%;top:87.3%;--s:2.2px;--d:2.1s;--t:4.8s"></i><i style="left:50.7%;top:22.8%;--s:1.1px;--d:0.3s;--t:4.9s"></i><i style="left:12.5%;top:34.3%;--s:1.7px;--d:1.9s;--t:3.8s"></i></div>
+                  <div class="layer l2"><i style="left:12.2%;top:36.9%;--s:1.8px;--d:2.9s;--t:4.1s;--c:#e8c79c"></i><i style="left:90.8%;top:11.1%;--s:3.3px;--d:5.0s;--t:4.7s"></i><i style="left:56.3%;top:36.0%;--s:3.1px;--d:3.2s;--t:3.9s"></i><i style="left:31.4%;top:51.0%;--s:2.0px;--d:4.8s;--t:4.1s"></i><i style="left:89.4%;top:15.5%;--s:1.8px;--d:4.8s;--t:4.5s;--c:#e8c79c"></i><i style="left:29.7%;top:78.0%;--s:2.2px;--d:4.4s;--t:3.8s"></i><i style="left:50.9%;top:23.3%;--s:1.7px;--d:4.0s;--t:5.0s"></i><i style="left:27.2%;top:71.7%;--s:2.1px;--d:4.3s;--t:3.7s"></i><i style="left:2.1%;top:3.9%;--s:1.6px;--d:2.8s;--t:3.3s;--c:#e8c79c"></i><i style="left:79.6%;top:31.2%;--s:2.7px;--d:4.9s;--t:3.9s"></i><i style="left:74.7%;top:17.9%;--s:2.7px;--d:2.5s;--t:3.1s"></i><i style="left:27.4%;top:47.7%;--s:2.6px;--d:2.3s;--t:3.3s"></i></div>
+                  <div class="layer l3"><i style="left:49.2%;top:48.9%;--s:2.4px;--d:3.1s;--t:4.8s;--c:#e8c79c"></i><i style="left:49.7%;top:53.5%;--s:2.6px;--d:3.9s;--t:3.5s"></i><i style="left:12.0%;top:54.6%;--s:3.0px;--d:1.0s;--t:3.9s"></i><i style="left:90.5%;top:38.2%;--s:2.5px;--d:4.2s;--t:4.9s"></i><i style="left:71.7%;top:24.1%;--s:2.8px;--d:1.2s;--t:3.3s;--c:#e8c79c"></i><i style="left:90.2%;top:65.6%;--s:3.4px;--d:2.1s;--t:3.9s"></i><i style="left:44.5%;top:70.3%;--s:2.1px;--d:3.9s;--t:4.7s"></i></div>
+                </div></div>
+                <span class="micro lab">Real client</span>
+                <strong class="bot">Booking site</strong>
+              </div></figure>
+              <div class="txt">
+                <p class="micro tag"><b>02 /04</b> · Real client · phase 1 · Sep – Oct 2026</p>
+                <h3>A <em>booking</em> site for a therapist</h3>
+                <p>A website and a three-step booking path for a holistic practitioner: her services, a choice of time in her own Google Calendar, then payment by bank transfer with the proof sent by WhatsApp. Phase 1 is live; what comes next is up to her.</p>
+                <p class="shows"><b>Shows:</b> listening to a client and turning her words into a simple flow.</p>
+                <div class="links"><a href="https://celestesimboli.lovable.app/" target="_blank" rel="noopener" aria-label="Open the site: A booking site for a therapist (opens in a new tab)">Open the site</a></div>
+              </div>
+            </li>
+
+            <li class="stop" data-n="03" data-group="Selected work">
+              <figure class="shot"><div class="frame f-norma" style="--c1:#f2e4d4;--c2:#e3bb9c;--r:-1.4deg">
+                <div class="motif"><div class="m-norma" aria-hidden="true">
+                  <img class="stroke m-anim" src="img/trazo-grueso-terracota.webp" alt="" loading="lazy" decoding="async">
+                  <img class="cactus m-anim" src="img/cactus-terracota.webp" alt="" loading="lazy" decoding="async">
+                </div></div>
+                <span class="micro lab">Challenge entry</span>
+                <strong class="bot">Cerámica de Norma</strong>
+              </div></figure>
+              <div class="txt">
+                <p class="micro tag"><b>03 /04</b> · Challenge entry · fictional client · Nov 2026</p>
+                <h3>Cerámica <em>de Norma</em></h3>
+                <p>An online catalog for a 70-year-old ceramist who is not at ease with technology. She adds, changes and hides pieces herself from her phone, by voice, with no account. I tested it with my 75-year-old mother, who played Norma, and changed the design after what I saw. The brush stroke and the cactus are my own ink drawings. Example photos: @delvientoceramica, with permission.</p>
+                <p class="shows"><b>Shows:</b> designing for a non-technical user and testing with real people.</p>
+                <div class="links"><a href="https://tia-norma.vercel.app" target="_blank" rel="noopener" aria-label="Open the site: Cerámica de Norma (opens in a new tab)">Open the site</a></div>
+              </div>
+            </li>
+
+            <li class="stop" data-n="04" data-group="Selected work">
+              <figure class="shot"><div class="frame f-h2h" style="--c1:#d9efe8;--c2:#a9d9cc;--r:1.3deg">
+                <div class="motif"><img class="shotimg" src="img/head-to-hand.jpg" alt="The Head to Hand landing page: a person with a laptop, a thought cloud and a handoff brief card" loading="lazy" decoding="async"></div>
+                <span class="micro lab">Practice project</span>
+                <strong class="bot">Head to Hand</strong>
+              </div></figure>
+              <div class="txt">
+                <p class="micro tag"><b>04 /04</b> · Bootcamp final project · Oct 2026</p>
+                <h3><em>Head</em> to Hand</h3>
+                <p>A free app, a landing page and a qualifying funnel for founders who run everything from memory. Final project of the Executive Assistant Bootcamp (Pareto Talent): a practice project, not an official Pareto page.</p>
+                <p class="shows"><b>Shows:</b> thinking a funnel end to end.</p>
+                <div class="links"><a href="https://headtohand-free.lovable.app" target="_blank" rel="noopener" aria-label="Landing page: Head to Hand (opens in a new tab)">Landing page</a><a href="https://headtohand.lovable.app" target="_blank" rel="noopener" aria-label="Free app: Head to Hand (opens in a new tab)">Free app</a></div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!--PLAY-->
+    <section class="play" id="playground" aria-labelledby="play-h">
+      <div class="wrap">
+        <div class="work-head">
+          <h2 id="play-h">Playground</h2>
+          <span class="micro">Everything else · one new thing each time</span>
+        </div>
+        <div class="play-grid">
+          <aside class="play-count" aria-hidden="true"><span class="big">0<span class="inf">8</span></span><span class="micro">things here</span></aside>
+          <div>
+            <p class="play-intro">Small builds where I try one new thing at a time, and the home of work that does not belong in the main selection. Some turn into projects. Others teach me something and stay here.</p>
+            <ol class="play-list">
+          <li class="play-item">
+            <span class="micro n">01</span>
+            <div class="mini" style="--m1:#dbe7f3;--m2:#c4d6ea"><div class="m-receipt" aria-hidden="true">
+              <span class="slot"></span>
+              <div class="ticket m-anim"><b>COPIA LITORAL</b><span><i>A4 · color · x2</i><i>$ 140</i></span><span><i>Anillado</i><i>$ 800</i></span><hr><span class="tot"><i>TOTAL</i><i>$ 940</i></span></div>
+            </div></div>
+            <div class="body">
+              <h3>Copia Litoral</h3>
+              <p class="tried"><b>I tried:</b> A real payment flow with Mercado Pago and file uploads with signed links, for a print-shop ordering page. The customer picks the options and uploads a file; the server creates the payment and marks the order as paid once it is confirmed.</p>
+              <p class="learned"><b>I learned:</b> The page can never be trusted with the price, so the server recalculates it. And a test seller needs a test buyer.</p>
+            </div>
+            <div class="side"><span class="micro status">Practice · test mode</span><span class="lnk"><a class="open" href="https://copia-litoral.vercel.app" target="_blank" rel="noopener" aria-label="Open it: Copia Litoral (opens in a new tab)">Open it</a></span></div>
+          </li>
+          <li class="play-item">
+            <span class="micro n">02</span>
+            <div class="mini" style="--m1:#f7e7cd;--m2:#e8c99c"><svg class="m-candle" viewBox="0 0 200 100" aria-hidden="true" focusable="false">
+              <defs><radialGradient id="gl-c"><stop offset="0" stop-color="#ffb347" stop-opacity=".75"/><stop offset="1" stop-color="#ffb347" stop-opacity="0"/></radialGradient></defs>
+              <circle class="halo" cx="100" cy="42" r="40" fill="url(#gl-c)"/>
+              <rect x="86" y="58" width="28" height="38" rx="3" fill="#f6e6c8" stroke="#c9a27e"/>
+              <path class="flame" d="M100 18 C 109 31, 113 41, 100 54 C 87 41, 91 31, 100 18 Z" fill="#ff9a3c"/>
+              <path class="flame in2" d="M100 33 C 105 40, 105 46, 100 52 C 95 46, 95 40, 100 33 Z" fill="#ffe08a"/>
+              <line x1="100" y1="53" x2="100" y2="59" stroke="#5a4630" stroke-width="1.6"/>
+            </svg></div>
+            <div class="body">
+              <h3>Cielas Aromas</h3>
+              <p class="tried"><b>What it was:</b> It started as part of my training: a digital starter pack for a friend's aromatic-candle business (a content calendar, designed posts and a plan for her sales channels), presented over Meet. I then kept running her Instagram for a while, paid partly in products, until she moved on to other work.</p>
+            </div>
+            <div class="side"><span class="micro status">For a friend · Jun 2025</span><span class="lnk"><a class="open" href="https://www.instagram.com/cielasaromas/" target="_blank" rel="noopener" aria-label="Instagram: Cielas Aromas (opens in a new tab)">Instagram</a><a class="open" href="https://www.linkedin.com/posts/angelinabesson_officemanagerdigital-starterpack-emprenderconorden-share-7337842189403590657-jwrr" target="_blank" rel="noopener" aria-label="My post about it: Cielas Aromas (opens in a new tab)">My post about it</a></span></div>
+          </li>
+          <li class="play-item">
+            <span class="micro n">03</span>
+            <div class="mini" style="--m1:#d6f2ef;--m2:#bfe6e1"><svg class="m-kit" viewBox="0 0 200 100" aria-hidden="true" focusable="false">
+              <g class="sheet m-anim" style="--dx:60px;--r:-15deg;--i:0"><rect x="72" y="18" width="44" height="62" rx="4"/><path d="M80 32 H108 M80 42 H104 M80 52 H108"/></g>
+              <g class="sheet m-anim" style="--dx:36px;--r:-9deg;--i:1"><rect x="78" y="18" width="44" height="62" rx="4"/><path d="M86 32 H114 M86 42 H110 M86 52 H114"/></g>
+              <g class="sheet m-anim" style="--dx:12px;--r:-3deg;--i:2"><rect x="84" y="18" width="44" height="62" rx="4"/><path d="M92 32 H120 M92 42 H116 M92 52 H120"/></g>
+              <g class="sheet m-anim" style="--dx:-12px;--r:3deg;--i:3"><rect x="90" y="18" width="44" height="62" rx="4"/><path d="M98 32 H126 M98 42 H122 M98 52 H126"/></g>
+              <g class="sheet m-anim" style="--dx:-36px;--r:9deg;--i:4"><rect x="96" y="18" width="44" height="62" rx="4"/><path d="M104 32 H132 M104 42 H128 M104 52 H132"/></g>
+              <g class="sheet m-anim" style="--dx:-60px;--r:15deg;--i:5"><rect x="102" y="18" width="44" height="62" rx="4"/><path d="M110 32 H138 M110 42 H134 M110 52 H138"/></g>
+            </svg></div>
+            <div class="body">
+              <h3>The Assistant Kit</h3>
+              <p class="tried"><b>What it is:</b> Six templates I built from real work: a weekly report, a publishing procedure with a final check, a checklist, a three-line task confirmation, a scope agreement and a prioritized task list.</p>
+            </div>
+            <div class="side"><span class="micro status">Free · no client data · 2026</span><span class="lnk"><a class="open" href="../portfolio/kit/" aria-label="Open the kit: The Assistant Kit">Open the kit</a></span></div>
+          </li>
+          <li class="play-item">
+            <span class="micro n">04</span>
+            <div class="mini" style="--m1:#f4dcb8;--m2:#ecc58f"><svg class="m-rubric" viewBox="0 0 200 100" aria-hidden="true" focusable="false">
+              <rect class="sheetbg" x="40" y="10" width="120" height="80" rx="5"/>
+              <path class="grid d-draw m-anim" pathLength="1" style="--i:0" d="M52 34 H148"/><path class="grid d-draw m-anim" pathLength="1" style="--i:1" d="M52 52 H148"/><path class="grid d-draw m-anim" pathLength="1" style="--i:2" d="M52 70 H148"/>
+              <path class="grid d-draw m-anim" pathLength="1" style="--i:3" d="M84 22 V80"/><path class="grid d-draw m-anim" pathLength="1" style="--i:4" d="M116 22 V80"/>
+              <path class="check d-draw m-anim" pathLength="1" style="--i:5" d="M58 42 l5 5 l9 -11"/>
+              <path class="check d-draw m-anim" pathLength="1" style="--i:6" d="M90 60 l5 5 l9 -11"/>
+              <path class="check d-draw m-anim" pathLength="1" style="--i:7" d="M122 42 l5 5 l9 -11"/>
+              <g class="pdf m-anim"><rect x="132" y="66" width="34" height="18" rx="9"/><text x="149" y="78.5" text-anchor="middle">PDF</text></g>
+            </svg></div>
+            <div class="body">
+              <h3>Rubric generator</h3>
+              <p class="tried"><b>What it is:</b> A web tool that turns an evaluation rubric into a clean, printable PDF (HTML5, JavaScript, jsPDF), built with the vice principal's requirements. The school valued the idea but did not adopt it.</p>
+            </div>
+            <div class="side"><span class="micro status">School tool · 2024</span><span class="lnk"><a class="open" href="https://angebesson.github.io/rubricasEvaluacion/" target="_blank" rel="noopener" aria-label="Live tool: Rubric generator (opens in a new tab)">Live tool</a><a class="open" href="https://github.com/angebesson/rubricasEvaluacion" target="_blank" rel="noopener" aria-label="Repository: Rubric generator (opens in a new tab)">Repository</a></span></div>
+          </li>
+          <li class="play-item">
+            <span class="micro n">05</span>
+            <div class="mini" style="--m1:#f2dba8;--m2:#c9e0e8"><svg class="m-sign" viewBox="0 0 200 100" aria-hidden="true" focusable="false">
+              <path class="pen d-draw m-anim" pathLength="1" d="M26 58 C 38 18, 52 84, 64 46 S 88 20, 96 52 C 104 84, 116 22, 130 50 S 154 74, 172 38"/>
+              <path class="pen d-draw m-anim under" pathLength="1" style="--i:1" d="M26 78 H174"/>
+            </svg></div>
+            <div class="body">
+              <h3>Juan Solá, writer</h3>
+              <p class="tried"><b>What it is:</b> A website about a writer, built in a front-end course with HTML, CSS, Sass and Bootstrap.</p>
+            </div>
+            <div class="side"><span class="micro status">Course project · 2024</span><span class="lnk"><a class="open" href="https://angebesson.github.io/JuanSolaescritor/" target="_blank" rel="noopener" aria-label="Open the site: Juan Solá, writer (opens in a new tab)">Open the site</a></span></div>
+          </li>
+          <li class="play-item">
+            <span class="micro n">06</span>
+            <div class="mini" style="--m1:#d9efe8;--m2:#c8e3ef"><svg class="m-calc" viewBox="0 0 200 100" aria-hidden="true" focusable="false">
+              <rect class="trk" x="24" y="10" width="152" height="9" rx="4.5"/><rect class="fill m-anim" style="--i:0;--w:150px" x="24" y="10" width="150" height="9" rx="4.5"/>
+              <rect class="trk" x="24" y="28" width="152" height="9" rx="4.5"/><rect class="fill m-anim" style="--i:1;--w:110px" x="24" y="28" width="110" height="9" rx="4.5"/>
+              <rect class="trk" x="24" y="46" width="152" height="9" rx="4.5"/><rect class="fill m-anim" style="--i:2;--w:168px" x="24" y="46" width="168" height="9" rx="4.5"/>
+              <rect class="trk" x="24" y="64" width="152" height="9" rx="4.5"/><rect class="fill m-anim" style="--i:3;--w:90px" x="24" y="64" width="90" height="9" rx="4.5"/>
+              <text class="hrs m-anim" x="176" y="20" text-anchor="end">+ hours</text>
+            </svg></div>
+            <div class="body">
+              <h3>Time calculator</h3>
+              <p class="tried"><b>I tried:</b> A six-question quiz that estimates how much time a small business could get back by delegating scheduling, appointments and customer service.</p>
+            </div>
+            <div class="side"><span class="micro status">Live · in Spanish</span><span class="lnk"><a class="open" href="../quiz/" aria-label="Open it: Time calculator">Open it</a></span></div>
+          </li>
+          <li class="play-item">
+            <span class="micro n">07</span>
+            <div class="mini" style="--m1:#ffd3c2;--m2:#f0cdff"><svg class="m-dots" viewBox="0 0 200 100" aria-hidden="true" focusable="false">
+              <circle cx="30" cy="50" r="15" fill="#00906d"/><circle cx="65" cy="50" r="11" fill="#e0fe9b"/><circle cx="100" cy="50" r="15" fill="#ef63a0"/><circle cx="135" cy="50" r="11" fill="#7faac7"/><circle cx="170" cy="50" r="15" fill="#e18264"/>
+            </svg></div>
+            <div class="body">
+              <h3>Pinta tu vida (Paint your life)</h3>
+              <p class="tried"><b>I tried:</b> A random colour-palette generator, which I took from another repository, and calling an API (The Color API). That was the main thing. Around it, a paint calculator and a small shopping cart.</p>
+              <p class="learned"><b>I learned:</b> Plain (vanilla) JavaScript, which is what I was studying at the time.</p>
+            </div>
+            <div class="side"><span class="micro status">Practice · Aug 2024 · in Spanish</span><span class="lnk"><a class="open" href="https://angebesson.github.io/cuddly-guacamole/" target="_blank" rel="noopener" aria-label="Open it: Pinta tu vida (Paint your life) (opens in a new tab)">Open it</a><a class="open" href="https://github.com/angebesson/cuddly-guacamole" target="_blank" rel="noopener" aria-label="Repository: Pinta tu vida (Paint your life) (opens in a new tab)">Repository</a></span></div>
+          </li>
+          <li class="play-item">
+            <span class="micro n">08</span>
+            <div class="mini" style="--m1:#7fc6f3;--m2:#d9f1fb"><svg class="m-sky2" viewBox="0 0 200 100" aria-hidden="true" focusable="false">
+              <g class="cloud c1"><ellipse cx="46" cy="30" rx="18" ry="8"/><ellipse cx="60" cy="26" rx="12" ry="8"/></g>
+              <g class="cloud c2"><ellipse cx="140" cy="18" rx="16" ry="7"/><ellipse cx="152" cy="14" rx="10" ry="7"/></g>
+              <path class="bird" d="M120 44 q5 -7 10 0 q5 -7 10 0" />
+              <rect class="bld" x="34" y="56" width="34" height="44"/><rect class="bld b2" x="76" y="42" width="40" height="58"/><rect class="bld" x="124" y="62" width="28" height="38"/>
+              <rect class="win" style="--i:0" x="40" y="62" width="7" height="6"/><rect class="win" style="--i:1" x="52" y="62" width="7" height="6"/><rect class="win" style="--i:2" x="40" y="76" width="7" height="6"/><rect class="win" style="--i:3" x="52" y="76" width="7" height="6"/><rect class="win" style="--i:4" x="84" y="50" width="7" height="6"/><rect class="win" style="--i:5" x="100" y="50" width="7" height="6"/><rect class="win" style="--i:6" x="84" y="66" width="7" height="6"/><rect class="win" style="--i:7" x="100" y="66" width="7" height="6"/><rect class="win" style="--i:8" x="84" y="82" width="7" height="6"/><rect class="win" style="--i:9" x="100" y="82" width="7" height="6"/><rect class="win" style="--i:10" x="130" y="70" width="7" height="6"/><rect class="win" style="--i:11" x="140" y="70" width="7" height="6"/><rect class="win" style="--i:12" x="130" y="84" width="7" height="6"/><rect class="win" style="--i:13" x="140" y="84" width="7" height="6"/>
+            </svg></div>
+            <div class="body">
+              <h3>First portfolio, with a drawing in CSS</h3>
+              <p class="tried"><b>I tried:</b> Putting a drawing animated in CSS into a portfolio, to give it personality without losing professionalism and to practice mixing creative visual elements with front-end code.</p>
+              <p class="tried"><b>I asked:</b> "Creative portfolios or more classic ones?" (my LinkedIn post, Sep 2025)</p>
+            </div>
+            <div class="side"><span class="micro status">Earlier version · Dec 2024 – Sep 2025</span><span class="lnk"><a class="open" href="https://angebesson.github.io/portfolio/" target="_blank" rel="noopener" aria-label="Open it: First portfolio, with a drawing in CSS (opens in a new tab)">Open it</a><a class="open" href="https://www.linkedin.com/posts/angelinabesson_frontenddeveloper-webdevelopment-css-share-7373811913962536960-C7Mr" target="_blank" rel="noopener" aria-label="My post about it: First portfolio, with a drawing in CSS (opens in a new tab)">My post about it</a></span></div>
+          </li>
+          <li class="play-item next">
+            <span class="micro n">+</span>
+            <div class="mini blank" aria-hidden="true"></div>
+            <div class="body">
+              <h3>Next up</h3>
+              <p class="tried">One new thing, still to choose.<span class="cursor" aria-hidden="true"></span></p>
+            </div>
+            <div class="side"><span class="micro status">Empty on purpose</span></div>
+          </li>
+            </ol>
+            <div class="origin">
+              <p class="micro">Where I come from</p>
+              <ul>
+                <li><p><b lang="es">Música en la 83.</b> A Google Sites page I made for my students and their families: the songs we work on in class and our class recordings (audio only, no names or images), all in one place. <span class="links"><a href="https://sites.google.com/view/musicaenla83/p%C3%A1gina-principal" target="_blank" rel="noopener" aria-label="Open the site: Música en la 83 (opens in a new tab)">Open the site</a></span></p></li>
+                <li><p><b>Music Therapy thesis, 2003.</b> "<span lang="es">El lugar de la música en la práctica musicoterapéutica argentina</span>", a degree thesis written with two co-authors and available in the university's repository. <span class="links"><a href="https://racimo.usal.edu.ar/id/eprint/3456" target="_blank" rel="noopener" aria-label="Open the repository: Music Therapy thesis, 2003 (opens in a new tab)">Open the repository</a></span></p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/PLAY-->
+    <!--ABOUT-->
+    <section class="about" id="about" aria-labelledby="about-h">
+      <div class="wrap">
+        <div class="work-head">
+          <h2 id="about-h">About</h2>
+          <span class="micro">Three moods</span>
+        </div>
+
+        <div class="moods">
+          <article class="mood">
+            <p class="pill lilac">Mood in work</p>
+            <p>I am a virtual and executive assistant based in Argentina. I keep content operations, reporting, calendar and documentation running. I have front-end training (HTML, CSS, JavaScript and React) and I finished the 10-day Executive Assistant Bootcamp (Pareto Talent) in October 2026.</p>
+          </article>
+          <article class="mood">
+            <p class="pill peach">Mood inspiring</p>
+            <figure class="portrait"><img src="img/angelina-mirando-arriba.webp" width="720" height="1080" alt="Angelina in profile, looking up" loading="lazy" decoding="async"></figure>
+            <blockquote class="quote">
+              <p lang="es">«Si vas a dar una oportunidad, que sea para la infancia que te habita.»</p>
+              <footer>Juan Solá, writer. <span>My translation: "If you are going to give an opportunity, let it be for the childhood that lives in you."</span></footer>
+            </blockquote>
+            <p class="small">I built a website about his work in a front-end course.</p>
+          </article>
+          <article class="mood">
+            <p class="pill cream">Mood in life</p>
+            <p>I'm a person in movement. I like to take pauses, but my constant curiosity keeps me going. I love music, and I built a path in that field: music therapy, piano and primary-school teaching. I love reading. I'm more introspective, and my personality type is Advocate (INFJ).</p>
+          </article>
+        </div>
+
+        <div class="notes">
+          <ul class="sticky-row words" aria-label="Words I work by">
+            <li class="sticky" style="--r:-2.2deg"><span class="hand"><svg class="wd" viewBox="5 5 1439 347" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" stroke-width="0" d="M 1216.5 12 L 1224.5 12 L 1231.5 18 Q 1240.17 16.33 1243 20.5 L 1244 22.5 L 1244 43.5 L 1245 44.5 L 1245 73.5 L 1248.5 78 Q 1252.17 81.33 1260.5 80 L 1263.5 83 L 1275.5 84 L 1280 87.5 L 1281.5 90 Q 1284.13 89.17 1283 92.5 L 1284 93.5 L 1284 100.5 L 1281.5 104 L 1251.5 104 L 1248 106.5 L 1247 144.5 L 1248 145.5 L 1248 190.5 L 1249 191.5 L 1249 206.5 Q 1254.93 219.57 1265.5 228 Q 1276.75 230.25 1279 223.5 L 1280 220.5 L 1288.5 211 Q 1297.88 209.13 1301 213.5 L 1300 224.5 L 1299 225.5 L 1299 236.5 L 1292 249 L 1283.5 254 L 1260.5 254 L 1255.5 252 L 1251.5 252 L 1241.5 248 L 1234 242.5 L 1231 238.5 L 1231 235.5 L 1232 234.5 L 1232 222.5 Q 1234 221.5 1233 217.5 Q 1230.75 216.25 1232 211.5 Q 1234.25 210.25 1233 205.5 L 1232 204.5 L 1232 197.5 L 1231 196.5 L 1231 172.5 Q 1233.25 171.25 1232 166.5 L 1231 165.5 L 1230 140.5 L 1229 139.5 L 1229 110.5 Q 1226.75 109.25 1228 104.5 L 1223.5 99 L 1218.5 97 L 1211.5 97 L 1210.5 96 L 1190.5 96 L 1185 92.5 L 1184 85.5 L 1188 74.5 L 1191.5 71 Q 1201.83 69.17 1206.5 73 L 1220.5 73 Q 1223 72 1222 67.5 L 1220 63.5 L 1219 50.5 Q 1216 49.5 1217 44.5 L 1212 37.5 L 1212 29.5 L 1209 23.5 L 1209 19.5 L 1211.5 15 L 1216.5 12 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 766.5 19 Q 773.31 18.12 776 20 L 777 22.5 L 777 37.5 L 776 38.5 L 776 70.5 L 779.5 74 L 787.5 76 Q 792.25 74.75 793.5 77 L 817.5 77 L 818.5 78 L 825.5 78 L 836 82 Q 837 90.5 834 95 L 829.5 98 L 798.5 98 L 790.5 95 L 785.5 95 L 780 98.5 L 780 114.5 L 781 115.5 L 781 124.5 L 783 129.5 L 783 173.5 L 786 183.5 L 787 230.5 L 789 234.5 L 789 239.5 L 791 247.5 L 800.5 259 Q 805.57 262.43 815.5 261 L 829.5 253 L 832.5 253 L 844 243.5 Q 843.25 241.25 845.5 242 L 846.5 241 L 853.5 241 L 862 245 Q 863.75 247.37 863 253.5 L 858.5 259 L 824.5 278 L 816.5 280 L 801.5 280 Q 794.9 278.6 791.5 274 Q 786.5 274.5 784.5 272 L 778 266.5 L 773 257.5 L 772 245.5 L 771 244.5 L 771 234.5 L 770 233.5 L 770 223.5 L 769 222.5 L 769 186.5 L 764 177.5 L 762 170.5 L 761 101.5 Q 759 100.5 760 96.5 L 757.5 94 L 755.5 93 L 729.5 93 L 724.5 91 L 710.5 91 L 706 86.5 L 706 80.5 L 707.5 80 L 709.5 78 L 723.5 77 L 733.5 74 L 751.5 74 L 755 70.5 L 756 64.5 L 755 63.5 L 755 53.5 L 753 51.5 L 753 40.5 L 760 34.5 Q 763 31.5 762 24.5 L 766.5 19 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 113.5 39 L 134.5 39 Q 135.75 41.25 140.5 40 L 152.5 43 L 162 48.5 L 164.5 53 L 168.5 53 L 178 59.5 L 181 63.5 L 181 74 Q 178.31 75.88 171.5 75 Q 170.5 73 166.5 74 Q 163.83 76.83 157.5 76 L 154 72.5 Q 153.29 66.71 149.5 64 Q 147.25 64.75 148 62.5 L 140.5 57 L 122.5 57 L 121.5 56 L 114.5 56 Q 113.5 58 109.5 57 L 90 70.5 L 72.5 90 L 63 98.5 Q 63.75 100.75 61.5 100 Q 55.89 102.39 56 110.5 L 57 111.5 L 57 118.5 L 62.5 125 L 67.5 128 L 78.5 128 L 84.5 126 L 91.5 126 L 92.5 125 L 111.5 125 L 112.5 126 L 135.5 126 L 136.5 127 L 144.5 127 Q 151.19 132.52 162 133 L 163.5 136 L 169 139 L 171.5 143 L 182 150.5 L 186.5 157 L 197 164.5 L 201 173.5 L 204 176.5 Q 202.75 181.25 205 182.5 L 205 219.5 L 203 221.5 L 201 229.5 L 197 235.5 L 197 240.5 L 195 242.5 L 194 247.5 L 188 260.5 L 168.5 283 L 157.5 291 Q 152.5 290.5 150.5 293 L 144.5 293 L 139.5 295 Q 134 300 125.5 302 L 121.5 306 L 109.5 307 L 108.5 308 L 72.5 308 L 71.5 307 L 57.5 305 L 43 296.5 L 41.5 294 Q 33.15 291.85 29 285.5 L 26.5 282 Q 21.88 281.13 20 277.5 Q 20.39 271.11 16.5 269 Q 12.5 269.5 12 266.5 L 12 256.5 Q 15.04 253.54 15 247.5 L 19.5 241 Q 23.13 239.12 29.5 240 L 37 244.5 L 39 252.5 L 47.5 262 L 63.5 273 L 70.5 276 L 77.5 276 L 79.5 278 L 84.5 279 L 89.5 283 Q 93.5 282 94.5 284 L 117.5 284 L 123.5 282 L 133.5 282 Q 143 276.5 149.5 268 L 153.5 267 L 162 258.5 L 167 251.5 L 167 249.5 L 171 245.5 L 175 234.5 L 181 223.5 L 181 190.5 Q 179 189.5 180 185.5 Q 173.96 182.04 172 174.5 L 158.5 160 L 147.5 154 L 140.5 154 L 139.5 153 L 123.5 153 L 114.5 156 L 91.5 156 L 88.5 154 Q 84.5 155 83.5 153 L 75.5 153 L 66.5 148 L 47.5 148 L 42 144.5 L 33 125.5 Q 34 121.5 32 120.5 L 32 107.5 L 33 104.5 L 42 94.5 Q 44.17 91.67 43 85.5 L 51.5 71 L 64.5 60 L 71.5 57 L 90.5 44 L 100.5 43 L 103.5 41 L 107.5 41 L 113.5 39 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 893.5 98 L 901.5 98 L 909.5 101 L 916.5 101 L 922 104 L 925 108.5 L 925 113.5 L 915 129 L 898.5 128 L 889 122.5 L 886 118.5 L 885 109.5 L 887 102 L 893.5 98 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 1430.5 109 Q 1437 108 1438 112.5 L 1436 120.5 L 1435 136.5 L 1433 139.5 L 1433 151.5 L 1431 154.5 Q 1432.25 159.25 1430 160.5 L 1430 172.5 L 1428 177.5 L 1428 203.5 L 1427 204.5 L 1427 214.5 L 1426 215.5 L 1425 227.5 L 1421 233.5 L 1420 251.5 L 1416 263.5 L 1416 274.5 Q 1414 275.5 1415 279.5 L 1408 292.5 L 1408 297.5 L 1405 303.5 L 1405 306.5 L 1400.5 313 L 1397 315.5 L 1394.5 320 L 1392 321.5 L 1387.5 329 L 1372.5 340 L 1368.5 340 L 1360.5 345 L 1349.5 346 L 1348.5 345 L 1334.5 345 L 1330.5 342 Q 1325.5 342.5 1323.5 340 L 1304.5 339 L 1302 336.5 L 1298 330.5 L 1298 326.5 L 1296 324.5 L 1295 315.5 L 1296 313 L 1304.5 313 Q 1314.88 317.12 1322.5 324 L 1326.5 324 L 1334.5 327 L 1350.5 327 L 1360.5 324 L 1374 312.5 L 1376.5 309 L 1380 306.5 L 1380 303.5 L 1385.5 298 L 1390 294.5 L 1393 288.5 Q 1391.83 279.33 1396 275.5 L 1397 233.5 L 1392.5 228 L 1379.5 220 L 1371 211.5 L 1368.5 208 L 1365 205.5 L 1356 190.5 L 1348 181.5 L 1348 176.5 L 1340 165.5 L 1339 159.5 L 1336 155.5 L 1336 152.5 L 1332 145.5 L 1331 140.5 L 1323 128.5 L 1323 124.5 L 1327.5 122 L 1341.5 122 L 1350 128.5 L 1351 132.5 L 1355 137.5 L 1357 143.5 L 1364 154.5 L 1387.5 179 L 1394.5 185 L 1399.5 187 L 1403 183.5 Q 1402.5 178.5 1405 176.5 L 1405 164.5 L 1406 163.5 L 1407 155.5 L 1412 145.5 L 1413 133.5 L 1415 125.5 L 1427.5 110 L 1430.5 109 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 1121.5 112 L 1128.5 113 L 1135 117.5 L 1137 123.5 L 1137 135.5 L 1128 152.5 L 1128 159.5 L 1130.5 162 L 1136.5 163 L 1138 164.5 L 1138 186.5 L 1137 187.5 L 1136 226.5 L 1137 227.5 L 1138 239.5 L 1142.5 244 L 1147.5 244 L 1156.5 240 L 1173.5 227 L 1176.5 227 L 1181.5 224 Q 1186.5 224.5 1188.5 222 L 1192.5 222 L 1197 225.5 Q 1199.17 228.33 1198 234.5 L 1196 239.5 L 1196 243.5 L 1193 249.5 L 1182.5 263 Q 1175.87 268.37 1166.5 271 L 1151.5 271 L 1150.5 270 L 1141.5 269 L 1130 261.5 L 1126 255.5 L 1126 250.5 L 1120 236.5 Q 1121.5 231 1119 229.5 L 1118 193.5 Q 1120.25 192.25 1119 187.5 L 1118 186.5 L 1117 168.5 L 1113 161.5 L 1113 150.5 L 1105 136.5 L 1105 129.5 L 1109 120.5 L 1114.5 115 L 1121.5 112 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 1053.5 116 L 1057.5 116 L 1065.5 123 L 1075 126 L 1075 141.5 Q 1072.33 143.83 1073 149.5 L 1068 156.5 L 1068 161.5 L 1066 163.5 L 1062 173.5 Q 1063.25 178.25 1061 179.5 L 1061 206.5 L 1060 207.5 L 1060 216.5 L 1056 227.5 L 1055 235.5 L 1052 242.5 L 1052 246.5 L 1050 248.5 L 1046 258.5 L 1045 264.5 L 1041 272 Q 1037.69 274.13 1029.5 273 L 1025 269.5 L 1022 259.5 L 1018 253.5 L 1018 250.5 Q 1015.22 247.78 1015 242.5 L 1010 234.5 L 1005 218.5 L 1001 213.5 L 1000 208.5 L 995 197.5 L 994 190.5 L 986 175.5 L 986 170.5 L 983 162.5 L 983 159.5 L 981 157.5 L 980 151.5 L 977 147.5 L 977 144.5 L 973 135.5 L 972 121.5 Q 973.5 118.5 979.5 120 L 986 125.5 L 993 140.5 L 1002 151.5 L 1002 154.5 L 1004 157.5 L 1004 160.5 L 1007 168.5 L 1008 177.5 L 1014 188.5 L 1018 204.5 L 1023.5 213 Q 1027.5 213.5 1028 210.5 L 1028 207.5 L 1035 195.5 L 1035 190.5 L 1039 184.5 L 1039 171.5 L 1041 166.5 L 1041 158.5 L 1042 157.5 L 1043 146.5 L 1045 143.5 L 1045 134.5 L 1050 118 L 1053.5 116 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 684.5 122 L 692.5 123 L 697 126.5 Q 699.33 129.67 698 136.5 L 695 144.5 L 692.5 147 Q 687.07 150.57 676.5 149 L 671 145.5 Q 669 141.5 670 134.5 L 679.5 124 L 684.5 122 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 601.5 129 L 618.5 129 L 630.5 134 L 633 136.5 L 635.5 141 L 650 149.5 L 650 154.5 L 645.5 159 L 638.5 159 Q 637.1 156.4 632.5 157 L 621.5 150 L 617.5 150 L 612.5 148 L 600.5 148 L 595.5 152 L 592.5 152 L 579 164.5 L 574 174.5 L 573 188.5 L 579.5 199 Q 582.33 201.17 588.5 200 L 589.5 199 L 598.5 198 L 603.5 195 L 606.5 195 L 608.5 193 L 620.5 193 L 621.5 194 L 632.5 195 L 641 202.5 L 645.5 208 Q 648.83 206.87 648 209.5 L 656 223.5 L 657 243.5 L 656 244.5 Q 657.25 252.75 655 257.5 L 647 271 L 639 276.5 L 633.5 283 L 618.5 292 L 611.5 298 L 602.5 299 L 596.5 303 L 585.5 303 L 584.5 302 L 576.5 302 Q 575 304.5 569.5 303 L 552 294 L 550.5 291 Q 548.25 291.75 549 289.5 L 529.5 267 Q 527.25 267.75 528 265.5 L 524 258.5 L 524 247.5 Q 526 242 535.5 244 L 541 248 L 543 251.5 L 545 260.5 L 557.5 276 L 566.5 280 L 587.5 280 L 588.5 279 L 596.5 279 L 602.5 277 L 608.5 277 L 612.5 274 L 617.5 273 L 625.5 269 L 633 262.5 L 638 251.5 L 638 246.5 L 640 241.5 L 640 235.5 Q 637.75 234.25 639 229.5 L 628.5 217 Q 623.5 217.5 621.5 215 L 612.5 215 L 606.5 223 L 604.5 224 L 586.5 224 L 577.5 227 Q 576.5 225 572.5 226 L 569.5 227 L 559 221 L 551 208.5 L 551 205.5 L 548 198.5 L 548 190.5 L 552 174.5 L 570.5 150 L 585 137.5 Q 584.25 135.25 586.5 136 L 601.5 129 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 454.5 135 L 473.5 135 Q 480.33 137.67 484 143.5 L 498 161.5 L 500 167.5 L 504 172.5 L 505 181.5 L 508 185.5 L 510 259.5 L 509 260.5 L 509 270.5 L 507 272.5 L 507 277.5 L 505 279.5 L 504 283.5 L 504 293.5 L 498.5 302 Q 490.19 303.31 488 298.5 L 488 275.5 Q 490.5 274 489 268.5 L 492 264.5 L 492 212.5 L 490 209.5 L 490 191.5 L 488 183.5 L 485 176.5 L 480.5 171 Q 478.25 171.75 479 169.5 L 462.5 157 L 450.5 156 L 449.5 157 L 440.5 157 L 436 161.5 L 434 176.5 Q 430.25 178.75 431 185.5 L 434 188.5 L 435 227.5 L 436 228.5 L 436 238.5 L 438 243.5 L 438 264.5 Q 441.4 267.1 440 274.5 L 435.5 280 Q 428.87 280.88 426 285.5 L 423.5 290 L 420.5 292 L 411.5 293 L 407 289.5 L 406 283.5 L 404 280.5 L 404 257.5 L 403 256.5 L 403 246.5 L 401 239.5 Q 403.5 238 402 232.5 L 401 231.5 L 401 212.5 L 400 211.5 L 400 172.5 L 396 158.5 L 396 153.5 L 397 151 L 400.5 149 L 406.5 149 L 407.5 150 L 416.5 151 L 422.5 146 L 434.5 143 L 445.5 136 L 453.5 136 L 454.5 135 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 291.5 146 L 303.5 146 L 306.5 148 L 320.5 151 L 323.5 154 Q 328.67 153.83 330.5 157 L 334.5 157 L 341 163.5 L 349 174.5 L 349 189.5 L 350 190.5 L 350 201.5 L 352 206.5 L 352 217.5 L 350 221 L 331.5 221 L 330.5 220 L 305.5 220 Q 304 222.5 298.5 221 L 295.5 223 L 285.5 223 Q 278.48 224.98 274.5 230 L 266.5 230 Q 263.9 226.6 256.5 228 L 251 231.5 L 251 240.5 L 252 241.5 L 252 248.5 L 253 249.5 L 254 259.5 L 257 262.5 L 261 271.5 L 270.5 282 L 273 283.5 L 274.5 286 L 285.5 292 L 297.5 293 L 298.5 294 L 306.5 294 L 307.5 293 L 314.5 293 Q 315.9 290.4 320.5 291 L 342 272.5 L 348 264.5 L 351 257.5 L 354.5 254 Q 357 252 362.5 253 L 367 255.5 Q 368 262.5 366 266.5 L 359 274.5 Q 359.5 279 356 279.5 L 356 282 L 352 284.5 L 349.5 288 Q 345.75 287.25 345 289.5 L 337.5 298 L 321.5 308 L 313.5 308 L 308.5 311 L 295.5 311 L 289.5 309 L 283.5 309 L 273.5 304 L 270.5 304 L 259 296 L 257.5 293 L 249 286.5 L 242 275.5 L 241 270.5 L 239 267.5 L 237 256.5 L 234 250.5 L 234 237.5 L 235 236.5 L 235 218.5 Q 237.5 217 236 211.5 L 238 207.5 L 238 202.5 L 241 198.5 L 242 190.5 L 245 183.5 L 254.5 173 L 257.5 172 L 266.5 163 L 285.5 148 L 291.5 146 Z M 295 165 L 277 178 L 267 192 L 263 201 Q 262 206 265 207 L 295 206 L 296 205 L 304 205 L 305 204 L 315 204 L 321 201 L 325 201 L 328 198 L 327 188 L 322 179 L 322 176 L 319 172 L 307 165 L 295 165 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 896.5 154 L 900.5 154 L 910 160.5 Q 912 163 911 168.5 L 912 169.5 L 912 178.5 L 914 184.5 L 914 207.5 L 913 208.5 L 913 217.5 L 914 218.5 L 914 238.5 L 916 243.5 L 916 247.5 Q 919.04 250.46 919 256.5 L 924.5 262 L 933.5 262 L 934.5 261 L 942.5 260 L 967.5 243 L 971 243 L 970 254.5 L 966 260.5 L 965 264.5 L 956.5 274 L 951 277.5 Q 951.75 279.75 949.5 279 L 942.5 283 Q 937.75 281.75 936.5 284 L 923.5 284 L 909 272.5 L 903 263.5 L 903 259.5 L 900 250.5 L 899 233.5 L 896 224.5 L 896 180.5 L 894 177.5 L 894 166.5 Q 891 165.5 892 160.5 L 894.5 155 L 896.5 154 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 672 163 Q 681.99 161.2 685 167.5 L 686 176.5 L 687 180.5 L 689 182.5 L 689 185.5 L 688 186.5 L 688 203.5 L 692 216.5 L 692 233.5 L 695 240.5 L 695 255.5 L 701.5 264 Q 714.06 266.06 717 258.5 L 724.5 250 L 730.5 249 L 732 250.5 L 732 268.5 L 731 272.5 L 727.5 276 L 724 277.5 L 723 281 L 709.5 288 L 705.5 289 L 693.5 289 Q 685.61 286.89 682 280.5 Q 682.5 277 680 276.5 L 680 260.5 L 678 256.5 L 678 249.5 L 677 248.5 L 677 217.5 L 675 213.5 L 675 190.5 L 673 184.5 L 673 175.5 L 672 174.5 L 671 165.5 L 672 163 Z " /></svg></span><span class="sr-only">Sensitivity</span></li>
+            <li class="sticky" style="--r:1.6deg"><span class="hand"><svg class="wd" viewBox="4 4 1509 397" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" stroke-width="0" d="M 939.5 12 Q 947.25 10.25 949 14.5 L 950 23.5 Q 955.09 30.41 957 40.5 L 962 45.5 L 962 52.5 L 961 53.5 L 961 73.5 L 965.5 79 Q 969.5 78 970.5 80 L 984.5 80 L 996.5 83 L 1007.5 83 L 1008.5 82 L 1015.5 82 L 1022 90.5 L 1022 99.5 L 1021 102 L 1017.5 104 L 1002.5 104 L 1001.5 105 L 988.5 105 L 987.5 106 L 972.5 106 Q 971 108.5 965.5 107 L 961 110.5 L 959 117.5 L 959 129.5 L 960 130.5 L 960 145.5 L 961 146.5 L 962 201.5 L 961 202.5 L 961 227.5 Q 958.75 228.75 960 233.5 L 961 234.5 L 961 242.5 L 960 243.5 L 960 267.5 L 961 268.5 L 961 287.5 L 963 291.5 L 965 301.5 L 968 304.5 L 970 310.5 L 975.5 317 L 986.5 324 L 991.5 325 L 996.5 328 L 1006.5 328 L 1010.5 327 L 1016 321.5 L 1017 318.5 L 1030.5 302 L 1039.5 302 L 1042 304.5 Q 1041.5 308 1044 308.5 L 1044 322.5 L 1034.5 334 L 1025.5 342 Q 1022 341.5 1021.5 344 L 1018.5 344 L 1010.5 349 Q 1005 347.5 1003.5 350 L 985.5 350 L 982.5 348 L 976.5 347 L 971.5 343 L 964 341 L 962.5 338 L 953 331.5 L 949 321.5 L 949 307.5 L 945 298.5 L 945 290.5 L 941 278.5 L 941 264.5 L 942 263.5 L 943 223.5 Q 940.5 222 942 216.5 L 949 211.5 Q 950 207 947.5 206 Q 944.17 207.13 945 204.5 L 943 201.5 L 943 189.5 L 944 188.5 L 944 181.5 L 943 180.5 L 943 161.5 L 941 154.5 L 941 133.5 L 942 132.5 L 942 112.5 Q 940.88 107.13 936.5 105 L 929.5 102 L 879.5 102 L 875 98.5 L 875 91.5 L 879 87.5 Q 877.42 77.42 883.5 75 L 889.5 75 L 896.5 77 L 907.5 77 L 913.5 80 L 933.5 80 L 939 76.5 L 939 58.5 L 942 53.5 L 942 49.5 L 937 45.5 L 937 34.5 Q 933.86 30.14 935 21.5 Q 937.25 20.25 936 15.5 L 939.5 12 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 524.5 53 L 534.5 53 L 540 57.5 Q 540.48 66.97 536 71.5 L 536 94.5 L 534 102.5 L 534 112.5 L 535 116.5 L 537.5 119 L 570.5 119 L 571.5 118 L 588.5 118 L 595.5 121 L 600.5 121 L 604 123.5 L 606 131.5 L 604 136 L 595.5 140 L 584.5 140 L 583.5 141 L 573.5 141 L 572.5 142 L 539.5 142 L 535 145.5 L 531 156.5 L 531 167.5 L 532 168.5 L 532 182.5 Q 529.75 183.75 531 188.5 L 532 189.5 L 532 204.5 L 534 211.5 L 535 283.5 L 536 284.5 L 538 297.5 L 541 302.5 L 541 313.5 Q 544.17 316.83 543 324.5 L 545 326.5 L 550 338.5 L 556.5 345 Q 560.88 347.13 568.5 346 L 575 340.5 L 583 329.5 L 586 322.5 L 590.5 318 Q 599.37 316.75 603 319 L 605 322.5 L 605 330.5 L 599 352.5 L 599 356.5 L 593.5 364 L 578.5 371 L 561.5 372 L 560.5 371 L 554.5 371 L 546.5 369 L 540 364.5 L 527 348.5 L 526 344.5 L 521 336.5 L 520 330.5 L 516 324.5 Q 517 318.5 514 316.5 L 514 286.5 L 513 285.5 L 513 211.5 L 511 205.5 L 511 181.5 L 512 180.5 L 512 169.5 L 511 168.5 L 511 148.5 L 507.5 144 L 504.5 143 L 490.5 143 Q 489.5 141 485.5 142 L 478.5 144 L 455.5 144 L 447.5 137 L 446 137 L 444 133.5 L 444 125.5 L 450.5 122 L 456.5 122 L 457.5 123 L 474.5 123 L 475.5 122 L 485.5 122 L 486.5 121 L 500.5 120 L 505 116.5 L 505 104.5 L 504 103.5 L 504 97.5 Q 501.5 95.5 502 90.5 L 505 83.5 L 506 75.5 L 511.5 70 Q 516.25 70.25 518 67.5 L 520 56.5 L 522.5 54 L 524.5 53 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 62.5 57 L 102.5 58 L 103.5 57 L 112.5 57 L 113.5 58 L 134.5 58 Q 135.75 60.25 140.5 59 L 142.5 61 Q 152.83 59.17 157.5 63 L 177.5 63 L 184.5 61 L 245.5 61 L 246.5 62 L 253.5 62 L 254.5 63 L 273.5 63 L 286.5 58 L 291.5 58 Q 297.92 60.08 301.5 65 L 305.5 66 L 309 69.5 Q 308.25 73.25 310.5 74 Q 315.25 73.25 316 76.5 Q 316.75 80.25 314.5 81 L 310.5 83 L 284.5 83 L 283.5 84 L 270.5 84 L 269.5 85 L 249.5 86 L 248.5 87 L 231.5 87 L 230.5 88 L 207.5 88 Q 206 90.5 200.5 89 L 199.5 88 L 192.5 88 Q 191 90.5 185.5 89 L 183 91.5 L 184 140.5 L 185 141.5 L 185 184.5 L 183 189.5 L 183 195.5 L 180 205.5 L 180 209.5 L 181 213.5 L 180 214.5 L 180 220.5 L 178 227.5 L 178 236.5 L 177 237.5 L 176 271.5 L 177 272.5 L 177 282.5 L 176 283.5 L 176 308.5 Q 178 309.5 177 313.5 L 176 314.5 L 176 327.5 L 177 328.5 L 177 356.5 L 180.5 361 L 219.5 361 L 226.5 364 L 240.5 364 L 244.5 362 L 265.5 362 L 271.5 364 L 275.5 368 Q 283.31 368.69 287 373.5 L 287 381.5 L 283.5 386 L 261.5 388 L 256.5 386 L 251.5 386 L 248.5 387 Q 247.25 384.75 242.5 386 L 241.5 387 L 221.5 387 L 220.5 388 L 209.5 388 L 208.5 389 L 197.5 389 L 196.5 390 L 161.5 390 Q 159.75 386.25 152.5 388 L 150.5 390 L 141.5 390 L 140.5 391 L 133.5 391 L 132.5 392 L 117.5 392 L 116.5 393 L 43.5 394 L 42.5 393 L 36 393 L 33.5 389 L 30.5 387 L 15.5 387 L 13 384.5 L 12 373.5 L 15.5 370 Q 29.5 372 35.5 366 L 57.5 365 L 58.5 366 L 70.5 367 L 72.5 369 L 94.5 369 L 95.5 368 L 114.5 368 Q 115.5 366 119.5 367 L 122.5 365 L 126.5 365 L 135.5 361 L 142 355.5 L 142 338.5 L 143 337.5 L 143 254.5 Q 140.75 253.25 142 248.5 L 143 247.5 L 143 205.5 L 142 204.5 L 142 106.5 L 141 105.5 L 141 92.5 L 139.5 91 L 137.5 90 L 119.5 90 L 118.5 91 L 97.5 91 L 96.5 90 L 78.5 89 L 76.5 87 L 70.5 87 L 66.5 84 L 56.5 80 L 53 76.5 Q 48.65 71.07 50 61 L 53.5 59 Q 60.2 60.2 62.5 57 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 1094.5 132 L 1109.5 132 L 1117 137.5 Q 1119.78 140.22 1120 145.5 L 1123 149.5 Q 1122.5 154.5 1125 156.5 L 1125 164.5 L 1123 170.5 L 1116.5 177 L 1096.5 177 L 1088 170.5 L 1082 159.5 L 1081 155.5 L 1081 146.5 L 1090.5 134 L 1094.5 132 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 829.5 163 L 838.5 164 L 847 170.5 L 849 175.5 L 850 185.5 L 849 186.5 L 848 195.5 L 846 199 L 838.5 202 L 828.5 202 L 819 194.5 L 817 191.5 L 817 178.5 L 824.5 166 L 829.5 163 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 1441.5 164 L 1456.5 164 L 1457.5 165 L 1462.5 165 L 1470.5 167 L 1474.5 171 L 1483.5 175 L 1493 182.5 L 1497 188.5 L 1498 192.5 L 1501 195.5 L 1502 199.5 L 1503 213.5 L 1505 221.5 L 1505 229.5 L 1506 230.5 L 1506 239.5 Q 1503.75 240.75 1505 245.5 Q 1507.25 246.75 1506 251.5 L 1505 252.5 L 1505 264.5 L 1503 270.5 L 1503 280.5 L 1502 281.5 L 1502 325.5 L 1501 326.5 L 1501 336.5 L 1499 343.5 L 1499 349.5 L 1495.5 355 L 1482.5 356 L 1480 355 L 1478 350.5 L 1478 321.5 L 1479 320.5 L 1479 274.5 L 1478 273.5 L 1477 248.5 L 1474 241.5 L 1473 218.5 L 1470 214.5 L 1470 212.5 L 1452.5 192 L 1444.5 187 L 1440.5 187 L 1437.5 189 L 1429.5 190 L 1415 203.5 Q 1415.5 207 1413 207.5 L 1413 211 L 1410 212.5 Q 1407.88 216.88 1409 224.5 L 1407 228.5 L 1406 262.5 Q 1403.75 263.75 1405 268.5 Q 1408.14 272.86 1407 281.5 L 1405 285.5 L 1405 303.5 L 1406 304.5 L 1408 333.5 L 1407 334.5 L 1407 342.5 L 1405 348 L 1402.5 349 L 1391.5 349 L 1390 347.5 L 1389 339.5 L 1388 338.5 L 1388 326.5 L 1387 322.5 L 1383 316.5 L 1383 312.5 L 1384 311.5 L 1384 302.5 L 1383 301.5 L 1383 288.5 L 1384 287.5 L 1384 271.5 L 1383 270.5 L 1382 255.5 L 1383 254.5 L 1383 243.5 L 1382 242.5 L 1382 228.5 L 1380 224.5 L 1380 211.5 L 1381 210.5 L 1381 202.5 L 1379 199.5 L 1379 187.5 L 1381 179.5 L 1384.5 174 L 1392.5 174 L 1397.5 179 L 1403.5 179 L 1408.5 177 L 1414.5 171 L 1419.5 169 Q 1428.08 168.58 1433.5 165 L 1440.5 165 L 1441.5 164 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 1246.5 177 L 1278.5 178 L 1285.5 180 L 1289.5 184 L 1300.5 188 L 1309.5 194 L 1317.5 202 L 1319 202 L 1320.5 205 L 1327 209 Q 1332.39 225.76 1341 240.5 L 1342 250.5 L 1344 253.5 L 1344 268.5 L 1345 269.5 Q 1343.37 279.62 1346 285.5 L 1345 286.5 L 1345 300.5 L 1344 301.5 L 1343 317.5 Q 1337 323.5 1335 333.5 L 1323.5 348 L 1320.5 349 L 1307.5 360 L 1302.5 363 L 1299.5 363 L 1293.5 368 L 1289.5 368 L 1284.5 370 L 1254.5 370 L 1250.5 369 L 1239 358.5 L 1236 352.5 L 1226 340.5 L 1222 330.5 L 1219.5 328 Q 1217.25 328.75 1218 326.5 L 1214 314.5 L 1213 295.5 L 1210 284.5 L 1210 277.5 L 1209 276.5 L 1209 258.5 L 1210 257.5 L 1210 250.5 L 1212 245.5 L 1213 235.5 L 1217 230.5 L 1217 224.5 L 1222 218.5 L 1222 215.5 L 1226 209.5 L 1227 203.5 L 1230 199.5 L 1231 192.5 L 1237 183 L 1241 180.5 Q 1240.12 177.5 1244.5 179 L 1246.5 177 Z M 1269 203 L 1266 206 L 1260 208 Q 1255 215 1248 218 L 1241 229 L 1237 233 L 1233 243 L 1233 256 L 1235 261 L 1236 281 L 1238 287 L 1238 294 L 1242 304 L 1252 312 L 1256 319 L 1261 322 L 1269 332 L 1268 341 L 1272 343 L 1281 343 Q 1284 338 1291 337 L 1294 334 L 1294 331 L 1297 326 L 1302 322 L 1304 318 L 1304 296 L 1305 295 L 1305 275 L 1304 274 L 1303 247 L 1300 240 L 1300 236 L 1297 232 L 1297 224 L 1290 217 L 1286 213 L 1275 203 L 1269 203 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 649.5 208 Q 655.25 207.25 656 211.5 Q 654.33 220.17 658.5 223 L 666.5 226 L 670 229.5 L 671 232.5 L 671 286.5 L 673 289.5 L 673 302.5 L 675 310.5 L 678 313.5 L 678 316.5 Q 681.5 320.5 682 327.5 Q 686.21 330.29 687 336.5 L 702.5 353 L 705.5 355 L 722.5 355 L 731 350.5 L 731 348.5 L 735 343.5 L 735 330.5 L 744 309.5 L 744 303.5 L 747 298.5 L 747 293.5 L 750 285.5 L 750 281.5 L 749 280.5 L 748 259.5 L 746 253.5 L 745 230.5 Q 747.25 229.25 746 224.5 L 749 219 Q 752.31 216.88 760.5 218 L 765 222.5 L 765 244.5 L 767 248.5 L 767 268.5 L 768 269.5 L 769 292.5 L 767 298.5 L 766 329.5 L 763 333.5 L 763 338.5 L 761 340.5 L 760 345.5 L 754 357 L 752.5 357 L 748 361.5 Q 748.75 363.75 746.5 363 L 739 370.5 L 739 372 L 731.5 375 L 723.5 381 Q 714.5 382 709.5 387 L 689.5 387 L 681.5 385 L 675.5 381 L 672.5 381 L 669 377.5 L 666.5 374 L 664 372.5 L 660.5 367 L 657 364.5 Q 654.4 363.1 655 358.5 L 651 352.5 L 651 347.5 L 646 341.5 L 639 325.5 L 639 317.5 L 636 308.5 L 636 294.5 L 635 293.5 L 635 258.5 L 636 257.5 L 636 247.5 L 637 246.5 L 637 225.5 L 638 224.5 L 638 217.5 Q 643.25 214.75 644 209 Q 648.15 210.25 649.5 208 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 1106.5 208 Q 1113.75 206.75 1116 210.5 L 1117 241.5 L 1118 242.5 L 1118 256.5 L 1119 257.5 L 1119 290.5 L 1120 291.5 L 1120 308.5 L 1121 309.5 L 1122 322.5 L 1127 334.5 L 1129.5 337 L 1139.5 338 L 1146.5 333 Q 1152.17 333.67 1154.5 331 L 1160 326.5 Q 1159.17 323.88 1162.5 325 L 1165.5 324 L 1168 325 L 1170 329.5 L 1170 332.5 L 1165 343 L 1160 346.5 L 1159 350 L 1148.5 356 L 1140.5 357 Q 1139 354.5 1133.5 356 L 1132.5 357 L 1123.5 357 L 1122.5 356 L 1115.5 356 L 1110 350.5 L 1103 337.5 L 1103 330.5 Q 1105 329.5 1104 325.5 L 1103 324.5 L 1103 307.5 L 1102 306.5 L 1101 259.5 L 1098 250.5 L 1098 215.5 L 1099 211 L 1106.5 208 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 317.5 211 L 323.5 211 L 328 215.5 L 329 219.5 L 329 231.5 L 332.5 236 L 338.5 235 L 348.5 225 L 364.5 217 L 371.5 217 L 376.5 215 L 401.5 215 L 406.5 217 L 412.5 217 L 424.5 224 L 429.5 225 L 435 228 L 438.5 233 L 445 238.5 L 453 250.5 L 453 264.5 L 456.5 270 L 459 271.5 L 462 283.5 L 462 292.5 L 464 297.5 L 465 344.5 L 466 345.5 L 466 352.5 L 467 353.5 L 467 375.5 L 465 379 L 462 380.5 Q 462.75 382.75 460.5 382 L 447.5 389 L 439.5 391 L 429.5 391 L 424 384.5 Q 425.5 379 423 377.5 L 423 356.5 L 421 354.5 Q 422 350.5 420 349.5 L 420 323.5 Q 422.25 322.25 421 317.5 L 420 316.5 L 420 289.5 L 421 288.5 L 421 279.5 L 420 278.5 L 420 271.5 L 417 265.5 L 413 260.5 L 413 258.5 L 407.5 253 L 405 251.5 L 401.5 247 L 388.5 240 Q 384.88 238.12 378.5 239 L 374.5 240 L 365 246.5 L 353 262.5 L 352 266.5 L 344 277.5 L 344 280 L 341 281.5 L 341 288.5 L 339 293.5 L 338 303.5 L 336 307.5 L 335 346.5 L 340 358.5 L 340 381.5 Q 338.75 387.75 334.5 391 L 326.5 392 L 322 389.5 L 322 380.5 L 319 376.5 L 318 360.5 L 309 350.5 L 308 347.5 L 308 334.5 L 307 333.5 L 307 301.5 L 306 300.5 L 305 277.5 L 303 272.5 L 303 266.5 L 301 264.5 L 301 255.5 L 299 253.5 L 299 247.5 L 297 242.5 L 296 220.5 Q 298.25 216.75 305.5 218 L 317.5 211 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 825.5 217 Q 833.5 215.5 835 220.5 L 844 262.5 L 842 270.5 L 841 314.5 L 842 315.5 L 842 322.5 L 848.5 330 L 852.5 333 Q 857.5 332.5 859.5 335 L 870.5 335 L 877 330.5 Q 877.88 325.88 881.5 324 Q 884.69 319.69 893.5 321 L 897 323.5 L 896 331.5 L 886 346.5 L 880 352.5 L 875 361.5 L 875 367.5 L 869.5 373 L 864.5 375 L 845.5 375 Q 844 372.5 838.5 374 L 835 370.5 L 831 360.5 L 825 351.5 L 825 337.5 L 823 330.5 L 823 311.5 L 824 310.5 L 824 266.5 L 823 265.5 L 823 253.5 L 821.5 252 Q 819.25 252.75 820 250.5 L 818 248.5 L 818 229.5 Q 819.83 221.33 825.5 217 Z " /></svg></span><span class="sr-only">Intuition</span></li>
+            <li class="sticky" style="--r:-1deg"><span class="hand"><svg class="wd" viewBox="5 5 1098 369" aria-hidden="true" focusable="false"><path fill="currentColor" stroke="none" stroke-width="0" d="M 405.5 12 L 425.5 12 L 432 18.5 Q 433.5 26.5 428.5 28 L 421.5 31 L 413.5 31 L 408.5 33 L 401.5 33 Q 400.25 30.75 395.5 32 L 389.5 37 L 385.5 37 L 377.5 40 L 372.5 40 L 369.5 42 L 356.5 42 L 348.5 45 L 334.5 45 L 312.5 52 L 293.5 52 L 292.5 53 L 274.5 54 L 273.5 55 L 255.5 55 Q 250.8 58.8 243.5 60 L 240 63.5 L 237 67.5 L 237 80.5 L 238 81.5 L 238 145.5 L 239 146.5 L 239 160.5 L 238 161.5 L 238 206.5 L 237 207.5 L 237 222.5 L 236 223.5 L 236 271.5 L 235 272.5 L 235 280.5 Q 237.25 281.75 236 286.5 L 235 287.5 L 235 302.5 L 236 303.5 L 236 345.5 L 235 346.5 L 235 355.5 Q 231.36 356.86 232 362.5 L 227.5 367 L 220.5 368 Q 219.15 365.75 215 367 L 212 362.5 L 212 351.5 L 211 350.5 L 210 337.5 L 212 334.5 L 212 311.5 L 213 310.5 L 213 279.5 L 214 278.5 L 214 254.5 L 215 253.5 L 215 220.5 L 216 219.5 L 216 197.5 L 217 196.5 L 217 166.5 L 216 165.5 L 216 121.5 L 217 120.5 L 217 72.5 Q 215 71.5 216 67.5 L 214.5 66 L 180.5 67 Q 179 69.5 173.5 68 L 168.5 71 Q 164.5 70 163.5 72 L 151.5 72 L 146.5 74 L 92.5 75 L 91.5 76 L 72.5 76 L 71.5 77 L 58.5 77 L 54.5 78 Q 53.5 76 49.5 77 L 42.5 79 L 27.5 79 L 21.5 81 L 14.5 81 Q 10.33 77.98 12 70 L 16 67.5 L 18 60.5 L 18 55.5 L 23.5 49 L 36.5 49 L 37.5 48 L 61.5 47 L 67 42.5 L 70.5 38 L 72.5 37 L 83.5 37 L 84.5 36 L 112.5 36 L 113.5 37 L 169.5 37 Q 171 39.5 176.5 38 L 177.5 37 L 204.5 37 L 205.5 36 L 212.5 36 L 219 29.5 Q 218.25 27.25 220.5 28 L 221.5 27 L 229.5 27 Q 235.61 28.39 238.5 33 L 253.5 34 L 254.5 33 L 280.5 33 L 281.5 32 L 288.5 32 L 292.5 30 L 304.5 30 L 307.5 28 L 326.5 27 L 337.5 23 L 350.5 22 L 363.5 18 L 375.5 18 L 383.5 15 L 389.5 15 L 395.5 13 L 404.5 13 L 405.5 12 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 980.5 118 L 1000.5 118 Q 1001.75 120.25 1006.5 119 L 1008.5 121 L 1024.5 124 L 1032.5 130 L 1039.5 133 L 1052 141 L 1065 163.5 L 1065 167.5 Q 1068.75 169.75 1068 176.5 L 1072 183.5 L 1073 191.5 L 1076 198.5 L 1076 203.5 L 1075 204.5 L 1075 211.5 L 1076 212.5 L 1077 241.5 L 1076 242.5 L 1076 251.5 L 1075 252.5 L 1075 271.5 Q 1072.75 272.75 1074 277.5 L 1075 278.5 L 1075 300.5 L 1080.5 307 Q 1090.73 306.77 1095 312.5 Q 1098.2 314.8 1097 321.5 L 1095 327 L 1086.5 329 L 1075.5 329 L 1064.5 324 L 1052.5 324 L 1051.5 323 L 1046 323 L 1043 318.5 L 1043 298.5 L 1042 297.5 L 1042 285.5 L 1040 279.5 L 1040 273.5 L 1042 265.5 L 1043 229.5 L 1044 228.5 L 1044 216.5 L 1045 215.5 L 1045 193.5 L 1043 190.5 L 1042 182.5 L 1037 174.5 L 1036 168.5 L 1034 166.5 L 1031 157.5 L 1021.5 148 L 996.5 146 L 973.5 153 L 966 158.5 Q 966.75 160.75 964.5 160 Q 957.63 161.63 955 167.5 L 951 174 L 948 175.5 L 948 177.5 L 945 180.5 L 945 183.5 L 941 189.5 Q 942.5 195 940 196.5 L 940 212.5 L 939 213.5 L 939 237.5 L 940 238.5 L 940 256.5 L 939 257.5 L 939 277.5 L 937 280.5 L 937 313.5 L 934.5 316 Q 929.22 316.22 926.5 319 L 922.5 319 L 915 312.5 L 913 305.5 L 908 298.5 L 906 290.5 L 904 288.5 L 903 282.5 L 901 280.5 L 901 272.5 L 900 271.5 L 900 248.5 L 899 245.5 Q 902.88 237.88 901 224.5 Q 899 223.5 900 219.5 L 901 218.5 L 901 186.5 L 899 180.5 L 893 174.5 Q 891.15 166.85 885.5 163 L 881.5 160 Q 876.75 161.25 875.5 159 L 855.5 159 Q 854.25 161.25 849.5 160 L 837 169.5 L 835.5 172 L 832 174.5 L 831 177.5 L 831 198.5 L 832 199.5 L 832 214.5 L 833 215.5 L 833 226.5 L 834 227.5 L 834 250.5 L 832 256.5 L 832 268.5 L 831 269.5 L 831 303.5 L 832 307.5 Q 830 308.5 831 312.5 L 829 314.5 L 828 322.5 L 823.5 327 L 812.5 327 L 809 323.5 L 804 315.5 L 804 303.5 L 802 296.5 L 801 232.5 L 800 231.5 L 800 211.5 L 799 210.5 L 798 172.5 L 793.5 165 L 770.5 165 L 763 163 L 760 157.5 L 760 151.5 L 763.5 148 L 766.5 148 Q 768.33 144.83 773.5 145 L 776.5 142 L 778.5 142 L 784.5 138 L 799.5 133 L 800.5 134 L 811.5 134 L 817.5 137 L 836.5 137 Q 841.23 132.23 850.5 132 L 852.5 130 L 884.5 130 L 885.5 131 L 899.5 131 Q 901 133.5 906.5 132 L 910.5 135 L 913.5 135 L 916 137.5 L 917.5 140 L 920 141.5 L 922.5 145 L 930.5 145 L 941 136.5 L 943.5 133 Q 951.44 131.44 955.5 126 Q 963.02 125.52 967.5 122 L 976.5 121 L 980.5 118 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 656.5 123 L 668.5 123 Q 669.5 125 673.5 124 L 685.5 132 L 687.5 132 L 699.5 139 L 704.5 140 L 711 146.5 L 712 150.5 L 721 166.5 L 721 169.5 L 724 175.5 L 724 179.5 L 726 182.5 Q 725 186.5 727 187.5 L 728 229.5 L 727 230.5 L 726 256.5 L 725 257.5 L 725 281.5 L 727 287.5 L 727 297.5 Q 730.37 300.13 731 305.5 L 734.5 309 L 740.5 313 L 756.5 313 L 767.5 307 L 778.5 306 L 785 310.5 L 785 316.5 L 783 322 L 769.5 329 Q 760.92 329.43 755.5 333 L 739.5 333 Q 738 330.5 732.5 332 L 726.5 327 L 719.5 324 L 710.5 324 L 705.5 326 L 693.5 336 L 685.5 339 L 676.5 340 L 668.5 344 L 664.5 344 L 655.5 347 L 625.5 347 L 622.5 345 L 617.5 345 L 612.5 343 L 602.5 336 L 599.5 336 L 588 325.5 L 579 312.5 L 572 295.5 L 567 289.5 L 566 253.5 L 569 240.5 L 573 234.5 L 573 231.5 L 575 228 L 578 226.5 L 582.5 221 Q 586.25 221.75 587 219.5 Q 586.25 217.25 588.5 218 L 602.5 209 L 612.5 205 L 615.5 205 L 618.5 203 L 628.5 201 L 631.5 199 L 668.5 199 L 669.5 200 L 677.5 200 L 680.5 202 L 685.5 202 Q 686.9 204.6 691.5 204 L 693.5 206 L 700.5 206 L 703 203.5 L 703 194.5 L 702 193.5 L 701 173.5 L 693.5 165 L 691.5 164 L 662.5 164 L 657.5 162 L 650.5 162 L 649.5 163 L 638.5 163 L 634.5 165 L 614.5 166 L 604.5 175 Q 598.5 175 596.5 179 L 592.5 179 L 590.5 181 L 579.5 183 Q 578 180.5 572.5 182 L 569 178.5 L 570 172.5 L 576.5 164 Q 587.25 159.75 593 150.5 L 598.5 144 L 604.5 142 L 613.5 136 L 628.5 131 L 631.5 128 L 640.5 127 L 656.5 123 Z M 643 225 L 637 229 L 628 232 L 623 237 Q 624 239 622 238 L 620 242 L 607 257 L 606 262 L 604 264 L 604 268 L 601 271 L 601 280 L 600 281 L 600 288 L 603 300 L 611 310 L 622 317 L 632 321 L 635 321 L 637 323 Q 642 322 644 324 L 664 323 L 678 319 L 680 315 L 686 314 L 699 299 L 703 287 L 703 266 Q 701 264 702 261 L 694 245 L 686 237 L 681 235 L 672 228 L 663 225 L 654 225 L 653 226 L 643 225 Z " /><path fill="currentColor" stroke="none" stroke-width="0" d="M 447.5 149 L 480.5 149 L 481.5 150 L 490.5 150 L 501.5 156 L 513 166.5 L 517 178.5 L 526 190.5 Q 528.55 200.95 535 207.5 L 537 215.5 L 537 222.5 L 534 232.5 L 528.5 238 L 526 239.5 Q 526.83 242.13 523.5 241 L 522.5 242 L 514.5 242 L 505.5 246 L 501.5 246 L 495.5 250 L 483.5 253 L 451.5 255 Q 450.5 253 446.5 254 L 434.5 257 L 433.5 256 L 416.5 256 Q 415.5 254 411.5 255 L 410.5 256 L 392.5 256 L 391.5 257 L 372.5 257 L 370 259.5 Q 367.67 262.67 369 269.5 L 371 274.5 L 371 279.5 L 374 285.5 L 375 293.5 L 377 295.5 L 377 299.5 L 382.5 307 L 387 309 Q 389.11 315.93 395.5 320 Q 401.25 321.25 403.5 326 L 412.5 330 L 415.5 330 L 418.5 333 L 427.5 335 L 431.5 338 L 450.5 339 L 451.5 338 L 458.5 338 L 462.5 335 L 472.5 331 L 485 320.5 L 488.5 316 L 492 314.5 Q 491.25 312.25 493.5 313 L 496 310.5 L 499 301.5 L 508.5 292 L 510.5 291 L 521.5 291 Q 522.5 293 526.5 292 L 528 293.5 L 530 296.5 L 530 307.5 Q 526 309.5 526 315.5 L 515.5 329 L 511 331.5 Q 511.75 333.75 509.5 333 L 500.5 343 L 489 350.5 Q 489.75 352.75 487.5 352 L 485.5 354 L 472.5 358 L 431.5 362 L 430.5 361 L 414.5 361 L 406.5 359 L 401.5 356 L 396.5 356 L 393.5 353 L 390.5 353 L 380.5 348 L 366.5 338 L 358 329.5 L 350 317.5 L 348 308.5 L 346 306.5 L 346 302.5 L 343 298.5 L 343 288.5 L 342 287.5 L 341 275.5 L 340 274.5 L 340 255.5 L 343 248.5 L 344 238.5 L 348 233.5 L 348 230.5 L 353 216.5 L 368 192.5 L 369 187 L 374 184.5 L 381.5 176 L 383.5 176 L 389.5 172 L 394.5 171 L 402.5 164 L 404.5 164 L 413.5 158 Q 420.5 157.5 424.5 154 L 432.5 153 L 434.5 151 L 446.5 150 L 447.5 149 Z M 468 174 L 463 176 L 437 177 L 427 181 L 416 189 L 414 189 L 411 193 Q 405 193 402 198 Q 396 197 395 200 L 384 211 Q 383 216 380 219 L 380 227 L 382 228 Q 386 229 388 227 L 407 227 L 408 226 L 416 225 L 419 223 L 429 222 L 434 220 L 456 220 L 462 217 L 479 214 L 486 210 L 490 210 L 501 207 L 504 204 Q 505 197 503 194 L 496 182 L 493 178 L 483 174 L 468 174 Z " /></svg></span><span class="sr-only">Team</span></li>
+          </ul>
+          <ul class="sticky-row code" aria-label="How I work, written as code">
+            <li class="sticky mono" style="--r:1.2deg"><code>confirm(request)</code><span>Three lines: what I understood, what I will do, what I need.</span></li>
+            <li class="sticky mono" style="--r:-1.6deg"><code>check(delivery)</code><span>A short checklist first, and nothing goes live without the client's OK.</span></li>
+            <li class="sticky mono" style="--r:.8deg"><code>write(scope)</code><span>What is included, how many rounds of corrections, how rework is handled. One page, at the start.</span></li>
+          </ul>
+        </div>
+
+        <div class="palette" aria-hidden="true"><i style="background:#00906d"></i><i style="background:#156668"></i><i style="background:#eeecdf"></i><i style="background:#ffd3c2"></i><i style="background:#f0cdff"></i><i style="background:#e0fe9b"></i><i style="background:#b1dcf9"></i><i style="background:#7faac7"></i><i style="background:#92a518"></i><i style="background:#ef63a0"></i><i style="background:#d5a9ce"></i><i style="background:#e18264"></i></div>
+        <p class="micro palette-cap">Colours from my first personal-brand board, Aug 2024</p>
+      </div>
+    </section>
+    <!--/ABOUT-->
+    <!--CONTACT-->
+    <section class="contact" id="contact" aria-labelledby="contact-h">
+      <div class="wrap">
+        <div class="work-head">
+          <h2 id="contact-h">Contact</h2>
+          <span class="micro">The best way to reach me</span>
+        </div>
+        <p class="contact-line">Let’s talk.</p>
+        <ul class="contact-list">
+          <li><span class="micro">Email</span><a href="mailto:bessonangelina@gmail.com?subject=Hello%20from%20your%20portfolio">bessonangelina@gmail.com</a></li>
+          <li><span class="micro">LinkedIn</span><a href="https://www.linkedin.com/in/angelinabesson" target="_blank" rel="noopener">linkedin.com/in/angelinabesson<span class="sr-only"> (opens in a new tab)</span></a></li>
+          <li><span class="micro">WhatsApp</span><a href="https://wa.me/5493447536882?text=Hi%20Angelina%2C%20I%20saw%20your%20portfolio%20and%20I'd%20like%20to%20talk." target="_blank" rel="noopener">Message me on WhatsApp<span class="sr-only"> (opens in a new tab)</span></a></li>
+          <li><span class="micro">Now</span><span>Open to remote assistant roles</span></li>
+          <li><span class="micro">Based in</span><span>Argentina, working remotely</span></li>
+        </ul>
+        <div class="btns">
+          <a class="btn main" href="mailto:bessonangelina@gmail.com?subject=Hello%20from%20your%20portfolio">Email me</a>
+          <a class="btn" href="https://wa.me/5493447536882?text=Hi%20Angelina%2C%20I%20saw%20your%20portfolio%20and%20I'd%20like%20to%20talk." target="_blank" rel="noopener">WhatsApp<span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="btn" href="https://www.linkedin.com/in/angelinabesson" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+    </section>
+    <!--/CONTACT-->
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026 Angelina (Ange) Besson</p>
+    </div>
+  </footer>
+
+  <button type="button" class="pause-btn" id="pause" aria-pressed="false">Pause motion</button>
+
+  <script>
+    (function () {
+      var svg = document.querySelector('.scribble');
+      var path = document.getElementById('ln');
+      var STRAIGHT = 'M 20 60 C 65.7 60, 111.4 60, 157.1 60 C 202.9 60, 248.6 60, 294.3 60 C 340 60, 385.7 60, 431.4 60 C 477.1 60, 522.9 60, 568.6 60 C 614.3 60, 660 60, 705.7 60 C 751.4 60, 797.1 60, 842.9 60 C 888.6 60, 934.3 60, 980 60';
+      var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // Sin movimiento (o sin soporte de animacion SVG): se muestra directo el resultado final.
+      if (reduce || !svg.setCurrentTime) {
+        path.setAttribute('d', STRAIGHT);
+        path.setAttribute('stroke-dashoffset', '0');
+        [].slice.call(path.querySelectorAll('animate')).forEach(function (a) { a.remove(); });
+      }
+
+      // Contador grande: muestra la parada que esta en el centro de la pantalla (mejora, no es necesario).
+      var cur = document.getElementById('cur'), lab = document.getElementById('curlabel');
+      var stops = [].slice.call(document.querySelectorAll('.stop'));
+      var ticking = false;
+      function updateCounter() {
+        ticking = false;
+        // in-view: arranca las animaciones de cada tarjeta cuando se acerca a la pantalla
+        var vh = window.innerHeight;
+        [].slice.call(document.querySelectorAll('.stop, .card, .play-item')).forEach(function (el) { if (!el.classList.contains('in') && el.getBoundingClientRect().top < vh * 0.9) el.classList.add('in'); });
+        var mid = window.innerHeight * 0.5, best = null, bestD = Infinity;
+        stops.forEach(function (s) {
+          var r = s.getBoundingClientRect();
+          var d = mid < r.top ? r.top - mid : (mid > r.bottom ? mid - r.bottom : 0); // 0 si el centro de la pantalla esta dentro
+          if (d < bestD) { bestD = d; best = s; }
+        });
+        if (best && cur.textContent !== best.getAttribute('data-n')) {
+          cur.textContent = best.getAttribute('data-n');
+          lab.textContent = best.getAttribute('data-group');
+        }
+      }
+      if (cur && stops.length) {
+        window.addEventListener('scroll', updateCounter, { passive: true }); // 7 elementos: es barato, sin rAF
+        window.addEventListener('resize', updateCounter);
+        updateCounter();
+      }
+
+      (document.getElementById('replay') || { addEventListener: function () {} }).addEventListener('click', function () {
+        if (!reduce && svg.setCurrentTime) { svg.unpauseAnimations(); svg.setCurrentTime(0); }
+        [].slice.call(document.querySelectorAll('.rise')).forEach(function (el) {
+          el.style.animation = 'none'; void el.offsetWidth; el.style.animation = '';
+        });
+      });
+    })();
+  </script>
+  <!--MENUJS-->
+  <script>
+    (function () {
+      // Marca en el riel la seccion que estas viendo (las demas palabras llevan a otras paginas)
+      var links = [].slice.call(document.querySelectorAll('.rail li a'));
+      var map = [['work', 0], ['sites', 0], ['playground', 1], ['about', 2], ['contact', 3]];
+      function onScroll() {
+        var mid = window.innerHeight * 0.4, active = -1;
+        map.forEach(function (p) {
+          var s = document.getElementById(p[0]); if (!s) return;
+          var r = s.getBoundingClientRect();
+          if (r.top <= mid && r.bottom > mid) active = p[1];
+        });
+        links.forEach(function (a, i) { if (i === active) a.setAttribute('aria-current', 'location'); else a.removeAttribute('aria-current'); });
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll);
+      onScroll();
+    })();
+  </script>
+  <!--/MENUJS-->
+  <!--STROKESJS-->
+  <script>
+    (function () {
+      var b = document.getElementById('replay'); if (!b) return;
+      b.addEventListener('click', function () {
+        [].slice.call(document.querySelectorAll('.strokes .st')).forEach(function (el) {
+          el.style.animation = 'none'; void el.getBoundingClientRect(); el.style.animation = '';
+        });
+      });
+    })();
+  </script>
+  <!--/STROKESJS-->
+  <!--OPENJS-->
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var lis = [].slice.call(document.querySelectorAll('.rail li'));
+      // orden del riel: Work, Playground, About, Contact. Posiciones del boceto, como fraccion de la pantalla.
+      var DESK = [[.13, .62], [.87, .62], [.30, .68], [.70, .67]];
+      var MOB = [[.25, .43], [.64, .65], [.72, .45], [.27, .58]];
+      var p = 1, ticking = false;
+      function setP(v) { if (!isFinite(v)) return; p = v; root.style.setProperty('--p', v.toFixed(3)); }
+      function measure() {
+        var vw = window.innerWidth, vh = window.innerHeight, mob = vw < 900;
+        var k = Math.max(.7, Math.min(vw / 1366, vh / 768, 1.2));
+        var s = mob ? 1.75 * Math.max(.85, Math.min(vw / 390, 1.4)) : 1.95 * k;
+        root.style.setProperty('--s', s.toFixed(3));
+        root.style.setProperty('--u', (mob ? .7 * Math.max(.85, Math.min(vw / 390, 1.3)) : .83 * k).toFixed(3));
+        var keep = p; root.style.setProperty('--p', 1);
+        var T = mob ? MOB : DESK;
+        lis.forEach(function (li, i) {
+          var a = li.querySelector('a'); if (!a || !T[i]) return;
+          var r = a.getBoundingClientRect();
+          li.style.setProperty('--dx', (T[i][0] * vw - (r.left + r.width / 2)).toFixed(1) + 'px');
+          li.style.setProperty('--dy', (T[i][1] * vh - (r.top + r.height / 2)).toFixed(1) + 'px');
+        });
+        root.style.setProperty('--p', keep.toFixed(3));
+      }
+      function update() {
+        ticking = false;
+        if (reduce) { setP(1); return; }
+        var x = Math.max(0, Math.min(1, window.scrollY / (Math.max(window.innerHeight, 200) * .7)));
+        setP(x * x * (3 - 2 * x));
+      }
+      function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(update); } }
+      if (!reduce) {
+        measure(); update();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', function () { measure(); update(); });
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { measure(); update(); });
+        window.addEventListener('load', function () { measure(); update(); });
+      }
+      // trazos: arrancan al verse
+      var st = document.querySelector('.strokes');
+      if (st) {
+        if ('IntersectionObserver' in window) {
+          new IntersectionObserver(function (es, o) { es.forEach(function (e) { if (e.isIntersecting) { st.classList.add('in'); o.disconnect(); } }); }, { threshold: .4 }).observe(st);
+        } else st.classList.add('in');
+      }
+      // Replay: vuelve al inicio y repite la entrada
+      var b = document.getElementById('replay');
+      if (b) b.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }); });
+    })();
+  </script>
+  <!--/OPENJS-->
+  <!--A11YJS-->
+  <script>
+    (function () {
+      var b = document.getElementById('pause'); if (!b) return;
+      b.addEventListener('click', function () {
+        var on = b.getAttribute('aria-pressed') !== 'true';
+        b.setAttribute('aria-pressed', on ? 'true' : 'false');
+        document.documentElement.classList.toggle('motion-paused', on);
+        [].forEach.call(document.querySelectorAll('svg'), function (s) { if (on && s.pauseAnimations) s.pauseAnimations(); else if (!on && s.unpauseAnimations) s.unpauseAnimations(); });
+      });
+    })();
+  </script>
+  <!--/A11YJS-->
+</body>
+</html>
