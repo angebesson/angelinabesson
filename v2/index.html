@@ -421,6 +421,7 @@
     .opening h1 .a { font-family: var(--sans); font-weight: 300; font-size: clamp(3.4rem, min(6.1vw, 13.8vh), 8rem); letter-spacing: .01em; line-height: .9; }
     .opening h1 .b { font-family: 'Alegreya', var(--serif); font-style: normal; font-weight: 700; font-size: clamp(2.2rem, min(4.6vw, 10.4vh), 5.4rem); letter-spacing: .05em; text-transform: uppercase; line-height: 1; margin-top: -.02em; }
     .opening .figura { position: absolute; left: 0; right: 0; margin-inline: auto; bottom: clamp(10px, 3vh, 36px); height: auto; width: min(30vw, 30vh * 1.52, 400px); z-index: 1; pointer-events: none; }
+    .opening .role-line { position: relative; z-index: 2; margin-top: clamp(14px, 2.6vh, 28px); color: var(--ink); opacity: .78; font-size: .8rem; }
     .opening-hint { position: absolute; right: clamp(18px, 3vw, 40px); bottom: clamp(14px, 3vh, 32px); color: var(--mute); z-index: 1; opacity: calc(1 - var(--p) * 4); }
     .intro { padding-top: clamp(40px, 7vw, 90px); }
     @media (max-width: 899px) {
@@ -526,6 +527,7 @@
     <!--OPENING-->
     <section class="opening" aria-labelledby="name">
       <h1 id="name"><span class="a rise d1">Ange</span><span class="b rise d2">Besson</span><span class="sr-only">, Virtual &amp; Executive Assistant</span></h1>
+      <p class="micro role-line rise d3" aria-hidden="true">Virtual &amp; Executive Assistant</p>
       <img class="figura rise d3" src="img/figura-laptop.svg" width="2104" height="1384" alt="Line drawing of a woman sitting on the floor with a laptop on her knees" decoding="async">
       <p class="micro opening-hint rise d4" aria-hidden="true">Scroll</p>
     </section>
@@ -832,7 +834,7 @@
           </article>
           <article class="mood">
             <p class="pill cream">Mood in life</p>
-            <p>I'm a person in movement. I like to take pauses, but my constant curiosity keeps me going. I love music, and I built a path in that field: music therapy, piano and primary-school teaching. I love reading. I'm more introspective, and my personality type is Advocate (INFJ).</p>
+            <p>I'm a person in movement. I like to take pauses, but my constant curiosity keeps me going. I love music, and I built a path in that field: music therapy, piano and primary-school teaching. I love reading. I'm more introspective.</p>
           </article>
         </div>
 
